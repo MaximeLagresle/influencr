@@ -62,13 +62,13 @@ ActiveRecord::Schema.define(version: 2019_02_25_213755) do
   end
 
   create_table "states", force: :cascade do |t|
-    t.boolean "read"
-    t.integer "display_count"
+    t.boolean "read", default: false
+    t.integer "display_count", default: 0
     t.bigint "user_id"
-    t.bigint "media_id"
+    t.bigint "medium_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["media_id"], name: "index_states_on_media_id"
+    t.index ["medium_id"], name: "index_states_on_medium_id"
     t.index ["user_id"], name: "index_states_on_user_id"
   end
 
@@ -89,6 +89,6 @@ ActiveRecord::Schema.define(version: 2019_02_25_213755) do
   add_foreign_key "media", "formats"
   add_foreign_key "media", "influencers"
   add_foreign_key "media", "platforms"
-  add_foreign_key "states", "media", column: "media_id"
+  add_foreign_key "states", "media"
   add_foreign_key "states", "users"
 end
