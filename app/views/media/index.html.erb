@@ -1,1 +1,14 @@
 <h1>All medium</h1>
+
+<%= link_to "log out", destroy_user_session_path, method: :delete %>
+
+<% @media.each do |medium| %>
+<% state = State.find_by(medium: medium, user: current_user) %>
+<ul>
+<li><%= medium.title %></li>
+<li><%= medium.influencer.name %></li>
+<li><%= medium.url %></li>
+<li>Dispaly Count: <%= state.display_count %></li>
+</ul>
+<br>
+<% end %>
