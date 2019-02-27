@@ -24,6 +24,9 @@ video = Format.create! type_of: "video", weight: 1.0
 
 # Creating big m hash!
 full_list = [
+
+  # Paul Graham
+
   {
     name: 'Paul Graham',
     bio: "Programmer, writer, and investor. In 1995, he and Robert Morris started Viaweb, the first software as a service company. Viaweb was acquired by Yahoo in 1998, where it became Yahoo Store. In 2001 he started publishing essays on paulgraham.com, which in 2015 got 34 million page views. In 2005 he and Jessica Livingston, Robert Morris, and Trevor Blackwell started Y Combinator, the first of a new type of startup incubator. Since 2005 Y Combinator has funded over 1000 startups, including Dropbox, Airbnb, Stripe, and Reddit.",
@@ -62,6 +65,9 @@ It's not true that there's nothing new under the sun. There are some domains whe
       }
     ]
   },
+
+  # James Currier
+
   {
     name: 'James Currier',
     bio: "James is one of Silicon Valley’s foremost experts in growth and network effects. He's a four-time serial entrepreneur. He is also a pioneer of user-generated models, viral marketing, a/b testing, crowdsourcing, and myriad other growth techniques now followed by nearly all technology companies.",
@@ -120,6 +126,68 @@ It's not true that there's nothing new under the sun. There are some domains whe
       }
     ]
   },
+
+  # Brian Balfour
+
+  {
+    name: 'Brian Balfour',
+    bio: "Founder/CEO of Reforge, previously VP Growth @ HubSpot. Brian Balfour has started multiple VC backed companies, and grown user bases to millions of daily active users. He writes detailed essays on growth and user acquisition that have been featured in Forbes, Hacker Monthly, and OnStartups to help build a growth machine.",
+    accounts: [
+      {
+        username: "bbalfour",
+        url:"https://twitter.com/bbalfour",
+        platform: twitter,
+        media: [
+          {
+            url: "https://twitter.com/JamesCurrier/status/1092823393416560641",
+            content: nil,
+            title: nil,
+            format: tweet
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.nfx.com/essays",
+        platform: blog,
+        media: [
+          {
+            url: "https://www.nfx.com/post/network-effects-alive-and-thriving",
+            content: "Recently, my friend Sarah Lacy at Pando.com wrote yet another insightful thought piece about the state of venture investing and the startup world.  But this one emerged with an unfortunate title:\n “The death of network effects and the sad return of the VC kingmaker”\n The original idea for the article came from a conversation she and I had in October, which has nothing to do with network effects.  My point was that raising capital was becoming more important to success, not less, and thus VC’s are becoming kingmakers again. Thus, this article generously quotes me.\n Unfortunately, based on the title, several people have thought that I am now saying network effects are dead, despite being a Partner at a fund whose name is Network Effects Guild (NFX Guild).\n It would indeed be an irony if true, but nothing could be further from the truth.\n More than ever, we believe getting network effects are critical to building value in startups.  I believe this will be true for the rest of my lifetime.  So much so that my Partners and I spend many hours per week honing our skills at helping build network effects in our 65+ portfolio companies.\nNetwork effects are alive and thriving.  The most valuable companies have them, and the most valuable companies in the future will have them.\n – James",
+            title: "Network Effects Are Not Dead, They Are Alive and Thriving",
+            format: article
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.iangels.co/2016/08/networkeffects/",
+        platform: blog,
+        media: [
+          {
+            url: "https://www.iangels.co/2016/08/networkeffects/",
+            content: "60 percent of the value created by tech companies since 1994 have “network effects” at their core.\n In this podcast, entrepreneur, angel investor, and co-founder of the NFX Guild James Currier joins iAngels’ host Max Marine to help define network effects and their implications for early-stage investors.",
+            title: "Podcast: Network Effects with James Currier",
+            format: podcast
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.youtube.com/watch?v=RGWG3_vfxiQ",
+        platform: blog,
+        media: [
+          {
+            url: "https://www.youtube.com/watch?v=RGWG3_vfxiQ",
+            content: nil,
+            title: "Solving the Chicken or Egg Problem",
+            format: video
+          }
+        ]
+      }
+    ]
+  },
+
 ]
 
 
