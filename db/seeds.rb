@@ -164,7 +164,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
       {
         username: nil,
         url:"https://www.intercom.com/blog/",
-        platform: blog,
+        platform: external_blog,
         media: [
           {
             url: "https://art19.com/shows/inside-intercom/episodes/d207c7c8-3869-41b2-a5b8-40313ac29a93/embed",
@@ -192,66 +192,391 @@ It's not true that there's nothing new under the sun. There are some domains whe
 
   # Influencer 4 : Andrew Chen
 
-  # {
-  #   name: 'Andrew Chen',
-  #   bio: "Investor at Andreessen Horowitz, where he focuses on consumer products, marketplaces, and bottoms up SaaS. Previously, he led growth teams at Uber.",
-  #   accounts: [
-  #     {
-  #       username: "bbalfour",
-  #       url:"https://twitter.com/bbalfour",
-  #       platform: twitter,
-  #       media: [
-  #         {
-  #           url: "https://twitter.com/bbalfour/status/1090300095151562752",
-  #           content: nil,
-  #           title: nil,
-  #           format: tweet
-  #         }
-  #       ]
-  #     },
-  #     {
-  #       username: nil,
-  #       url:"https://brianbalfour.com/",
-  #       platform: blog,
-  #       media: [
-  #         {
-  #           url: "https://brianbalfour.com/essays/how-to-launch-a-product-or-feature-to-maximize-growth",
-  #           content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  #           title: "How To Launch A Product or Feature To Maximize Growth",
-  #           format: article
-  #         }
-  #       ]
-  #     },
-  #     {
-  #       username: nil,
-  #       url:"https://www.intercom.com/blog/",
-  #       platform: blog,
-  #       media: [
-  #         {
-  #           url: "https://art19.com/shows/inside-intercom/episodes/d207c7c8-3869-41b2-a5b8-40313ac29a93/embed",
-  #           content: nil,
-  #           title: "Brian Balfour on creating meaningful growth",
-  #           format: podcast
-  #         }
-  #       ]
-  #     },
-  #     {
-  #       username: nil,
-  #       url:"https://www.youtube.com/",
-  #       platform: youtube,
-  #       media: [
-  #         {
-  #           url: "https://www.youtube.com/watch?v=RGWG3_vfxiQ",
-  #           content: nil,
-  #           title: "Brian Balfour: Building a Growth Machine",
-  #           format: video
-  #         }
-  #       ]
-  #     }
-  #   ]
-  # },
+  {
+    name: 'Andrew Chen',
+    bio: "Investor at Andreessen Horowitz, where he focuses on consumer products, marketplaces, and bottoms up SaaS. Previously, he led growth teams at Uber.",
+    accounts: [
+      {
+        username: "andrewchen",
+        url:"https://twitter.com/andrewchen",
+        platform: twitter,
+        media: [
+          {
+            url: "https://twitter.com/andrewchen/status/1099782259475804160",
+            content: nil,
+            title: nil,
+            format: tweet
+          },
+          {
+            url: "https://twitter.com/andrewchen/status/1099419191793180673",
+            content: nil,
+            title: nil,
+            format: tweet
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://andrewchen.co/",
+        platform: blog,
+        media: [
+          {
+            url: "https://andrewchen.co/2018-essay-collection/",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: "2018 essay collection on growth metrics, marketplaces, viral growth in the enterprise, and more",
+            format: article
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://andrewchen.co/",
+        platform: blog,
+        media: [
+          {
+            url: "https://soundcloud.com/a16z/growth-user-acquisition",
+            content: nil,
+            title: "The Basics of Growth 1 -- User Acquisition",
+            format: podcast
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.youtube.com/",
+        platform: youtube,
+        media: [
+          {
+            url: "https://www.youtube.com/watch?v=m8DQpqJwo3Q",
+            content: nil,
+            title: "Chat with Andrew Chen, Supply Growth at Uber",
+            format: video
+          }
+        ]
+      }
+    ]
+  },
 
+  # Influencer 5 : Connie Chan
 
+  {
+    name: 'Connie Chan',
+    bio: "Connie Chan is a general partner at Andreessen Horowitz where she focuses on consumer tech investments. Since joining the firm in 2011, Connie has worked on the investment team sourcing consumer tech deals including Pinterest and Lime and worked closely with startups across the portfolio.",
+    accounts: [
+      {
+        username: "conniechan",
+        url:"https://twitter.com/conniechan",
+        platform: twitter,
+        media: [
+          {
+            url: "https://twitter.com/conniechan/status/1098975729146982401",
+            content: nil,
+            title: nil,
+            format: tweet
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"http://www.conniechan.com/",
+        platform: blog,
+        media: [
+          {
+            url: "https://a16z.com/2018/12/07/when-advertising-isnt-enough-multimodal-business-models-product-strategy/",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: "Outgrowing Advertising: Multimodal Business Models as a Product Strategy",
+            format: article
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"http://www.conniechan.com/#posts-and-podcasts",
+        platform: blog,
+        media: [
+          {
+            url: "https://soundcloud.com/a16z/mobile-design-culture-product",
+            content: nil,
+            title: "Culture and/of Design",
+            format: podcast
+          }
+        ]
+      }
+    ]
+  },
+
+  # Influencer 6 : Marc Andreessen
+
+  {
+    name: 'Marc Andreessen',
+    bio: "Marc Andreessen is a cofounder and general partner of the venture capital firm Andreessen Horowitz. He is an innovator and creator, one of the few to pioneer a software category used by more than a billion people and one of the few to establish multiple billion-dollar companies. \n
+    Marc co-created the highly influential Mosaic Internet browser and co-founded Netscape, which later sold to AOL for $4.2 billion. He also co-founded Loudcloud, which as Opsware, sold to Hewlett-Packard for $1.6 billion. He later served on the board of Hewlett-Packard from 2008 to 2018.",
+    accounts: [
+      {
+        username: nil,
+        url:"http://blog.pmarca.com/",
+        platform: blog,
+        media: []
+      },
+      {
+        username: nil,
+        url:"https://a16z.com/2018/",
+        platform: external_blog,
+        media: [
+          {
+            url: "https://soundcloud.com/a16z/talent-tech-trends-culture-ben-marc-tyler-cowen-summit-2018",
+            content: nil,
+            title: "Talent, Tech Trends, and Culture",
+            format: podcast
+          }
+        ]
+      }
+    ]
+  },
+
+  # Influencer 7 : Sam Altman
+
+  {
+    name: 'Sam Altman',
+    bio: "Sam Altman is an American entrepreneur, investor, programmer, and blogger. He is the president of Y Combinator and co-chairman of OpenAI.",
+    accounts: [
+      {
+        username: "sama",
+        url:"https://twitter.com/sama",
+        platform: twitter,
+        media: [
+          {
+            url: "https://twitter.com/sama/status/1098344690896711681",
+            content: nil,
+            title: nil,
+            format: tweet
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://blog.samaltman.com/",
+        platform: blog,
+        media: [
+          {
+            url: "https://blog.samaltman.com/how-to-be-successful",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: "How To Be Successful",
+            format: article
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://mastersofscale.com/",
+        platform: external_blog,
+        media: [
+          {
+            url: "https://rss.art19.com/episodes/85928af6-62aa-4d53-ac55-0c3300241767.mp3",
+            content: nil,
+            title: "Why customer love is all you need",
+            format: podcast
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.youtube.com/",
+        platform: youtube,
+        media: [
+          {
+            url: "https://www.youtube.com/watch?v=0lJKucu6HJc",
+            content: nil,
+            title: "How to Succeed with a Startup",
+            format: video
+          }
+        ]
+      }
+    ]
+  },
+
+  # Influencer 8 : Benedict Evans
+
+  {
+    name: 'Benedict Evans',
+    bio: "I work at Andreessen Horowitz ('a16z'), a venture capital firm in Silicon Valley that invests in technology companies. I try to work out what's going on and what will happen next.",
+    accounts: [
+      {
+        username: "benedictevans",
+        url:"https://twitter.com/benedictevans",
+        platform: twitter,
+        media: [
+          {
+            url: "https://twitter.com/benedictevans/status/1100659109647527936",
+            content: nil,
+            title: nil,
+            format: tweet
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.ben-evans.com/benedictevans/",
+        platform: blog,
+        media: [
+          {
+            url: "https://www.ben-evans.com/benedictevans/2019/2/5/cameras-that-understand",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: "Cameras that understand: portrait mode and Google Lens",
+            format: article
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.ben-evans.com/benedictevans/",
+        platform:blog,
+        media: [
+          {
+            url: "https://soundcloud.com/a16z/a16z-podcast-everything-you-need-to-know-about-amazon",
+            content: nil,
+            title: "Everything You Need to Know About Amazon",
+            format: podcast
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.youtube.com/",
+        platform: youtube,
+        media: [
+          {
+            url: "https://www.youtube.com/watch?v=RF5VIwDYIJk",
+            content: nil,
+            title: "The End of the Beginning",
+            format: video
+          }
+        ]
+      }
+    ]
+  },
+
+  # Influencer 9 : Reid Hoffman
+
+  {
+    name: 'Reid Hoffman',
+    bio: "Reid Garrett Hoffman is an American internet entrepreneur, venture capitalist and author. Hoffman was the co-founder and executive chairman of LinkedIn. He is currently a partner at the venture capital firm Greylock Partners.",
+    accounts: [
+      {
+        username: "reidhoffman",
+        url:"https://twitter.com/reidhoffman",
+        platform: twitter,
+        media: [
+          {
+            url: "https://twitter.com/reidhoffman/status/1100811939691679745",
+            content: nil,
+            title: nil,
+            format: twitter
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.reidhoffman.org/",
+        platform: blog,
+        media: [
+          {
+            url: "https://hbr.org/2019/03/educating-the-next-generation-of-leaders#learn-from-people-not-classes",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: "Learn from People, Not Classes",
+            format: article
+          }
+        ]
+      },
+      {
+        username: ,
+        url:"https://mastersofscale.com/",
+        platform: external_blog,
+        media: [
+          {
+            url: "https://rss.art19.com/episodes/f7484bf4-8e1e-4c59-bc47-a4e761805991.mp3",
+            content: nil,
+            title: "The Reid Hoffman Story (Part 2) — Make everyone a hero",
+            format: podcast
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.youtube.com/",
+        platform: youtube,
+        media: [
+          {
+            url: "https://www.youtube.com/watch?v=J-4J9gP1pIo",
+            content: nil,
+            title: "The secrets of Blitzscaling",
+            format: video
+          }
+        ]
+      }
+    ]
+  },
+
+  # Influencer 10 : Tim O'Reilly
+
+  {
+    name: "Tim O'Reilly",
+    bio: "Tim has a history of convening conversations that reshape the computer industry. In 1998, he organized the meeting where the term “open source software” was agreed on, and helped the business world understand its importance. In 2004, with the Web 2.0 Summit, he defined how “Web 2.0” represented not only the resurgence of the web after the dot com bust, but a new model for the computer industry, based on big data, collective intelligence, and the internet as a platform.",
+    accounts: [
+      {
+        username: "timoreilly",
+        url:"https://twitter.com/timoreilly",
+        platform: twitter,
+        media: [
+          {
+            url: "https://twitter.com/timoreilly/status/1100451353883664384",
+            content: nil,
+            title: nil,
+            format: twitter
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.oreilly.com/tim/",
+        platform: blog,
+        media: [
+          {
+            url: "https://evonomics.com/new-economy-evolution-oreilly-wilson/",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: "Evolving the New Economy: Tim O’Reilly and David Sloan Wilson",
+            format: article
+          }
+        ]
+      },
+      {
+        username: ,
+        url:"https://after-on.com/episodes/",
+        platform: external_blog,
+        media: [
+          {
+            url: "https://html5-player.libsyn.com/embed/episode/id/5824897/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/",
+            content: nil,
+            title: "Tech's Past & Future",
+            format: podcast
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://www.youtube.com/",
+        platform: youtube,
+        media: [
+          {
+            url: "https://www.youtube.com/watch?v=xRmQTWpkaVU",
+            content: nil,
+            title: "Why we'll never run out of jobs",
+            format: video
+          }
+        ]
+      }
+    ]
+  },
 ]
 
 full_list.each do |influencer|
