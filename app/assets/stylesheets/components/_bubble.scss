@@ -1,0 +1,55 @@
+.bubble-container{
+
+}
+
+.bubble-wrapper{
+
+}
+
+.bubble{
+  background: linear-gradient(260.75deg, rgba(255, 255, 255, 0.125) 0%, rgba(255, 255, 255, 0.1875) 46.41%, rgba(255, 255, 255, 0.125) 100%);
+  border: 3px solid $bubbleborder-white;
+  backdrop-filter: blur(4px);/* Note: backdrop-filter has minimal browser support */
+  border-radius: 0px 40px 40px 40px;
+  position: relative;
+  cursor: pointer;
+  transition: all 5s ease-in-out;
+  min-height: 100px;
+  width: 400px;
+  display: auto;
+  overflow: block;
+
+  p.content{
+    opacity: 0;
+    display: none;
+  }
+}
+
+.bl-close{
+ }
+
+.bl-open{
+  // height: 140px;
+  // max-height: 200px;
+  // overflow-y: scroll;
+  // overflow: hidden;
+  p.content{
+    opacity: 0;
+    display: block;
+  }
+  &.bl-show-text{
+    p.content{
+      opacity:1;
+    }
+  }
+}
+
+.title-top-bar{
+  background: white;
+  border-radius: 0px 0px 40px 40px;
+  position: absolute;
+  height: 40px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+}
