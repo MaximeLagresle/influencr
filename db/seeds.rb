@@ -471,7 +471,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
             url: "https://twitter.com/reidhoffman/status/1100811939691679745",
             content: nil,
             title: nil,
-            format: twitter
+            format: tweet
           }
         ]
       },
@@ -489,7 +489,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
         ]
       },
       {
-        username: ,
+        username: nil,
         url:"https://mastersofscale.com/",
         platform: external_blog,
         media: [
@@ -532,7 +532,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
             url: "https://twitter.com/timoreilly/status/1100451353883664384",
             content: nil,
             title: nil,
-            format: twitter
+            format: tweet
           }
         ]
       },
@@ -550,7 +550,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
         ]
       },
       {
-        username: ,
+        username: nil,
         url:"https://after-on.com/episodes/",
         platform: external_blog,
         media: [
