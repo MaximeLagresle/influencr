@@ -14,6 +14,8 @@ twitter = Platform.create! name: "Twitter", weight: 1.0
 blog = Platform.create! name: "Blog", weight: 1.0
 newsletter = Platform.create! name: "Newsletter", weight: 1.0
 medium = Platform.create! name: "Medium", weight: 1.0
+external_blog = Platform.create! name: "External Blog", weight: 1.0
+youtube = Platform.create! name:"Conference", weight: 1.0
 
 # Creating the 4 types of formats
 tweet = Format.create! type_of: "tweet", weight: 0.25
@@ -25,7 +27,7 @@ video = Format.create! type_of: "video", weight: 1.0
 # Creating big m hash!
 full_list = [
 
-  # Paul Graham
+  # Influencer 1 : Paul Graham
 
   {
     name: 'Paul Graham',
@@ -66,7 +68,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
     ]
   },
 
-  # James Currier
+  # Influencer 2 : James Currier
 
   {
     name: 'James Currier',
@@ -100,12 +102,12 @@ It's not true that there's nothing new under the sun. There are some domains whe
       },
       {
         username: nil,
-        url:"https://www.iangels.co/2016/08/networkeffects/",
-        platform: blog,
+        url:"https://www.iangels.co/blog/",
+        platform: external_blog,
         media: [
           {
-            url: "https://www.iangels.co/2016/08/networkeffects/",
-            content: "60 percent of the value created by tech companies since 1994 have “network effects” at their core.\n In this podcast, entrepreneur, angel investor, and co-founder of the NFX Guild James Currier joins iAngels’ host Max Marine to help define network effects and their implications for early-stage investors.",
+            url: "https://soundcloud.com/investwithinfluence/network-effects",
+            content: nil,
             title: "Podcast: Network Effects with James Currier",
             format: podcast
           }
@@ -113,8 +115,8 @@ It's not true that there's nothing new under the sun. There are some domains whe
       },
       {
         username: nil,
-        url:"https://www.youtube.com/watch?v=RGWG3_vfxiQ",
-        platform: blog,
+        url:"https://www.youtube.com/",
+        platform: youtube,
         media: [
           {
             url: "https://www.youtube.com/watch?v=RGWG3_vfxiQ",
@@ -127,7 +129,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
     ]
   },
 
-  # Brian Balfour
+  # Influencer 3 : Brian Balfour
 
   {
     name: 'Brian Balfour',
@@ -139,7 +141,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
         platform: twitter,
         media: [
           {
-            url: "https://twitter.com/JamesCurrier/status/1092823393416560641",
+            url: "https://twitter.com/bbalfour/status/1090300095151562752",
             content: nil,
             title: nil,
             format: tweet
@@ -148,39 +150,39 @@ It's not true that there's nothing new under the sun. There are some domains whe
       },
       {
         username: nil,
-        url:"https://www.nfx.com/essays",
+        url:"https://brianbalfour.com/",
         platform: blog,
         media: [
           {
-            url: "https://www.nfx.com/post/network-effects-alive-and-thriving",
-            content: "Recently, my friend Sarah Lacy at Pando.com wrote yet another insightful thought piece about the state of venture investing and the startup world.  But this one emerged with an unfortunate title:\n “The death of network effects and the sad return of the VC kingmaker”\n The original idea for the article came from a conversation she and I had in October, which has nothing to do with network effects.  My point was that raising capital was becoming more important to success, not less, and thus VC’s are becoming kingmakers again. Thus, this article generously quotes me.\n Unfortunately, based on the title, several people have thought that I am now saying network effects are dead, despite being a Partner at a fund whose name is Network Effects Guild (NFX Guild).\n It would indeed be an irony if true, but nothing could be further from the truth.\n More than ever, we believe getting network effects are critical to building value in startups.  I believe this will be true for the rest of my lifetime.  So much so that my Partners and I spend many hours per week honing our skills at helping build network effects in our 65+ portfolio companies.\nNetwork effects are alive and thriving.  The most valuable companies have them, and the most valuable companies in the future will have them.\n – James",
-            title: "Network Effects Are Not Dead, They Are Alive and Thriving",
+            url: "https://brianbalfour.com/essays/how-to-launch-a-product-or-feature-to-maximize-growth",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            title: "How To Launch A Product or Feature To Maximize Growth",
             format: article
           }
         ]
       },
       {
         username: nil,
-        url:"https://www.iangels.co/2016/08/networkeffects/",
+        url:"https://www.intercom.com/blog/",
         platform: blog,
         media: [
           {
-            url: "https://www.iangels.co/2016/08/networkeffects/",
-            content: "60 percent of the value created by tech companies since 1994 have “network effects” at their core.\n In this podcast, entrepreneur, angel investor, and co-founder of the NFX Guild James Currier joins iAngels’ host Max Marine to help define network effects and their implications for early-stage investors.",
-            title: "Podcast: Network Effects with James Currier",
+            url: "https://art19.com/shows/inside-intercom/episodes/d207c7c8-3869-41b2-a5b8-40313ac29a93/embed",
+            content: nil,
+            title: "Brian Balfour on creating meaningful growth",
             format: podcast
           }
         ]
       },
       {
         username: nil,
-        url:"https://www.youtube.com/watch?v=RGWG3_vfxiQ",
-        platform: blog,
+        url:"https://www.youtube.com/",
+        platform: youtube,
         media: [
           {
             url: "https://www.youtube.com/watch?v=RGWG3_vfxiQ",
             content: nil,
-            title: "Solving the Chicken or Egg Problem",
+            title: "Brian Balfour: Building a Growth Machine",
             format: video
           }
         ]
@@ -188,7 +190,164 @@ It's not true that there's nothing new under the sun. There are some domains whe
     ]
   },
 
+  # Influencer 4 : Andrew Chen
+
+  # {
+  #   name: 'Andrew Chen',
+  #   bio: "Investor at Andreessen Horowitz, where he focuses on consumer products, marketplaces, and bottoms up SaaS. Previously, he led growth teams at Uber.",
+  #   accounts: [
+  #     {
+  #       username: "bbalfour",
+  #       url:"https://twitter.com/bbalfour",
+  #       platform: twitter,
+  #       media: [
+  #         {
+  #           url: "https://twitter.com/bbalfour/status/1090300095151562752",
+  #           content: nil,
+  #           title: nil,
+  #           format: tweet
+  #         }
+  #       ]
+  #     },
+  #     {
+  #       username: nil,
+  #       url:"https://brianbalfour.com/",
+  #       platform: blog,
+  #       media: [
+  #         {
+  #           url: "https://brianbalfour.com/essays/how-to-launch-a-product-or-feature-to-maximize-growth",
+  #           content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  #           title: "How To Launch A Product or Feature To Maximize Growth",
+  #           format: article
+  #         }
+  #       ]
+  #     },
+  #     {
+  #       username: nil,
+  #       url:"https://www.intercom.com/blog/",
+  #       platform: blog,
+  #       media: [
+  #         {
+  #           url: "https://art19.com/shows/inside-intercom/episodes/d207c7c8-3869-41b2-a5b8-40313ac29a93/embed",
+  #           content: nil,
+  #           title: "Brian Balfour on creating meaningful growth",
+  #           format: podcast
+  #         }
+  #       ]
+  #     },
+  #     {
+  #       username: nil,
+  #       url:"https://www.youtube.com/",
+  #       platform: youtube,
+  #       media: [
+  #         {
+  #           url: "https://www.youtube.com/watch?v=RGWG3_vfxiQ",
+  #           content: nil,
+  #           title: "Brian Balfour: Building a Growth Machine",
+  #           format: video
+  #         }
+  #       ]
+  #     }
+  #   ]
+  # },
+
+
 ]
+
+full_list.each do |influencer|
+
+  # influencer[:name]
+  # influencer[:bio]
+
+  this_influencer = Influencer.create! name: influencer[:name], bio: influencer[:bio]
+
+  accounts = influencer[:accounts]
+
+
+  accounts.each do |account|
+
+    # account[:username]
+    # account[:url]
+    # account[:platform]
+
+    this_account = Account.create! username: account[:username], url: account[:url], platform: account[:platform], influencer: this_influencer
+
+    media = account[:media]
+
+    media.each do |medium|
+
+      # medium[:title]
+      # medium[:content]
+      # medium[:url]
+      # medium[:format]
+
+      this_medium = Medium.create! title: medium[:title], content: medium[:content], url: medium[:url], format: medium[:format], influencer: this_influencer, platform: this_account.platform
+    end
+  end
+end
+
+## --------------------------------------------------------------------------------
+
+  # # Influencer # : Influencer_name
+
+  # {
+  #   name: '',
+  #   bio: "",
+  #   accounts: [
+  #     {
+  #       username: "",
+  #       url:"",
+  #       platform: ,
+  #       media: [
+  #         {
+  #           url: "",
+  #           content: ,
+  #           title: ,
+  #           format:
+  #         }
+  #       ]
+  #     },
+  #     {
+  #       username: ,
+  #       url:"",
+  #       platform: ,
+  #       media: [
+  #         {
+  #           url: "",
+  #           content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  #           title: "",
+  #           format:
+  #         }
+  #       ]
+  #     },
+  #     {
+  #       username: ,
+  #       url:"",
+  #       platform: ,
+  #       media: [
+  #         {
+  #           url: "",
+  #           content: ,
+  #           title: "",
+  #           format:
+  #         }
+  #       ]
+  #     },
+  #     {
+  #       username: ,
+  #       url:"",
+  #       platform: ,
+  #       media: [
+  #         {
+  #           url: "",
+  #           content: ,
+  #           title: "",
+  #           format:
+  #         }
+  #       ]
+  #     }
+  #   ]
+  # },
 
 
 
