@@ -1,1 +1,11 @@
 <h1>All medium</h1>
+<div>
+  <%= @media.each do |medium| %>
+    <div>
+
+      <h2> <%= medium.influencer.name %> </h2>
+      <p> <%= medium.title %> </p>
+
+    </div>
+  <% end %>
+</div>

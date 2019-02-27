@@ -1,7 +1,7 @@
 class MediaController < ApplicationController
 
   def index
-    #@media = Medium.all
+    @media = Medium.all
   end
 
   def show
