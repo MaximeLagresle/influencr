@@ -13,36 +13,30 @@
   border-radius: 0px 40px 40px 40px;
   position: relative;
   cursor: pointer;
-  transition: all 5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   min-height: 100px;
+  height: 100px;
   width: 400px;
-  display: auto;
-  overflow: block;
-
-  p.content{
-    opacity: 0;
-    display: none;
-  }
+  // display: auto;
+  overflow: hidden;
 }
 
-.bl-close{
- }
-
-.bl-open{
-  // height: 140px;
-  // max-height: 200px;
-  // overflow-y: scroll;
-  // overflow: hidden;
-  p.content{
-    opacity: 0;
-    display: block;
-  }
-  &.bl-show-text{
-    p.content{
-      opacity:1;
-    }
-  }
+.extend{
+  height:150px;
 }
+
+p.content{
+  // transition: height 0.4s linear;
+  // display:block;
+}
+
+// .bl-open{
+//   display:none;
+//   p.content{
+//     display:block;
+//   }
+// }
+
 
 .title-top-bar{
   background: white;

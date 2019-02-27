@@ -5,7 +5,7 @@
       <%= render "components/bubble" do |f| %>
         <h2> <%= medium.influencer.name %> </h2>
         <p> <%= medium.title %> </p>
-        <p class="content"> <%= medium.content %> </p>
+        <div> <p class="content hidden"> <%= medium.content.first(200) if medium.content %> </p> </div>
       <% end %>
     </div>
   <% end %>
