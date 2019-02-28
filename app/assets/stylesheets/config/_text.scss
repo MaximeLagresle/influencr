@@ -47,3 +47,12 @@ p{
   font-size: 14px;
   margin: 0px;
 }
+
+a{
+  color: $text-white;
+}
+
+a:hover{
+  color: $text-dark;
+  text-decoration: none;
+}
