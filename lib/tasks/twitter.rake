@@ -16,18 +16,15 @@ namespace :twitter do
       twitter_username_list << account.username
     end
 
-
     twitter_username_list.each do |username|
       tweets = TwitterClient.user_timeline(username)
       format_tweet = Format.find_by type_of: "tweet"
       influencer = Account.find_by(username: username, platform: platform_tweet)
       tweets.each do |tweet|
         if !historical_tweets_list.include? tweet.id.to_s
-          Medium.create! title: tweet.id, content: tweet.full_text, url: tweet.uri, influencer: influencer.influencer, format: format_tweet, platform: platform_tweet
-        else
+          tweet = Medium.create! title: tweet.id, content: tweet.full_text, url: tweet.uri, influencer: influencer.influencer, format: format_tweet, platform: platform_tweet
         end
       end
     end
   end
 end
-
