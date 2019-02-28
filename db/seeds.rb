@@ -25,6 +25,7 @@ video = Format.create! type_of: "video", weight: 1.0
 
 
 # Creating big m hash!
+puts 'Creating database'
 full_list = [
 
   # Influencer 1 : Paul Graham
@@ -610,6 +611,8 @@ full_list.each do |influencer|
     end
   end
 end
+
+puts 'Database created'
 
 ## --------------------------------------------------------------------------------
 
