@@ -6,47 +6,44 @@
 </div>
 
 <h1>All medium</h1>
-<p><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></p>
-<p><strong>LAST SESSION:</strong>
-  <span id="utc" data-time="<%= current_user.last_sign_in_at %>"></span></p>
-  <p><%= current_user.last_sign_in_at %></p>
 
 <!-- Ed's code -->
 
-<div>
-  <%= @media.each do |medium| %>
-    <% state = State.find_by(medium: medium, user: current_user) %>
-    <div>
-      <div id="display-grid">
-        <div class="bubble-container">
-          <%= render "components/bubble" do |f| %>
+<div id="display-grid">
 
-            <h2 class="bubble-influencer"> <%= medium.influencer.name %> </h2>
-            <p class="bubble-title"> <%= medium.title %> </p>
+  <div class="bubble-container">
+    <%= @state_array.each do |state| %>
 
+      <div class="bubble-wrapper">
+
+        <div class='bubble <%=state.medium.format.type_of%>'>
+
+          <div class="title-top-bar"> <h2 class="bubble-influencer"> <%= state.medium.influencer.name %> </h2> </div>
+
+          <% if state.medium.format.type_of == "article" %>
+            <h4 class="bubble-title"> <%= state.medium.title %> </h4>
             <div class="content">
               <p> Dispaly Count: <%= state.display_count %> </p>
-              <p> <%= medium.content.first(100) if medium.content %> </p>
+              <p> <%= state.medium.content.first(100) if state.medium.content %> </p>
             </div>
+
+          <% elsif state.medium.format.type_of == "tweet" %>
+            <div class="content"> <h2>Tweet</h2> </div>
+
+          <% elsif state.medium.format.type_of == "podcast" %>
+            <h4 class="bubble-title"> <%= state.medium.title %> </h4>
+            <div class="content"> <h2>Podcast</h2> </div>
+
+          <% elsif state.medium.format.type_of == "video" %>
+            <h4 class="bubble-title"> <%= state.medium.title %> </h4>
+            <div class="content"> <h2>Video</h2> </div>
           <% end %>
         </div>
-        <div class="window-container">
-
-        </div>
       </div>
-    </div>
-  <% end %>
-</div>
 
-<!-- <%# @state_array.each do |state| %>
-  <span>
-    <br>
-    <p><%# state.medium.title %></p>
-    <p>By <%# state.medium.influencer.name %></p>
-    <p><%# state.medium.url %></p>
-    <p><%# state.medium.created_at %></p>
-    <p>
-      t: <%# state.medium.format.type_of %> |
-      d: <%# state.display_count %> |
-      v: <%# state.algie_check %>
- -->
+      <div class="window-container">
+      </div>
+
+    <% end %>
+  </div>
+</div>

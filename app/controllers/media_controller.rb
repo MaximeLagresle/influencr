@@ -10,11 +10,11 @@ class MediaController < ApplicationController
 
     # store all the current user's state records. sorts by the algorithm in the state model.
 
-    @state = current_user.states.sort_by(&:algie_check)
+    @state = current_user.states.sort_by(&:algie_check).reverse
 
     # store the ten most relevent state records. send to the view and increment display_count.
 
-    @state_array = @state.first(4).map { |state| increment_state!(state.medium) }
+    @state_array = @state.first(10).map { |state| increment_state!(state.medium) }
   end
 
   def show
