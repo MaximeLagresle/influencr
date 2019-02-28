@@ -23,9 +23,10 @@ $cold-mid: rgb(18,193,243);
 $cold-low: rgb(0,202,255);
 
 // Bubble Colors:
-$bubblebg-white: rgba(255,255,255,1);
-$bubbleborder-white: rgba(255,255,255,1);
+$bubble-transparent: linear-gradient(260.75deg, rgba(255, 255, 255, 0.125) 0%, rgba(255, 255, 255, 0.1875) 46.41%, rgba(255, 255, 255, 0.125) 100%);
+$bubble-white-transparent: linear-gradient(260.75deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.3) 46.41%, rgba(255, 255, 255, 0.2) 100%);
+$bubble-white: rgba(255,255,255,1);
 
 // Bubble Text:
 $text-white: rgba(255,255,255,1);
-$text-dark: rgba(0,0,0,0.8);
+$text-dark: rgba(0,0,0,0.6);

@@ -5,14 +5,31 @@
 }
 
 .content{
+  position: absolute;
+  left: 40px;
+  top: 90px;
   transition: all 0.5s ease-in-out;
   opacity:0;
 }
 
+.title-top-bar{
+  position: absolute;
+  background: $bubble-transparent;
+  height: 40px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  h2{
+    position: absolute;
+    left: 40px;
+  }
+}
+
 .bubble{
+  opacity:0.9;
   position: relative;
-  background: linear-gradient(260.75deg, rgba(255, 255, 255, 0.125) 0%, rgba(255, 255, 255, 0.1875) 46.41%, rgba(255, 255, 255, 0.125) 100%);
-  border: 2px solid $bubbleborder-white;
+  background: $bubble-transparent;
+  border: 1px solid $bubble-white;
   backdrop-filter: blur(4px);/* Note: backdrop-filter has minimal browser support */
   border-radius: 0px 40px 40px 40px;
   cursor: pointer;
@@ -23,20 +40,40 @@
   min-width: 350px;
   overflow: hidden;
   &:hover{
-
-    height:150px;
+    opacity:1;
+    border: 2px solid $bubble-white;
+    background: $bubble-white-transparent;
+    height:200px;
     .content{
       opacity: 1;
+    }
+    .title-top-bar{
+      background: $bubble-white;
+      h2{
+        color: $text-dark;
+      }
     }
   }
 }
 
-.title-top-bar{
+.bubble-title{
   position: absolute;
-  background: white;
-  border-radius: 0px 0px 40px 40px;
-  height: 40px;
-  left: 0%;
-  right: 0%;
-  top: 0px;
+  left: 40px;
+  top: 45px;
+}
+
+.tweet{
+
+}
+
+.article{
+
+}
+
+.podcast{
+
+}
+
+.video{
+
 }
