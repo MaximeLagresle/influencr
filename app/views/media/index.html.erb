@@ -1,6 +1,9 @@
 <h1>All medium</h1>
 
-<%= link_to "log out", destroy_user_session_path, method: :delete %>
+<p><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></p>
+<p><strong>LAST SESSION:</strong>
+  <span id="utc" data-time="<%= current_user.last_sign_in_at %>"></span></p>
+  <p><%= current_user.last_sign_in_at %></p>
 
 <% @media.each do |medium| %>
 <% state = State.find_by(medium: medium, user: current_user) %>
