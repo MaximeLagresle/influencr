@@ -6,6 +6,12 @@
 </div>
 
 <h1>All medium</h1>
+<p><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></p>
+<p><strong>LAST SESSION:</strong>
+  <span id="utc" data-time="<%= current_user.last_sign_in_at %>"></span></p>
+  <p><%= current_user.last_sign_in_at %></p>
+
+<!-- Ed's code -->
 
 <div>
   <%= @media.each do |medium| %>
@@ -25,9 +31,22 @@
           <% end %>
         </div>
         <div class="window-container">
-
+          
         </div>
       </div>
     </div>
   <% end %>
 </div>
+
+<!-- <% @state_array.each do |state| %>
+  <span>
+    <br>
+    <p><%= state.medium.title %></p>
+    <p>By <%= state.medium.influencer.name %></p>
+    <p><%= state.medium.url %></p>
+    <p><%= state.medium.created_at %></p>
+    <p>
+      t: <%= state.medium.format.type_of %> |
+      d: <%= state.display_count %> |
+      v: <%= state.algie_check %>
+ -->
