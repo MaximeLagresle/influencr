@@ -1,4 +1,10 @@
 <h1>All medium</h1>
+<p><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></p>
+<p><strong>LAST SESSION:</strong>
+  <span id="utc" data-time="<%= current_user.last_sign_in_at %>"></span></p>
+  <p><%= current_user.last_sign_in_at %></p>
+
+<!-- Ed's code -->
 
 <div>
   <%= @media.each do |medium| %>
@@ -12,20 +18,24 @@
   <% end %>
 </div>
 
-<p><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></p>
-<p><strong>LAST SESSION:</strong>
-  <span id="utc" data-time="<%= current_user.last_sign_in_at %>"></span></p>
-  <p><%= current_user.last_sign_in_at %></p>
+<!-- Gary's code: iterated over 'states' -->
 
-<% @media.each do |medium| %>
-<% state = State.find_by(medium: medium, user: current_user) %>
-<ul>
-<li><%= medium.title %></li>
-<li><%= medium.influencer.name %></li>
-<li><%= medium.url %></li>
-<li>Dispaly Count: <%= state.display_count %></li>
-<li>Sort Value: <%= state.algo_check %></li>
-</ul>
-<br>
+<h2>STATES ITERATION</h2>
+
+<% @state_array.each do |state| %>
+  <span>
+    <br>
+    <p><%= state.medium.title %></p>
+    <p>By <%= state.medium.influencer.name %></p>
+    <p><%= state.medium.url %></p>
+    <p><%= state.medium.created_at %></p>
+    <p>
+      t: <%= state.medium.format.type_of %> |
+      d: <%= state.display_count %> |
+      v: <%= state.algie_check %>
+    </p>
+    <br>
+    <p>- - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+  </span>
 <% end %>
 

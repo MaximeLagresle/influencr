@@ -1,27 +1,20 @@
 class MediaController < ApplicationController
-
   def index
     @media = Medium.all
 
     # checks to see if a state record exists for each medium. creates one if false.
 
     @media.each do |medium|
-      create_state(medium) if !validate_state?(medium)
+      create_state(medium) unless validate_state?(medium)
     end
 
-    # collects all the current user's state records. sorts by the algorithm in the state model.
+    # store all the current user's state records. sorts by the algorithm in the state model.
 
-    @state = current_user.states.sort_by { |state| state.algo_check }
+    @state = current_user.states.sort_by(&:algie_check)
 
-    # stores the ten most relevent medium records in the instance variable @media as an array.
+    # store the ten most relevent state records. send to the view and increment display_count.
 
-    @media = @state.first(10).map { |state| state.medium }
-
-    # calls the increment method for ONLY the ten associated state records that were displayed.
-
-    @media.each do |medium|
-      increment_state!(medium)
-    end
+    @state_array = @state.first(4).map { |state| increment_state!(state.medium) }
   end
 
   def show
