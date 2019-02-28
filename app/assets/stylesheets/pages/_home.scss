@@ -4,3 +4,32 @@ body{
   background-size: contain;
   min-height: 100vh;
 }
+
+.bubble-container {
+  grid-area: bubble-container;
+}
+
+.window-container {
+  grid-area: window-container;
+}
+
+#display-grid {
+  display: grid;
+}
+
+// Small device
+@media (max-width: 1400px) {
+  #display-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:"bubble-container"
+  }
+}
+
+// Large device
+@media (min-width: 1400px) {
+  #display-grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:"bubble-container   window-container"
+  }
+}
+
