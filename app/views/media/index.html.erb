@@ -1,3 +1,10 @@
+<div>
+  <h2><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></h2>
+  <p><strong>LAST SESSION:</strong>
+  <span id="utc" data-time="<%= current_user.last_sign_in_at %>"></span></p>
+  <p><%= current_user.last_sign_in_at %></p>
+</div>
+
 <h1>All medium</h1>
 <p><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></p>
 <p><strong>LAST SESSION:</strong>
@@ -8,21 +15,30 @@
 
 <div>
   <%= @media.each do |medium| %>
-    <div class="bubble-container">
-      <%= render "components/bubble" do |f| %>
-        <h2> <%= medium.influencer.name %> </h2>
-        <p> <%= medium.title %> </p>
-        <div> <p class="content hidden"> <%= medium.content.first(200) if medium.content %> </p> </div>
-      <% end %>
+    <% state = State.find_by(medium: medium, user: current_user) %>
+    <div>
+      <div id="display-grid">
+        <div class="bubble-container">
+          <%= render "components/bubble" do |f| %>
+
+            <h2 class="bubble-influencer"> <%= medium.influencer.name %> </h2>
+            <p class="bubble-title"> <%= medium.title %> </p>
+
+            <div class="content">
+              <p> Dispaly Count: <%= state.display_count %> </p>
+              <p> <%= medium.content.first(100) if medium.content %> </p>
+            </div>
+          <% end %>
+        </div>
+        <div class="window-container">
+          
+        </div>
+      </div>
     </div>
   <% end %>
 </div>
 
-<!-- Gary's code: iterated over 'states' -->
-
-<h2>STATES ITERATION</h2>
-
-<% @state_array.each do |state| %>
+<!-- <% @state_array.each do |state| %>
   <span>
     <br>
     <p><%= state.medium.title %></p>
@@ -33,9 +49,4 @@
       t: <%= state.medium.format.type_of %> |
       d: <%= state.display_count %> |
       v: <%= state.algie_check %>
-    </p>
-    <br>
-    <p>- - - - - - - - - - - - - - - - - - - - - - - - - -</p>
-  </span>
-<% end %>
-
+ -->

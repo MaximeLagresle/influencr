@@ -1,47 +1,40 @@
-.bubble-container{
-
+.bubble-wrapper{
+  display:flex;
+  justify-content: center;
+  padding: 5px;
 }
 
-.bubble-wrapper{
-
+.content{
+  transition: all 0.5s ease-in-out;
+  opacity:0;
 }
 
 .bubble{
+  position: relative;
   background: linear-gradient(260.75deg, rgba(255, 255, 255, 0.125) 0%, rgba(255, 255, 255, 0.1875) 46.41%, rgba(255, 255, 255, 0.125) 100%);
-  border: 3px solid $bubbleborder-white;
+  border: 2px solid $bubbleborder-white;
   backdrop-filter: blur(4px);/* Note: backdrop-filter has minimal browser support */
   border-radius: 0px 40px 40px 40px;
-  position: relative;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  min-height: 100px;
-  height: 100px;
-  width: 400px;
-  // display: auto;
+  height:100px;
+  width:100%;
+  max-width: 450px;
+  min-width: 350px;
   overflow: hidden;
+  &:hover{
+
+    height:150px;
+    .content{
+      opacity: 1;
+    }
+  }
 }
-
-.extend{
-  height:150px;
-}
-
-p.content{
-  // transition: height 0.4s linear;
-  // display:block;
-}
-
-// .bl-open{
-//   display:none;
-//   p.content{
-//     display:block;
-//   }
-// }
-
 
 .title-top-bar{
+  position: absolute;
   background: white;
   border-radius: 0px 0px 40px 40px;
-  position: absolute;
   height: 40px;
   left: 0%;
   right: 0%;
