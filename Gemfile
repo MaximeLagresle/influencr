@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.5.3'
 
+gem 'twitter'
+gem 'twurl'
+
 gem 'forest_liana'
 
 gem 'bootsnap', require: false
