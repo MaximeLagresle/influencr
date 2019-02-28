@@ -4,7 +4,14 @@ class MediaController < ApplicationController
     @media = Medium.all
 
     @media.each do |medium|
-      validate_state?(medium) ? increment_state!(medium) : create_state(medium)
+      create_state(medium) if !validate_state?(medium)
+    end
+
+    @state = current_user.states.sort_by { |state| state.algo_check }
+    @media = @state.first(6).map { |state| state.medium }
+
+    @media.each do |medium|
+      increment_state!(medium)
     end
   end
 
@@ -12,12 +19,16 @@ class MediaController < ApplicationController
     @medium = Medium.find(params[:id])
   end
 
+  def find_state(medium)
+    State.find_by(medium: medium, user: current_user)
+  end
+
   def validate_state?(medium)
-    State.find_by(medium: medium, user: current_user).present?
+    find_state(medium).present?
   end
 
   def increment_state!(medium)
-    State.find_by(medium: medium, user: current_user).increment!(:display_count)
+    find_state(medium).increment!(:display_count)
   end
 
   def create_state(medium)
