@@ -10,14 +10,22 @@ $gray: #000000;
 $light-gray: #F4F4F4;
 
 // Warm:
-$warm-hot: ragb(236,85,110);
-$warm-mid: ragb(211,98,126);
-$warm-low: ragb(179,113,145);
+$warm-hot: rgb(236,85,110);
+$warm-mid: rgb(211,98,126);
+$warm-low: rgb(179,113,145);
 // Warm:
-$temp-hot: ragb(145,130,167);
-$temp-mid: ragb(110,148,187);
-$temp-low: ragb(75,165,209);
+$temp-hot: rgb(145,130,167);
+$temp-mid: rgb(110,148,187);
+$temp-low: rgb(75,165,209);
 // Warm:
-$cold-hot: ragb(44,180,228);
-$cold-mid: ragb(18,193,243);
-$cold-low: ragb(0,202,255);
+$cold-hot: rgb(44,180,228);
+$cold-mid: rgb(18,193,243);
+$cold-low: rgb(0,202,255);
+
+// Bubble Colors:
+$bubblebg-white: rgba(255,255,255,1);
+$bubbleborder-white: rgba(255,255,255,1);
+
+// Bubble Text:
+$text-white: rgba(255,255,255,1);
+$text-dark: rgba(0,0,0,0.8);

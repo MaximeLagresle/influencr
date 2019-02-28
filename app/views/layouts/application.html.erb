@@ -11,10 +11,11 @@
   </head>
   <body>
     <div class="tempered-background">
-      <%# #render 'shared/navbar' %>
-      <%# #render 'shared/flashes' %>
+      <%#= render 'shared/navbar' %>
+      <%#= render 'shared/flashes' %>
       <%= yield %>
     </div>
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

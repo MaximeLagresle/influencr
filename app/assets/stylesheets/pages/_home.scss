@@ -1,1 +1,6 @@
-// Specific CSS for your home-page
+body{
+  background: linear-gradient($warm_hot, $cold_low);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+}
