@@ -3,7 +3,9 @@
 }
 
 // copied this over from bubble.scss to avoid hover effect
-
+.hidden-page {
+  display: block !important;
+}
 .bubble-right{
   position: sticky !important;
   top: 0 !important;
@@ -17,6 +19,7 @@
   transition: all 0.5s ease-in-out;
   height: calc(100vh - 150px);
   width:100%;
+  display: none;
   // max-width: 450px;
   min-width: 350px;
   overflow: hidden;
