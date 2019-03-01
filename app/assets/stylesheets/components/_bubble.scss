@@ -44,13 +44,13 @@
   &:hover{
     opacity:1;
     border: 1px solid $bubble-white;
-    background: $bubble-white-transparent;
+    background: $bubble-white;
     height:200px;
     .content{
       opacity: 1;
     }
     .title-top-bar{
-      background: $bubble-white;
+      // background: $bubble-white;
       h2{
         color: $text-dark;
       }
@@ -69,7 +69,8 @@
     height:40px;
     width:40px;
     background: $bubble-white;
-    -webkit-mask-image: radial-gradient(circle 10px at 0 0, transparent 0, transparent 39px, black 1px);
+    -webkit-mask-image: radial-gradient(circle 10px at 0 0, transparent 0, transparent 39px, black 41px);
+    // -webkit-mask-image: radial-gradient(circle 10px at 0 0, transparent 0, transparent 40px, black 40px);
     transform: rotate(180deg);
 }
 
