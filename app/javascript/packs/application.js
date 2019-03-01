@@ -23,6 +23,17 @@ closeButton.forEach( button => {
   })
 });
 
+
+
+
+const logo = document.getElementById("menu-logo-container")
+logo.addEventListener("click", (event) => {
+  console.log("test")
+  const menu = document.getElementById("menu-content")
+  menu.classList.toggle("hidden");
+});
+
+
 // Convert last login to current timezone
 // Will refactor later
 

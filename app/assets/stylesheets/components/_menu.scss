@@ -1,6 +1,15 @@
-.menu-container{
-  opacity: 0.9;
+#menu-logo-container{
+  opacity: 0.8;
   &:hover{
     opacity: 1;
   }
+}
+
+.menu-container{
+  display: contents;
+}
+
+.menu{
+  list-style: none;
+  padding-right:20px;
 }
