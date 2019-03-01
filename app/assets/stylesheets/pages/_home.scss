@@ -11,6 +11,10 @@ body{
   grid-area: bubble-container;
 }
 
+.top-border {
+   grid-area: top-border;
+}
+
 .header-container {
   display: flex;
   justify-content:flex-end;
@@ -25,7 +29,7 @@ body{
 
 #display-grid {
   display: grid;
-  grid-template-rows: 100px 1fr ;
+  grid-template-rows: 100px 100px 1fr ;
 }
 
 // Small device
@@ -34,6 +38,7 @@ body{
     grid-template-columns: 15px 1fr 15px;
     grid-template-areas:". header-container ."
                         ". bubble-container ."
+                        ". bubble-container ."
   }
 }
 
@@ -41,7 +46,8 @@ body{
 @media (min-width: 1400px) {
   #display-grid {
     grid-template-columns: 60px 2fr 5fr 60px;
-    grid-template-areas:". bubble-container header-container ."
+    grid-template-areas:"top-border top-border top-border top-border"
+                        ". bubble-container header-container ."
                         ". bubble-container window-container ."
   }
 }
