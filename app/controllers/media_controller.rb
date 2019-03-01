@@ -13,8 +13,26 @@ class MediaController < ApplicationController
     @state = current_user.states.sort_by(&:algie_check).reverse
 
     # store the ten most relevent state records. send to the view and increment display_count.
+    s_array = []
+    tweet_array = []
 
-    @state_array = @state.first(12).map { |state| increment_state!(state.medium) }
+    @state.each do |s|
+      if s.medium.platform.name != "Twitter"
+        s_array << s
+      else
+        tweet_array << s
+      end
+    end
+
+    insert_tweet = tweet_array.first(3)
+    insert_array = s_array.first(9)
+
+    insert_tweet.each do |t|
+      insert_array << t
+    end
+
+    @state_array = insert_array.map { |state| increment_state!(state.medium) }
+
   end
 
   def show
