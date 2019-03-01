@@ -20,7 +20,8 @@ class State < ApplicationRecord
     if self.read || self.rejected || self.display_count == display_cap
       algie_value = 0
     else
-      algie_value = display_value + time_value.to_i
+      algie_value = display_value
+      # + time_value.to_i
     end
 
     return algie_value
