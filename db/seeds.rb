@@ -198,7 +198,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
             url: "https://andrewchen.co/2018-essay-collection/",
             content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             title: "2018 essay collection on growth metrics, marketplaces, viral growth in the enterprise, and more",
-            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",,
+            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",
             format: article
           }
         ]
@@ -527,7 +527,7 @@ It's not true that there's nothing new under the sun. There are some domains whe
             url: "https://www.youtube.com/watch?v=xRmQTWpkaVU",
             content: nil,
             title: "Why we'll never run out of jobs",
-            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus."
+            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",
             format: video
           }
         ]
