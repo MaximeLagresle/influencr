@@ -44,7 +44,16 @@
    <!-- MENU DISPLAY -->
 
   <div class="header-container">
-    <div class="menu-container"> <%= image_tag "Logo.svg", height: 60 %> </div>
+    <div class="menu-container">
+      <div id="menu-content" class="hidden">
+        <ul class="menu list-inline">
+          <li class="list-inline-item"><h4><%= link_to "Logout", destroy_user_session_path, method: :delete %></h4></li>
+          <li class="list-inline-item"><h4>|</h4></li>
+          <li class="list-inline-item"><h4><%= link_to "Influencers", destroy_user_session_path, method: :delete %></h4></li>
+        </ul>
+      </div>
+      <div id="menu-logo-container"><%= image_tag "Logo.svg", height: 60 %></div>
+    </div>
   </div>
 
   <!-- RIGHT SIDE DISPLAY -->
@@ -61,6 +70,5 @@
         </div>
       </div>
     <% end %>
-    <h2><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></h2>
   </div>
 </div>
