@@ -47,9 +47,26 @@
       </div>
     <% end %>
   </div>
+  
+   <!-- MENU DISPLAY -->
+  
   <div class="header-container">
     <div class="menu-container"> <%= image_tag "Logo.svg", height: 60 %> </div>
   </div>
+
+  <!-- RIGHT SIDE DISPLAY -->
+
   <div class="window-container">
+    <% @state_array.each do |state| %>
+      <div class="bubble-right">
+        <div class="title-top-bar top-bar-nav bottom-border">
+          <p>full screen | close</p>
+        </div>
+        <div class="content article-text-style">
+          <h3><%= state.medium.title %></h3>
+          <h3><%= state.medium.influencer.name %></h3>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
