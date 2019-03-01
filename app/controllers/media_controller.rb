@@ -14,7 +14,7 @@ class MediaController < ApplicationController
 
     # store the ten most relevent state records. send to the view and increment display_count.
 
-    @state_array = @state.first(20).map { |state| increment_state!(state.medium) }
+    @state_array = @state.first(12).map { |state| increment_state!(state.medium) }
   end
 
   def show
