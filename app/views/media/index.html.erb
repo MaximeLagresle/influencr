@@ -1,15 +1,8 @@
-<div>
-  <h2><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></h2>
-  <p><strong>LAST SESSION:</strong>
-  <span id="utc" data-time="<%= current_user.last_sign_in_at %>"></span></p>
-  <p><%= current_user.last_sign_in_at %></p>
-</div>
-
-<h1>All medium</h1>
 
 <!-- Ed's code -->
 <!-- Dsplay the page in a grid fashion for responsive design -->
 <div id="display-grid">
+<div class="top-border"></div>
   <!-- Container Left Side -->
   <div class="bubble-container">
     <% @state_array.each do |state| %>
@@ -47,16 +40,16 @@
       </div>
     <% end %>
   </div>
-  
+
    <!-- MENU DISPLAY -->
-  
+
   <div class="header-container">
     <div class="menu-container"> <%= image_tag "Logo.svg", height: 60 %> </div>
   </div>
 
   <!-- RIGHT SIDE DISPLAY -->
 
-  <div class="window-container">
+  <div class="window-container hidden">
     <% @state_array.each do |state| %>
       <div class="bubble-right">
         <div class="title-top-bar top-bar-nav bottom-border">
@@ -68,5 +61,6 @@
         </div>
       </div>
     <% end %>
+    <h2><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></h2>
   </div>
 </div>
