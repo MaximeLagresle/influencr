@@ -12,13 +12,13 @@
 <div id="display-grid">
 
   <div class="bubble-container">
-    <%= @state_array.each do |state| %>
+    <% @state_array.each do |state| %>
 
       <div class="bubble-wrapper">
 
         <div class='bubble <%=state.medium.format.type_of%>'>
 
-          <div class="title-top-bar"> <h2 class="bubble-influencer"> <%= state.medium.influencer.name %> </h2> </div>
+          <div class="title-top-bar"> <div id="inner-round"></div> <h2 class="bubble-influencer"> <%= state.medium.influencer.name %> </h2> </div>
 
           <% if state.medium.format.type_of == "article" %>
             <h4 class="bubble-title"> <%= state.medium.title %> </h4>
@@ -28,7 +28,10 @@
             </div>
 
           <% elsif state.medium.format.type_of == "tweet" %>
-            <div class="content"> <h2>Tweet</h2> </div>
+            <div class="content">
+              <h2>Tweet</h2>
+              <p> <%= state.medium.content if state.medium.content %> </p>
+            </div>
 
           <% elsif state.medium.format.type_of == "podcast" %>
             <h4 class="bubble-title"> <%= state.medium.title %> </h4>
