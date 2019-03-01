@@ -8,45 +8,48 @@
 <h1>All medium</h1>
 
 <!-- Ed's code -->
-
+<!-- Dsplay the page in a grid fashion for responsive design -->
 <div id="display-grid">
-
+  <!-- Container Left Side -->
   <div class="bubble-container">
     <% @state_array.each do |state| %>
-
+      <!-- Going through all Medium from State to diplay in a wrapper -->
       <div class="bubble-wrapper">
-
+        <!-- Storing the format in a CSS class style -->
         <div class='bubble <%=state.medium.format.type_of%>'>
-
+          <!-- Displaying Influencer Name for all media format in a CSS Title class -->
+          <!-- Inner-round Div = Curve inner corner top right of bubbles -->
           <div class="title-top-bar"> <div id="inner-round"></div> <h2 class="bubble-influencer"> <%= state.medium.influencer.name %> </h2> </div>
-
+          <!-- Display different content for Format type -->
+          <!-- ARTICLE-->
           <% if state.medium.format.type_of == "article" %>
             <h4 class="bubble-title"> <%= state.medium.title %> </h4>
             <div class="content">
               <p> Dispaly Count: <%= state.display_count %> </p>
               <p> <%= state.medium.content.first(100) if state.medium.content %> </p>
             </div>
-
+          <!-- TWEET-->
           <% elsif state.medium.format.type_of == "tweet" %>
             <div class="content">
               <h2>Tweet</h2>
               <p> <%= state.medium.content if state.medium.content %> </p>
             </div>
-
+          <!-- PODCAST-->
           <% elsif state.medium.format.type_of == "podcast" %>
             <h4 class="bubble-title"> <%= state.medium.title %> </h4>
             <div class="content"> <h2>Podcast</h2> </div>
-
+          <!-- VIDEO-->
           <% elsif state.medium.format.type_of == "video" %>
             <h4 class="bubble-title"> <%= state.medium.title %> </h4>
             <div class="content"> <h2>Video</h2> </div>
           <% end %>
         </div>
       </div>
-
-      <div class="window-container">
-      </div>
-
     <% end %>
+  </div>
+  <div class="header-container">
+    <div class="menu-container"> <%= image_tag "Logo.svg", height: 60 %> </div>
+  </div>
+  <div class="window-container">
   </div>
 </div>
