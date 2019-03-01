@@ -7,7 +7,7 @@
   <div class="bubble-container">
     <% @state_array.each do |state| %>
       <!-- Going through all Medium from State to diplay in a wrapper -->
-      <div class="bubble-wrapper">
+      <div class="bubble-wrapper" data-target-id="medium<%= state.medium.id %>">
         <!-- Storing the format in a CSS class style -->
         <div class='bubble <%=state.medium.format.type_of%>'>
           <!-- Displaying Influencer Name for all media format in a CSS Title class -->
@@ -16,6 +16,7 @@
           <!-- Display different content for Format type -->
           <!-- ARTICLE-->
           <% if state.medium.format.type_of == "article" %>
+            <div class="icon-container"><i class="far fa-file-alt"></i></div>
             <h4 class="bubble-title"> <%= state.medium.title %> </h4>
             <div class="content">
               <p> Dispaly Count: <%= state.display_count %> </p>
@@ -23,18 +24,21 @@
             </div>
           <!-- TWEET-->
           <% elsif state.medium.format.type_of == "tweet" %>
+            <!-- <div class="icon-container"><i class="fab fa-twitter"></i></div> -->
             <div class="content">
               <h2>Tweet</h2>
               <p> <%= state.medium.content if state.medium.content %> </p>
             </div>
           <!-- PODCAST-->
           <% elsif state.medium.format.type_of == "podcast" %>
-            <h4 class="bubble-title"> <%= state.medium.title %> </h4>
-            <div class="content"> <h2>Podcast</h2> </div>
+            <div class="icon-container"><i class="fas fa-headphones"></i></div>
+            <h4 class="bubble-title"><%= state.medium.title %></h4>
+            <div class="content"> <h3>Podcast</h3> </div>
           <!-- VIDEO-->
           <% elsif state.medium.format.type_of == "video" %>
-            <h4 class="bubble-title"> <%= state.medium.title %> </h4>
-            <div class="content"> <h2>Video</h2> </div>
+            <div class="icon-container"><i class="fas fa-tv"></i></div>
+            <h4 class="bubble-title"><%= state.medium.title %></h4>
+            <div class="content"> <h3>Video</h3> </div>
           <% end %>
         </div>
       </div>
@@ -49,15 +53,17 @@
 
   <!-- RIGHT SIDE DISPLAY -->
 
-  <div class="window-container hidden">
+  <div class="window-container ">
     <% @state_array.each do |state| %>
-      <div class="bubble-right">
+      <div class="bubble-right" id="medium<%= state.medium.id %>">
         <div class="title-top-bar top-bar-nav bottom-border">
-          <p>full screen | close</p>
+          <p class="close-button">close</p>
         </div>
         <div class="content article-text-style">
           <h3><%= state.medium.title %></h3>
           <h3><%= state.medium.influencer.name %></h3>
+          <br>
+          <p><%= state.medium.content %></p>
         </div>
       </div>
     <% end %>

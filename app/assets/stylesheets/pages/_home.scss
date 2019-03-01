@@ -23,6 +23,13 @@ body{
   padding-right: 50px;
 }
 
+.icon-container {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: $bubble-white;
+}
+
 .window-container {
   grid-area: window-container;
 }
