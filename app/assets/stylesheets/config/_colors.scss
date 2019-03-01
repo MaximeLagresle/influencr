@@ -26,6 +26,8 @@ $cold-low: rgb(0,202,255);
 $bubble-transparent: linear-gradient(260.75deg, rgba(255, 255, 255, 0.125) 0%, rgba(255, 255, 255, 0.1875) 46.41%, rgba(255, 255, 255, 0.125) 100%);
 $bubble-white-transparent: linear-gradient(260.75deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.3) 46.41%, rgba(255, 255, 255, 0.2) 100%);
 $bubble-white: rgba(255,255,255,1);
+$bubble-linearwhite: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+$bubble-fulltransparent: rgba(255,255,255,0);
 
 // Bubble Text:
 $text-white: rgba(255,255,255,1);
