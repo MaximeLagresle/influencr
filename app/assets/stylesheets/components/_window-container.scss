@@ -1,0 +1,43 @@
+.window-container {
+  padding-right: 25px;
+}
+
+// copied this over from bubble.scss to avoid hover effect
+
+.bubble-right{
+  position: sticky !important;
+  top: 0 !important;
+  opacity:1;
+  position: relative;
+  background: $bubble-white;
+  border: 1px solid $bubble-white;
+  backdrop-filter: blur(4px);/* Note: backdrop-filter has minimal browser support */
+  border-radius: 0px 40px 40px 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  height: calc(100vh - 150px);
+  width:100%;
+  // max-width: 450px;
+  min-width: 350px;
+  overflow: hidden;
+  .content{
+      opacity: 1;
+    }
+    .title-top-bar{
+      h2{
+        color: $text-dark;
+      }
+    }
+}
+
+.top-bar-nav {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 25px;
+}
+
+.bottom-border {
+  border-bottom: 1px solid $line-light;
+  left: 3%;
+  right: 3%;
+}
