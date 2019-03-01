@@ -12,7 +12,7 @@ body{
 }
 
 .top-border {
-   grid-area: top-border;
+  grid-area: top-border;
 }
 
 .header-container {
@@ -29,7 +29,7 @@ body{
 
 #display-grid {
   display: grid;
-  grid-template-rows: 100px 100px 1fr ;
+  grid-template-rows: 50px 100px 1fr ;
 }
 
 // Small device
