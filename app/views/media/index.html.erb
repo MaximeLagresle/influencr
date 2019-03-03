@@ -64,40 +64,26 @@
 
   <!-- INFLUENCER'S MODAL -->
 
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
         <div class="modal-container">
+
           <div class="sidebar">
             <% @influencers.each do | influencer| %>
-              <h2><%=link_to influencer.name, media_path %></h2>
+              <h3><%=link_to influencer.name, influencer_path(influencer), :class => "dark" %></h3>
             <% end %>
           </div>
 
-          <div class="topbar">
-            <h1><%= @influencers.first.name %></h1>
-            <p><%= @influencers.first.bio %></p>
-          </div>
+          <div class="modal-main">
 
-          <div class="inner-left">
-            <h2>Filter by:</h2>
-            <h3>Article</h3>
-            <h3>Podcast</h3>
-            <h3>Video</h3>
-            <h3>Tweet</h3>
-          </div>
+            <%# @influencers.each do |influencer| %>
+               <%# render 'influencers/influencer', :influencer => influencer %>
+            <%# end %>
 
-          <div class="inner-right">
-            <div class="bubble-container">
-              <div class="bubble-wrapper">
-                <div class='bubble'>
-                  <div class="title-top-bar">
-                    <div id="inner-round"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <%= render partial: 'influencers/influencer_modal' %>
+
           </div>
         </div>
 
