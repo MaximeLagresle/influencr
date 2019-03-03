@@ -54,10 +54,54 @@
         <ul class="menu list-inline">
           <li class="list-inline-item"><h4><%= link_to "Logout", destroy_user_session_path, method: :delete %></h4></li>
           <li class="list-inline-item"><h4>|</h4></li>
-          <li class="list-inline-item"><h4><%= link_to "Influencers", destroy_user_session_path, method: :delete %></h4></li>
+          <li class="list-inline-item"><h4><%= link_to "My Influencers", ".bd-example-modal-lg", "data-toggle" => "modal" %></h4></li>
+
         </ul>
       </div>
       <div id="menu-logo-container"><%= image_tag "Logo.svg", height: 60 %></div>
+    </div>
+  </div>
+
+  <!-- INFLUENCER'S MODAL -->
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-container">
+          <div class="sidebar">
+            <% @influencers.each do | influencer| %>
+              <h2><%=link_to influencer.name, media_path %></h2>
+            <% end %>
+          </div>
+
+          <div class="topbar">
+            <h1><%= @influencers.first.name %></h1>
+            <p><%= @influencers.first.bio %></p>
+          </div>
+
+          <div class="inner-left">
+            <h2>Filter by:</h2>
+            <h3>Article</h3>
+            <h3>Podcast</h3>
+            <h3>Video</h3>
+            <h3>Tweet</h3>
+          </div>
+
+          <div class="inner-right">
+            <div class="bubble-container">
+              <div class="bubble-wrapper">
+                <div class='bubble'>
+                  <div class="title-top-bar">
+                    <div id="inner-round"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 
