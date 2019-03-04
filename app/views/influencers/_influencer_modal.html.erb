@@ -13,21 +13,29 @@
 <div class="inner-left">
   <h3>Filter by:</h3>
   <br>
-  <h4 class="dark">Article</h4>
-  <h4 class="dark">Podcast</h4>
-  <h4 class="dark">Video</h4>
-  <h4 class="dark">Tweet</h4>
+    <h4>
+    <%=link_to "Articles",
+      influencer_type_path(influencer_id: @influencer.id,
+      formata: "article"), :class => "dark", remote: true %>
+  </h4>
+
+  <h4>
+    <%=link_to "Podcasts",
+      influencer_type_path(influencer_id: @influencer.id,
+      formata: "podcast"), :class => "dark", remote: true %>
+  </h4>
+
+  <h4>
+    <%=link_to "Videos",
+      influencer_type_path(influencer_id: @influencer.id,
+      formata: "video"), :class => "dark", remote: true %>
+  </h4>
+
+  <h4>
+    <%=link_to "Tweets",
+      influencer_type_path(influencer_id: @influencer.id,
+      formata: "tweet"), :class => "dark", remote: true %>
+  </h4>
 </div>
 
-<div class="inner-right">
-  <div class="bubble-container">
-    <div class="bubble-wrapper">
-      <div class='bubble dark'>
-        <div class="title-top-bar">
-          <div id="inner-round-dark"></div>
-          <h2 class="bubble-influencer dark">ARTICLE TITLE</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="inner-right"></div>
