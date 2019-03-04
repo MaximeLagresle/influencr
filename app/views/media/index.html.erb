@@ -101,17 +101,15 @@
 
   <div class="window-container ">
     <% @state_array.each do |state| %>
-
-        <div class="bubble-right" id="medium<%= state.medium.id %>">
-          <div class="title-top-bar top-bar-nav bottom-border">
-            <p class="close-button">close</p>
-          </div>
-          <div class="content article-text-style">
-            <h3><%= state.medium.title %></h3>
-            <h3><%= state.medium.influencer.name %></h3>
-            <br>
-            <p><%= state.medium.content %></p>
-          </div>
+      <div class="bubble-right" id="medium<%= state.medium.id %>">
+        <div class="title-top-bar top-bar-nav bottom-border">
+          <p class="close-button">close</p>
+        </div>
+        <div class="content article-text-style">
+          <h3 class="title_styling"><%= state.medium.title %></h3>
+          <h3 class="influencer_name_styling"><%= state.medium.influencer.name %></h3>
+          <br>
+          <p class="body_styling"><%= state.medium.content %></p>
         </div>
 
     <% end %>

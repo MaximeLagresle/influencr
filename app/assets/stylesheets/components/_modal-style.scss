@@ -11,7 +11,7 @@
 
 .modal-container {
   display: grid;
-  grid-template-columns: 2fr 3fr 3fr;
+  grid-template-columns: 3fr 3fr 4fr;
   // grid-template-rows: 1fr 4fr;
   height: calc(100vh - 60px);
 }
@@ -45,4 +45,5 @@
   grid-column: 3 / span 1;
   grid-row: 2 / span 1;
   padding: 30px;
+  border-width: 1px;
 }

@@ -1,0 +1,6 @@
+  <div>
+    <% @media.each do | medium | %>
+    <!-- <h4 class="dark"><%# medium.title %></h4> -->
+    <%= link_to medium.title, medium.url, :class => "dark" %>
+    <% end %>
+  </div>
