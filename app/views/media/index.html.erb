@@ -1,20 +1,46 @@
 
-<!-- Ed's code -->
-<!-- Dsplay the page in a grid fashion for responsive design -->
+<!-- Dsplay the page in a grid 2 columns desktop / 1 column mobile-->
 <div id="display-grid">
-<div class="top-border"></div>
-  <!-- Container Left Side -->
+
+<!-- MENU DISPLAY -->
+
+  <!-- Menu -->
+  <div class="navbar-influencr menu-container fixed-top">
+
+    <!-- Righ Navigation for desktop -->
+    <div class="menu hidden">
+
+      <!-- Link list -->
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item" %>
+      <h2>|</h2>
+      <%= link_to "My Influencers", ".bd-example-modal-lg", "data-toggle" => "modal", class: "menu-item" %>
+    </div>
+
+    <!-- Logo - Clickable far right -->
+    <div id="menu-logo-container"><%= image_tag "Logo.svg", height: 60 %></div>
+
+  </div>
+
+<!-- INDEX DISPLAY -->
+
+ <!-- Container Left Side -->
   <div class="bubble-container">
     <% @state_array.each do |state| %>
+
       <!-- Going through all Medium from State to diplay in a wrapper -->
       <div class="bubble-wrapper" data-target-id="medium<%= state.medium.id %>">
+
         <!-- Storing the format in a CSS class style -->
         <div class='bubble <%=state.medium.format.type_of%>'>
+
           <!-- Displaying Influencer Name for all media format in a CSS Title class -->
           <!-- Inner-round Div = Curve inner corner top right of bubbles -->
           <div class="title-top-bar"> <div id="inner-round"></div> <h2 class="bubble-influencer"> <%= state.medium.influencer.name %> </h2> </div>
+
           <!-- Display different content for Format type -->
+
           <!-- ARTICLE-->
+
           <% if state.medium.format.type_of == "article" %>
             <div class="icon-container"><i class="far fa-file-alt"></i></div>
             <h4 class="bubble-title"> <%= state.medium.title %> </h4>
@@ -44,22 +70,6 @@
         </div>
       </div>
     <% end %>
-  </div>
-
-   <!-- MENU DISPLAY -->
-
-  <div class="header-container">
-    <div class="menu-container">
-      <div id="menu-content" class="hidden">
-        <ul class="menu list-inline">
-          <li class="list-inline-item"><h4><%= link_to "Logout", destroy_user_session_path, method: :delete %></h4></li>
-          <li class="list-inline-item"><h4>|</h4></li>
-          <li class="list-inline-item"><h4><%= link_to "My Influencers", ".bd-example-modal-lg", "data-toggle" => "modal" %></h4></li>
-
-        </ul>
-      </div>
-      <div id="menu-logo-container"><%= image_tag "Logo.svg", height: 60 %></div>
-    </div>
   </div>
 
   <!-- INFLUENCER'S MODAL -->
@@ -101,7 +111,7 @@
           <br>
           <p class="body_styling"><%= state.medium.content %></p>
         </div>
-      </div>
+
     <% end %>
   </div>
 </div>
