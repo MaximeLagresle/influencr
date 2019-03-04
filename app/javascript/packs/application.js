@@ -1,5 +1,7 @@
 import "bootstrap";
 
+// Event listeners to toggle the articles hide.
+
 const bubbles = document.querySelectorAll(".bubble-wrapper")
 
 bubbles.forEach( bubble => {
@@ -10,6 +12,8 @@ bubbles.forEach( bubble => {
     document.getElementById(hh).classList.toggle("hidden-page");
   })
 });
+
+// Event listener to toggle the article hide on CLOSE button.
 
 const closeButton = document.querySelectorAll(".close-button")
 
@@ -23,8 +27,7 @@ closeButton.forEach( button => {
   })
 });
 
-
-
+// Navigation animation for the logo.
 
 const logo = document.getElementById("menu-logo-container")
 logo.addEventListener("click", (event) => {

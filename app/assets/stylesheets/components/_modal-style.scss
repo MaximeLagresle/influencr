@@ -1,10 +1,12 @@
 .modal-content {
   border-radius: 0px 40px 40px 40px;
+  border: 0px !important;
+  box-shadow: 0 0 0 !important;
 }
 
 .modal-backdrop {
    background-color: $warm_hot;
-   opacity: 0.4 !important;
+   opacity: 0.5 !important;
 }
 
 .modal-container {

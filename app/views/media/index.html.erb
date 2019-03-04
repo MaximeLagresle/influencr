@@ -72,15 +72,11 @@
 
           <div class="sidebar">
             <% @influencers.each do | influencer| %>
-              <h3><%=link_to influencer.name, influencer_path(influencer), :class => "dark" %></h3>
+              <h3><%=link_to influencer.name, influencer_path(influencer), :class => "dark", remote: true %></h3>
             <% end %>
           </div>
 
           <div class="modal-main">
-
-            <%# @influencers.each do |influencer| %>
-               <%# render 'influencers/influencer', :influencer => influencer %>
-            <%# end %>
 
             <%= render partial: 'influencers/influencer_modal' %>
 

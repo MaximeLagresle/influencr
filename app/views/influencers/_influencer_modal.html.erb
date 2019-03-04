@@ -1,9 +1,13 @@
 <!-- rendered into the right container of the influencer's modal -->
 
+<% unless @influencer.present? %>
+  <% @influencer = Influencer.first %>
+<% end %>
+
 <div class="topbar">
-  <h1 class="dark"><%= @influencers.first.name %></h1>
+  <h1 class="dark"><%= @influencer.name %></h1>
   <br>
-  <p><%= @influencers.first.bio %></p>
+  <p><%= @influencer.bio %></p>
 </div>
 
 <div class="inner-left">
