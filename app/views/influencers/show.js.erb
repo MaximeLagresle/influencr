@@ -1,0 +1,6 @@
+function refreshInfluencer(innerHTML) {
+  const influencerContainer = document.querySelector('.modal-main');
+  influencerContainer.innerHTML = innerHTML;
+}
+
+refreshInfluencer('<%= j render "influencer_modal", influencer: @influencer %>');

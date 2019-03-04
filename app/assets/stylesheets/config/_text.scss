@@ -8,6 +8,10 @@ h1{
   margin: 0px;
 }
 
+h1.dark {
+  color: $text-dark;
+}
+
 h2{
   color: $text-white;
   font-family: $body-font;
@@ -38,6 +42,10 @@ h4{
   margin: 0px;
 }
 
+h4.dark {
+  color: $text-dark;
+}
+
 p{
   color: $text-dark;
   font-family: $body-font;
@@ -50,6 +58,10 @@ p{
 
 a{
   color: $text-white;
+}
+
+a.dark{
+  color: $text-dark;
 }
 
 a:hover{

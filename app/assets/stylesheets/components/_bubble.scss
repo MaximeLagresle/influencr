@@ -57,6 +57,10 @@
   }
 }
 
+.dark {
+  border-color: $text-dark;
+}
+
 .bubble-title{
   position: absolute;
   left: 40px;
@@ -72,6 +76,18 @@
     // -webkit-mask-image: radial-gradient(circle 10px at 0 0, transparent 0, transparent 40px, black 40px);
     transform: rotate(180deg);
 }
+
+#inner-round-dark {
+    position:absolute;
+    height:40px;
+    width:40px;
+    background: $text-dark;
+    -webkit-mask-image: radial-gradient(circle 10px at 0 0, transparent 0, transparent 39px, black 41px);
+    // -webkit-mask-image: radial-gradient(circle 10px at 0 0, transparent 0, transparent 40px, black 40px);
+    transform: rotate(180deg);
+}
+
+
 
 .tweet{
  position: relative;

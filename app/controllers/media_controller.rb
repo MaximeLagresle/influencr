@@ -2,6 +2,8 @@ class MediaController < ApplicationController
   def index
     @media = Medium.all
 
+    @influencers = Influencer.all
+
     # checks to see if a state record exists for each medium. creates one if false.
 
     @media.each do |medium|

@@ -1,0 +1,33 @@
+<!-- rendered into the right container of the influencer's modal -->
+
+<% unless @influencer.present? %>
+  <% @influencer = Influencer.first %>
+<% end %>
+
+<div class="topbar">
+  <h1 class="dark"><%= @influencer.name %></h1>
+  <br>
+  <p><%= @influencer.bio %></p>
+</div>
+
+<div class="inner-left">
+  <h3>Filter by:</h3>
+  <br>
+  <h4 class="dark">Article</h4>
+  <h4 class="dark">Podcast</h4>
+  <h4 class="dark">Video</h4>
+  <h4 class="dark">Tweet</h4>
+</div>
+
+<div class="inner-right">
+  <div class="bubble-container">
+    <div class="bubble-wrapper">
+      <div class='bubble dark'>
+        <div class="title-top-bar">
+          <div id="inner-round-dark"></div>
+          <h2 class="bubble-influencer dark">ARTICLE TITLE</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
