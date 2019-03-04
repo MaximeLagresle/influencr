@@ -8,6 +8,14 @@ bubbles.forEach( bubble => {
 
   bubble.addEventListener("click", (e) => {
 
+    const bubblesWindow = document.querySelectorAll(".bubble-right")
+    bubblesWindow.forEach( bbl => {
+      if ( bbl.classList.contains("hidden-page") ){
+        bbl.classList.toggle("hidden-page");
+      }
+    });
+
+
     const hh = e.currentTarget.attributes["data-target-id"].value ;
     document.getElementById(hh).classList.toggle("hidden-page");
   })
@@ -31,8 +39,7 @@ closeButton.forEach( button => {
 
 const logo = document.getElementById("menu-logo-container")
 logo.addEventListener("click", (event) => {
-  console.log("test")
-  const menu = document.getElementById("menu-content")
+  const menu = document.querySelector(".menu")
   menu.classList.toggle("hidden");
 });
 
