@@ -8,5 +8,12 @@
 }
 
 .cards {
+  margin-top: 15vh;
+}
+
+#page_three_progress_button {
+  font-family: $headers-font;
   margin-top: 8vh;
+  color: $text-white;
+  border-bottom: 3px solid #FFFFFF;
 }

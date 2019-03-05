@@ -60,9 +60,22 @@ input[type=text] {
   font-family: $headers-font;
 }
 
+.footer {
+  margin-top: 8vh;
+  flex-direction: row;
+}
+
 #page_two_progress_button {
   font-family: $headers-font;
-  margin-top: 8vh;
+  color: $warm-mid;
+  // border-bottom: 3px solid #FFFFFF;
+  background-color: white;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+#page_two_previous_button {
+  font-family: $headers-font;
   color: $text-white;
   border-bottom: 3px solid #FFFFFF;
 }
