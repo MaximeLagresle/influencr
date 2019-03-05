@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_28_233615) do
+ActiveRecord::Schema.define(version: 2019_03_04_223651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,15 @@ ActiveRecord::Schema.define(version: 2019_02_28_233615) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "preferences", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "influencer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["influencer_id"], name: "index_preferences_on_influencer_id"
+    t.index ["user_id"], name: "index_preferences_on_user_id"
+  end
+
   create_table "states", force: :cascade do |t|
     t.boolean "read", default: false
     t.integer "display_count", default: 0
@@ -96,6 +105,8 @@ ActiveRecord::Schema.define(version: 2019_02_28_233615) do
   add_foreign_key "media", "formats"
   add_foreign_key "media", "influencers"
   add_foreign_key "media", "platforms"
+  add_foreign_key "preferences", "influencers"
+  add_foreign_key "preferences", "users"
   add_foreign_key "states", "media"
   add_foreign_key "states", "users"
 end
