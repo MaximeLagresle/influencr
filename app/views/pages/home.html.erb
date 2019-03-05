@@ -1,2 +1,17 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="app">
+  <div class="container" id="page_one" style="display: none;">
+    <%= render 'page_one' %>
+  </div>
+
+  <div class="container" id="page_two" style="display: none;">
+    <%= render 'page_two' %>
+  </div>
+
+  <div class="container" id="page_three" style="display: none";>
+    <%= render 'page_three' %>
+  </div>
+</div>
+
+
+<%#= javascript_include_tag 'onboarding' %>
+<%= javascript_pack_tag 'onboarding' %>

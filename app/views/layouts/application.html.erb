@@ -8,6 +8,8 @@
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
   </head>
   <body>
     <div class="tempered-background">
@@ -15,8 +17,5 @@
       <%#= render 'shared/flashes' %>
       <%= yield %>
     </div>
-    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
   </body>
 </html>
