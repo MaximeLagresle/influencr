@@ -34,5 +34,16 @@ $text-white: rgba(255,255,255,1);
 $text-dark: rgba(0,0,0,0.6);
 
 // Line
-
 $line-light: rgba(0,0,0,0.2);
+
+// Logo
+$logo-white: rgba(255,255,255,1);
+$logo-dark: rgba(0,0,0,0.6);
+
+.logo-dark {
+  fill: $logo-dark;
+}
+
+.logo-white {
+  fill: $logo-white;
+}

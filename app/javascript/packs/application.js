@@ -35,14 +35,26 @@ closeButton.forEach( button => {
   })
 });
 
+// Mobile animation for navabr.
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("menu-mobile").style.top = "0";
+  } else {
+    document.getElementById("menu-mobile").style.top = "-67px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 // Navigation animation for the logo.
 
-const logo = document.getElementById("menu-logo-container")
+const logo = document.getElementById("menu-logo-container-desktop")
 logo.addEventListener("click", (event) => {
   const menu = document.querySelector(".menu")
   menu.classList.toggle("hidden");
 });
-
 
 // Convert last login to current timezone
 // Will refactor later

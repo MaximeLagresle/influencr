@@ -3,28 +3,48 @@
 <div id="display-grid">
 
 <!-- MENU DISPLAY -->
-
-  <!-- Menu -->
   <div class="navbar-influencr menu-container fixed-top">
 
-    <!-- Righ Navigation for desktop -->
-    <div class="menu hidden">
-
-      <!-- Link list -->
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item" %>
-      <h2>|</h2>
-      <%= link_to "My Influencers", ".bd-example-modal-lg", "data-toggle" => "modal", class: "menu-item" %>
+    <!-- DESKTOP MENU -->
+    <div class="menu-desktop hidden-sm">
+      <!-- Righ Navigation for desktop -->
+      <div class="menu hidden">
+        <!-- Link list -->
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item" %>
+        <%= link_to "My Influencers", ".bd-example-modal-lg", "data-toggle" => "modal", class: "menu-item" %>
+      </div>
+      <!-- Logo - Clickable far right -->
+      <div id="menu-logo-container-desktop">
+        <!-- SVG LOGO -->
+        <%= render partial:'shared/logo', locals: { myclass: 'logo-white' } %>
+      </div>
     </div>
 
-    <!-- Logo - Clickable far right -->
-    <div id="menu-logo-container"><%= image_tag "Logo.svg", height: 60 %></div>
+    <!-- MOBILE MENU -->
+    <div id="menu-mobile" class="menu-mobile hidden-lg" >
+    <!-- Navigation for mobile -->
 
+      <div id="inner-round-mobile"></div>
+
+      <div class="menu">
+        <!-- Link list -->
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item dark" %>
+        <%= link_to "My Influencers", ".bd-example-modal-lg", "data-toggle" => "modal", class: "menu-item dark" %>
+      </div>
+
+    <!-- Logo - Clickable far right -->
+      <div id="menu-logo-container-mobile">
+        <!-- SVG LOGO -->
+        <%= render partial:'shared/logo', locals: { myclass: 'logo-dark' } %>
+      </div>
+
+    </div>
   </div>
 
 <!-- INDEX DISPLAY -->
 
  <!-- Container Left Side -->
-  <div class="bubble-container">
+  <div class="bubble-container overflow-sm">
     <% @state_array.each do |state| %>
 
       <!-- Going through all Medium from State to diplay in a wrapper -->
