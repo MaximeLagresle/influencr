@@ -1,0 +1,72 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content:center;
+  flex-direction: column;
+}
+
+.button_growth {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  color: white;
+  outline: none;
+  padding: 15px;
+  &:focus {
+    background-color: white;
+    color: $warm-mid;
+    // font-weight: bolder;
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+  &:hover {
+    border-color: $warm-mid;
+    color: $warm-mid;
+    // font-weight: bolder;
+  }
+  &.first {
+    margin-right: 30px;
+  }
+  &.third {
+    margin-left: 30px;
+  }
+  // &:active {
+  //   background-color: white;
+  //   color: $warm-mid;
+  // }
+}
+
+.user_name_input {
+  font-family: $headers-font;
+  border-bottom: 1px solid white;
+}
+
+input[type=text] {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.question {
+  margin-top: 8vh;
+  font-family: $headers-font;
+}
+
+.checkbox_topics {
+  margin-top: 4vh;
+  font-family: $headers-font;
+}
+
+#page_two_progress_button {
+  font-family: $headers-font;
+  margin-top: 8vh;
+  color: $text-white;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+#recommended {
+  font-size: 10px;
+}

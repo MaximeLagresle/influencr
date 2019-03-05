@@ -1,0 +1,27 @@
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content:center;
+  flex-direction: column;
+}
+
+.title {
+  font-family: $headers-font;
+}
+
+.tagline {
+  margin-top: 2vh;
+  font-family: $headers-font;
+}
+
+.get-started {
+  margin-top: 15vh;
+  font-family: $headers-font;
+}
+
+#get-started-button {
+  color: $text-white;
+  border-bottom: 3px solid #FFFFFF;
+}
