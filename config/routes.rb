@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   mount ForestLiana::Engine => '/forest'
+
   devise_for :users
+
   root to: 'media#index'
 
   get "/onboarding", to: "pages#home", as: "onboarding"
@@ -13,4 +15,5 @@ Rails.application.routes.draw do
   end
 
   resources :states, only: [:create]
+  resources :preferences, only: [:index, :create]
 end

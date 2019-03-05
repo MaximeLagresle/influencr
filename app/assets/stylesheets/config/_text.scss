@@ -12,6 +12,10 @@ h1{
   color: $text-dark;
 }
 
+.gray {
+  color: $text-gray;
+}
+
 h2{
   color: $text-white;
   font-family: $body-font;
@@ -46,6 +50,10 @@ h4.dark {
   color: $text-dark;
 }
 
+h4.gray {
+  color: $text-gray;
+}
+
 p{
   color: $text-dark;
   font-family: $body-font;
@@ -58,10 +66,12 @@ p{
 
 a{
   color: $text-white;
-}
-
-a.dark{
+  &.dark {
   color: $text-dark;
+  }
+  &.gray {
+  color: $text-gray;
+  }
 }
 
 a:hover{
