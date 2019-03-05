@@ -36,21 +36,27 @@ body{
 
 #display-grid {
   display: grid;
-  grid-template-rows: 100px 1fr ;
 }
 
 // Small device
 @media (max-width: 1400px) {
   #display-grid {
+    grid-template-rows: 50px 1fr ;
     grid-template-columns: 15px 1fr 15px;
-    grid-template-areas:". menu-container ."
+    grid-template-areas:"menu-container menu-container menu-container"
                         ". bubble-container ."
+                        ". window-container ."
+  }
+
+  .window-container.hidden-sm {
+    display: none;
   }
 }
 
 // Large device
 @media (min-width: 1400px) {
   #display-grid {
+    grid-template-rows: 100px 1fr ;
     grid-template-columns: 60px 2fr 5fr 60px;
     grid-template-areas:". menu-container menu-container ."
                         ". bubble-container window-container ."
