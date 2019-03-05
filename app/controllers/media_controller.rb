@@ -2,8 +2,9 @@ class MediaController < ApplicationController
   def index
 
     @media = Medium.all
-
     @influencers = Influencer.all
+
+    @preferences = Preference.where(user: current_user)
 
     # checks to see if a state record exists for each medium. creates one if false.
 
@@ -36,6 +37,11 @@ class MediaController < ApplicationController
 
     @state_array = insert_array.map { |state| increment_state!(state.medium) }
 
+    # @media = @influencer.media
+    if @influencer.nil?
+      @influencer = Influencer.first
+      @media = @influencer.media
+    end
   end
 
   def show
