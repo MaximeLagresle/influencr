@@ -1,0 +1,34 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content:center;
+  flex-direction: column;
+}
+
+.cards {
+  margin-top: 10vh;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header img {
+  max-height: 80px;
+}
+
+#page_three_progress_button {
+  font-family: $headers-font;
+  margin-top: 8vh;
+  color: $text-white;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.footer {
+  margin-top: 6vh;
+}

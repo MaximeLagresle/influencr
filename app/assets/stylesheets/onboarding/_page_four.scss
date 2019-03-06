@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content:center;
+  flex-direction: column;
+}
+
+.arrow img {
+  height: 32vh;
+}
+
+.onboarding-header {
+  padding: 14px;
+}
+

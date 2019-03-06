@@ -1,21 +1,25 @@
 <div class="app">
-  <div class="container" id="page_one" style="display: none;">
+  <div class="container" id="page_one" style="display:none;">
     <%= render 'page_one' %>
   </div>
 
-  <div class="container" id="page_two" style="display: none;">
+  <div class="container" id="page_two" style="display:none;">
     <%= render 'page_two' %>
   </div>
 
-  <div class="container" id="page_three" style="display: none";>
+  <div class="container" id="page_three" style="display:none;">
     <%= render 'page_three' %>
   </div>
 
-  <div class="container" id="page_five" style="display: block";>
+  <div class="container" id="page_five" style="display: none;">
     <%= render 'page_five' %>
   </div>
 </div>
 
+  <div class="container" id="page_four" style="display:none;">
+    <%= render 'page_four' %>
+  </div>
+</div>
 
-<%#= javascript_include_tag 'onboarding' %>
+<!-- Call /stylesheets/onboarding/onboarding.js -->
 <%= javascript_pack_tag 'onboarding' %>

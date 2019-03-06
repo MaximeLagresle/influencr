@@ -1,6 +1,19 @@
-  <div>
-    <% @media.each do | medium | %>
-    <!-- <h4 class="dark"><%# medium.title %></h4> -->
-    <%= link_to medium.title, medium.url, :class => "dark" %>
-    <% end %>
-  </div>
+<div>
+  <h3>My Collection</h3>
+</div>
+
+<br>
+
+  <% if @media.any? %>
+    <div>
+      <% @media.each do | medium | %>
+      <h4><%= link_to medium.title, medium.url, :class => "dark", target: "_blank" %></h4>
+      <% end %>
+    </div>
+
+    <% else %>
+      <div class="empty-display">
+      <h4 class="gray" style=" height: 100px;">
+      <em style="text-align: center;">Nothing to display</em></h4>
+      </div>
+  <% end %>

@@ -2,20 +2,21 @@ class MediaController < ApplicationController
   def index
 
     @media = Medium.all
-
     @influencers = Influencer.all
 
-    # checks to see if a state record exists for each medium. creates one if false.
+    @preferences = Preference.where(user: current_user)
+
+  # checks to see if a state record exists for each medium. creates one if false.
 
     @media.each do |medium|
       create_state(medium) unless validate_state?(medium)
     end
 
-    # store all the current user's state records. sorts by the algorithm in the state model.
+  # store all the current user's state records. sorts by the algorithm in the state model.
 
     @state = current_user.states.sort_by(&:algie_check).reverse
 
-    # store the ten most relevent state records. send to the view and increment display_count.
+  # store the ten most relevent state records. send to the view and increment display_count.
     s_array = []
     tweet_array = []
 
@@ -36,6 +37,12 @@ class MediaController < ApplicationController
 
     @state_array = insert_array.map { |state| increment_state!(state.medium) }
 
+  # defaults to the first influencer's media for filter window
+
+    if @influencer.nil?
+      @influencer = Influencer.first
+      @media = @influencer.media
+    end
   end
 
   def show

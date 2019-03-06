@@ -63,10 +63,41 @@ input[type=text] {
 #page_two_progress_button {
   font-family: $body-font;
   margin-top: 8vh;
-  color: $text-white;
-  border-bottom: 3px solid #FFFFFF;
 }
 
-#recommended {
-  font-size: 10px;
+.footer {
+  width: 20%;
+  display: flex;
+  margin-top: 10vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.progress_button {
+  font-family: $headers-font;
+  color: $text-white;
+  border-bottom: 3px solid #FFFFFF;
+  &:hover {
+    color: $warm-mid;
+    border-bottom: 3px solid $warm-mid;
+    cursor: pointer;
+  }
+}
+
+.previous_button {
+  font-family: $headers-font;
+
+  color: $text-white;
+  border-bottom: 3px solid #FFFFFF;
+  &:hover {
+    color: $warm-mid;
+    border-bottom: 3px solid $warm-mid;
+    cursor: pointer;
+  }
+}
+
+#recommended p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
 }
