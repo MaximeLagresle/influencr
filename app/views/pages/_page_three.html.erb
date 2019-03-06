@@ -3,19 +3,19 @@
 <div class="cards">
 
   <div class="card-influencer">
-    <h2>Paul Graham</h2>
+    <h2 class="dark"><%= @influencer_one.name %></h2>
     <img class="influencer-avatar" alt="influencer-avatar" src="https://kitt.lewagon.com/placeholder/users/krokrob"/>
-    <p class="bio-card">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    <p class="bio-card"><%= @influencer_one.bio  %></p>
   </div>
 
   <div class="card-influencer">
-    <h2>Marc Andreessen</h2>
+    <h2 class="dark">Marc Andreessen</h2>
     <img class="influencer-avatar" alt="influencer-avatar" src="https://kitt.lewagon.com/placeholder/users/krokrob" />
     <p class="bio-card">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
   </div>
 
   <div class="card-influencer">
-    <h2>Sam Altman</h2>
+    <h2 class="dark">Sam Altman</h2>
     <img class="influencer-avatar" alt="influencer-avatar" src="https://kitt.lewagon.com/placeholder/users/krokrob" />
     <p class="bio-card">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
   </div>
@@ -23,6 +23,7 @@
 </div>
 
 <div>
-  <h2 id="page_three_progress_button">NEXT</h2>
+  <h2 class="previous_button" id="previous_button_page_three">PREV</h2>
+  <h2 class="progress_button" id="progress_button_page_three">NEXT</h2>
 </div>
 

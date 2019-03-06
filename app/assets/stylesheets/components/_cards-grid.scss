@@ -40,10 +40,12 @@
 }
 
 .card-influencer {
-  border: 1px solid #FFFFFF;
-  border-radius: 3px;
+  border: 1px solid $bubble-white;
+  border-radius: 0px 40px 40px 40px;
+  background: $bubble-white;
   text-align: center;
   padding: 15px;
+  height: 369px;
 }
 
 .influencer-avatar {
