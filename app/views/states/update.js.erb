@@ -1,0 +1,7 @@
+function refreshReadState(innerHTML) {
+  console.log("updated")
+  const influencerContainer = document.getElementById("<%= @state.id %>readstate");
+  influencerContainer.innerHTML = innerHTML;
+}
+
+refreshReadState( "<%= @inner_html %>");

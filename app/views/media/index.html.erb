@@ -60,7 +60,6 @@
           <!-- Display different content for Format type -->
 
           <!-- ARTICLE-->
-
           <% if state.medium.format.type_of == "article" %>
             <div class="icon-container"><i class="far fa-file-alt"></i></div>
             <h4 class="bubble-title"> <%= state.medium.title %> </h4>
@@ -68,6 +67,7 @@
               <p> Dispaly Count: <%= state.display_count %> </p>
               <p> <%= state.medium.content.first(100) if state.medium.content %> </p>
             </div>
+
           <!-- TWEET-->
           <% elsif state.medium.format.type_of == "tweet" %>
             <div class="icon-container"><i class="fab fa-twitter"></i></div>
@@ -76,11 +76,13 @@
               <h2>Tweet</h2>
               <p> <%= state.medium.content if state.medium.content %> </p>
             </div>
+
           <!-- PODCAST-->
           <% elsif state.medium.format.type_of == "podcast" %>
             <div class="icon-container"><i class="fas fa-headphones"></i></div>
             <h4 class="bubble-title"><%= state.medium.title %></h4>
             <div class="content"> <h3>Podcast</h3> </div>
+
           <!-- VIDEO-->
           <% elsif state.medium.format.type_of == "video" %>
             <div class="icon-container"><i class="fas fa-tv"></i></div>
@@ -112,8 +114,26 @@
     <% @state_array.each do |state| %>
       <div class="bubble-right" id="medium<%= state.medium.id %>">
         <div class="title-top-bar top-bar-nav bottom-border">
-          <p class="close-button">close</p>
+
+          <!-- top menu -->
+          <div class="menu-window">
+            <!-- READ / Update read state -->
+            <%=link_to state_path(state.id),method: :patch, remote: true do %>
+              <p id="<%= state.id %>readstate" class="click-aspect menu-item-window">read</p>
+            <% end %>
+
+            <!-- FULLSCREEN / Redirect to medium show page -->
+            <%=link_to medium_path(state.medium.id) do %>
+              <p class="click-aspect menu-item-window">fullscreen</p>
+            <% end %>
+
+            <!-- <p class="menu-item-window">|</p> -->
+
+            <!-- CLOSE -->
+            <p class="close-button click-aspect menu-item-window">close</p>
+          </div>
         </div>
+
         <div class="content article-text-style">
           <h3 class="title_styling"><%= state.medium.title %></h3>
           <h3 class="influencer_name_styling"><%= state.medium.influencer.name %></h3>

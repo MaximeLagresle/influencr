@@ -14,6 +14,6 @@ Rails.application.routes.draw do
     get "/media_type/:formata", to: "influencers#collect_media", as: "type"
   end
 
-  resources :states, only: [:create]
+  resources :states, only: [:create, :update]
   resources :preferences, only: [:index, :create]
 end

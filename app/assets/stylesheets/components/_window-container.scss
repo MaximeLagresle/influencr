@@ -37,9 +37,27 @@
   padding-right: 25px;
 }
 
+.menu-window {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-item-window {
+  padding-right: 10px;
+}
+
 .bottom-border {
   border-bottom: 1px solid $line-light;
   left: 3%;
   right: 3%;
 }
+
+.click-aspect {
+  cursor: pointer;
+  opacity:0.8;
+  &:hover {
+    opacity:1;
+  }
+}
+
 
