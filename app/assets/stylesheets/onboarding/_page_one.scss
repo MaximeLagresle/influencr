@@ -23,7 +23,9 @@
 
 #get-started-button {
   color: $text-white;
-  border-bottom: 3px solid #FFFFFF;
+  // border-bottom: 3px solid rgba(255,255,255,0.8);
+  border-bottom: 3px solid;
+  // opacity: 0.8;
   &:hover {
     color: $warm-mid;
     border-bottom: 3px solid $warm-mid;

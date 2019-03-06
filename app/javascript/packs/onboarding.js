@@ -11,12 +11,17 @@ $("#page_one").fadeIn(300, () => {
 $("#get-started-button").click((e) => {
  $("#page_one").fadeOut(300, () => {
   $("#page_two").fadeIn(300, () => {
-    console.log("page two loaded")
+    // console.log("page two loaded")
+
+    // Implement an auto-focus on input when page 2 is fadeIn
     $("#input_field").focus();
+
+    // Typed.js animation (refer to _page_two.html.erb for more details)
     if (pageTwoRenderCount === 0) {
       var typed = new Typed('#input_field', {
         stringsElement: '#typed-strings',
-        attr: "placeholder"
+        attr: "placeholder",
+        typeSpeed: 30
       });
       pageTwoRenderCount += 1;
     }
@@ -28,14 +33,14 @@ $("#get-started-button").click((e) => {
 $("#progress_button_page_two").click((e) => {
  $("#page_two").fadeOut(300, () => {
   $("#page_three").fadeIn(300, () => {
-    console.log("page three loaded")
+    // console.log("page three loaded")
   })
  })
 })
 $("#previous_button_page_two").click((e) => {
  $("#page_two").fadeOut(300, () => {
   $("#page_one").fadeIn(300, () => {
-    console.log("page one loaded")
+    // console.log("page one loaded")
   })
  })
 })
@@ -44,14 +49,14 @@ $("#previous_button_page_two").click((e) => {
 $("#progress_button_page_three").click((e) => {
  $("#page_three").fadeOut(300, () => {
   $("#page_four").fadeIn(300, () => {
-    console.log("page four loaded")
+    // console.log("page four loaded")
   })
  })
 })
 $("#previous_button_page_three").click((e) => {
  $("#page_three").fadeOut(300, () => {
   $("#page_two").fadeIn(300, () => {
-    console.log("page two loaded")
+    // console.log("page two loaded")
   })
  })
 })
