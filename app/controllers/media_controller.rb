@@ -40,6 +40,7 @@ class MediaController < ApplicationController
 
   def show
     @medium = Medium.find(params[:id])
+    @state = find_state(@medium)
   end
 
   # searches for a state record for each medium associated to the current user
