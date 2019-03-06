@@ -37,12 +37,21 @@ class MediaController < ApplicationController
 
     @state_array = insert_array.map { |state| increment_state!(state.medium) }
 
-  # defaults to the first influencer's media for filter window
+    # defaults to the first influencer's media for filter window
 
-    if @influencer.nil?
-      @influencer = Influencer.first
-      @media = @influencer.media
-    end
+    @influencer = Influencer.first if @influencer.nil?
+
+    # define first preference to show add or delete option
+
+    @preference = Preference.find_by(user: current_user, influencer: @influencer)
+
+    # set default format to article, display the influencer's articles only
+
+    form = Format.find_by(type_of: "article")
+    @media = @influencer.media.where(format: form)
+
+    #Active Record alternative for faster processing.
+    # @influencer.media.joins(:format).where(formats: { type_of: "article" } ).count
   end
 
   def show
