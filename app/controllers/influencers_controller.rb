@@ -2,13 +2,15 @@ class InfluencersController < ApplicationController
 
   def show
     @influencer = Influencer.find(params[:id])
+
     @influencers = Influencer.all
     @preferences = Preference.where(user: current_user)
-    @media = @influencer.media
-    if @influencer.nil?
-      @influencer = Influencer.first
-      @media = @influencer.media
-    end
+
+    @preference = Preference.find_by(user: current_user, influencer: @influencer)
+
+    form = Format.find_by(type_of: "article")
+    @media = @influencer.media.where(format: form)
+
     respond_to do |format|
       format.html { redirect_to root_path }
       format.js

@@ -16,6 +16,10 @@ h1{
   color: $text-gray;
 }
 
+.blue {
+  color: $temp-low;
+}
+
 h2{
   color: $text-white;
   font-family: $body-font;
@@ -71,6 +75,9 @@ a{
   }
   &.gray {
   color: $text-gray;
+  }
+  &.blue {
+  color: $temp-low;
   }
 }
 

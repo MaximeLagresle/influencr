@@ -1,0 +1,16 @@
+.button-outline {
+  background-color: transparent;
+  border: 1px solid $temp-low;
+  border-radius: 4px;
+  color: $temp-low;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: auto;
+  margin: 4px auto;
+  &:hover {
+    background-color: $temp-low;
+    color: $bubble-white;
+  }
+}

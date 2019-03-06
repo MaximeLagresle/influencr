@@ -4,7 +4,7 @@
 <!-- This is what is rendered into the right container of the influencer's modal -->
 
 <div class="close-header title-top-bar top-bar-nav bottom-border">
-  <p>close</p>
+  <p data-dismiss="modal" aria-hidden="true">close</p>
 </div>
 
 <div class="sidebar">
@@ -13,24 +13,47 @@
   <!-- Lists the influencer's included in the user's preferences -->
 
   <% @preferences.each do | preference| %>
-    <h3><%=link_to preference.influencer.name, influencer_path(preference.influencer), :class => "dark", remote: true %></h3>
+    <h3><%=link_to preference.influencer.name, influencer_path(preference.influencer), :class => "blue", remote: true %></h3>
   <% end %>
 
   <br><br>
 
   <!-- Lists all the influencer's available -->
 
-  <h4 class="dark">Top Influencers</h4><br>
+  <h2 class="dark">Top Influencers</h2><br>
 
-  <% @influencers.each do | influencer| %>
-    <h4><%=link_to influencer.name, influencer_path(influencer), :class => "gray", remote: true %></h4>
+  <!-- map preferences to obtain influencer ids -->
+
+  <% pref_filter = @preferences.map do | pref | %>
+    <% pref.influencer.id %>
+  <% end %>
+
+  <!-- display only influencers NOT in the user's list -->
+
+  <% @influencers.sort.each do | influencer| %>
+
+    <% unless pref_filter.include?(influencer.id) %>
+      <h3><%=link_to influencer.name, influencer_path(influencer), :class => "gray", remote: true %></h3>
+      <% end %>
   <% end %>
 </div>
 
 <!-- Displays the influencer avatar and name -->
 
 <div class="name-bar">
-  <h1 class="dark"><%= @influencer.name %></h1>
+    <h1 class="dark"><%= @influencer.name %></h1>
+
+    <% if @preference.nil? %>
+
+      <%= link_to influencer_preferences_path(@influencer), method: :post, remote: true do %>
+      <p class="button-outline">Follow</p>
+      <% end %>
+
+    <% else %>
+      <%= link_to influencer_preference_path(@influencer, @preference), method: :delete, remote: true do %>
+      <p class="button-outline">Unfollow</p>
+      <% end %>
+    <% end %>
 </div>
 
 <div class="avatar-container">
@@ -47,30 +70,30 @@
 
   <!-- Filter tags to toggle between colelcted articles -->
 
-  <h3>Filter</h3>
+  <h3>Filter By</h3>
   <br>
     <h4>
     <%=link_to "Articles",
       influencer_type_path(influencer_id: @influencer.id,
-      formata: "article"), :class => "gray", remote: true %>
+      formata: "article"), :class => "blue", remote: true %>
   </h4>
 
   <h4>
     <%=link_to "Podcasts",
       influencer_type_path(influencer_id: @influencer.id,
-      formata: "podcast"), :class => "gray", remote: true %>
+      formata: "podcast"), :class => "blue", remote: true %>
   </h4>
 
   <h4>
     <%=link_to "Videos",
       influencer_type_path(influencer_id: @influencer.id,
-      formata: "video"), :class => "gray", remote: true %>
+      formata: "video"), :class => "blue", remote: true %>
   </h4>
 
   <h4>
     <%=link_to "Tweets",
       influencer_type_path(influencer_id: @influencer.id,
-      formata: "tweet"), :class => "gray", remote: true %>
+      formata: "tweet"), :class => "blue", remote: true %>
   </h4>
 
   <br>
@@ -82,13 +105,13 @@
 
   <div class="accounts-container">
     <% @influencer.accounts.each do |account| %>
-      <h4><%=link_to account.platform.name, account.url, :class => "gray" %></h4>
+      <h4><%=link_to account.platform.name, account.url, :class => "blue" %></h4>
     <% end %>
   </div>
 
 </div>
 
-<!-- Renders default content from the _medium partial -->
+<!-- Renders content from the _medium partial -->
 
 <div class="inner-right">
 
