@@ -63,7 +63,7 @@ input[type=text] {
 .footer {
   width: 20%;
   display: flex;
-  margin-top: 12vh;
+  margin-top: 10vh;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -75,6 +75,7 @@ input[type=text] {
   &:hover {
     color: $warm-mid;
     border-bottom: 3px solid $warm-mid;
+    cursor: pointer;
   }
 }
 
@@ -85,9 +86,12 @@ input[type=text] {
   &:hover {
     color: $warm-mid;
     border-bottom: 3px solid $warm-mid;
+    cursor: pointer;
   }
 }
 
-// #recommended {
-//   font-size: 10px;
-// }
+#recommended p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
