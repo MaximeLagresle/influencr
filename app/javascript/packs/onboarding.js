@@ -1,5 +1,7 @@
 // Being called on /views/pages/home.html.erb
+import Typed from 'typed.js';
 
+let pageTwoRenderCount = 0;
 // jquery
 $("#page_one").fadeIn(300, () => {
   console.log("page one loaded")
@@ -10,19 +12,27 @@ $("#get-started-button").click((e) => {
  $("#page_one").fadeOut(300, () => {
   $("#page_two").fadeIn(300, () => {
     console.log("page two loaded")
+    $("#input_field").focus();
+    if (pageTwoRenderCount === 0) {
+      var typed = new Typed('#input_field', {
+        stringsElement: '#typed-strings',
+        attr: "placeholder"
+      });
+      pageTwoRenderCount += 1;
+    }
   })
  })
 })
 
 //jquery logic for page two
-$("#page_two_progress_button").click((e) => {
+$("#progress_button_page_two").click((e) => {
  $("#page_two").fadeOut(300, () => {
   $("#page_three").fadeIn(300, () => {
     console.log("page three loaded")
   })
  })
 })
-$("#page_two_previous_button").click((e) => {
+$("#previous_button_page_two").click((e) => {
  $("#page_two").fadeOut(300, () => {
   $("#page_one").fadeIn(300, () => {
     console.log("page one loaded")
@@ -30,18 +40,19 @@ $("#page_two_previous_button").click((e) => {
  })
 })
 
-//jquery logic for page two
-$("#page_three_progress_button").click((e) => {
+//jquery logic for page three
+$("#progress_button_page_three").click((e) => {
  $("#page_three").fadeOut(300, () => {
   $("#page_four").fadeIn(300, () => {
     console.log("page four loaded")
   })
  })
 })
-$("#page_three_previous_button").click((e) => {
+$("#previous_button_page_three").click((e) => {
  $("#page_three").fadeOut(300, () => {
   $("#page_two").fadeIn(300, () => {
     console.log("page two loaded")
   })
  })
 })
+

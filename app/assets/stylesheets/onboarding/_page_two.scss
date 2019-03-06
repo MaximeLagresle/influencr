@@ -61,23 +61,31 @@ input[type=text] {
 }
 
 .footer {
-  margin-top: 8vh;
+  width: 20%;
+  display: flex;
+  margin-top: 12vh;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-#page_two_progress_button {
-  font-family: $headers-font;
-  color: $warm-mid;
-  // border-bottom: 3px solid #FFFFFF;
-  background-color: white;
-  padding: 5px;
-  border-radius: 2px;
-}
-
-#page_two_previous_button {
+.progress_button {
   font-family: $headers-font;
   color: $text-white;
   border-bottom: 3px solid #FFFFFF;
+  &:hover {
+    color: $warm-mid;
+    border-bottom: 3px solid $warm-mid;
+  }
+}
+
+.previous_button {
+  font-family: $headers-font;
+  color: $text-white;
+  border-bottom: 3px solid #FFFFFF;
+  &:hover {
+    color: $warm-mid;
+    border-bottom: 3px solid $warm-mid;
+  }
 }
 
 // #recommended {
