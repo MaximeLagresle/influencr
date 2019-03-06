@@ -1,28 +1,21 @@
-<h2 class="tagline">Let’s start by introducing you with the 3 must-known Growth Strategists Influencers</h2>
+<h2 class="onboarding-header tagline">Let’s start by introducing you with the 3 must-known Growth Strategists Influencers</h2>
 
 <div class="cards">
 
-  <div class="card-influencer">
-    <h2>Paul Graham</h2>
-    <img class="influencer-avatar" alt="influencer-avatar" src="https://kitt.lewagon.com/placeholder/users/krokrob"/>
-    <p class="bio-card">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-  </div>
-
-  <div class="card-influencer">
-    <h2>Marc Andreessen</h2>
-    <img class="influencer-avatar" alt="influencer-avatar" src="https://kitt.lewagon.com/placeholder/users/krokrob" />
-    <p class="bio-card">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-  </div>
-
-  <div class="card-influencer">
-    <h2>Sam Altman</h2>
-    <img class="influencer-avatar" alt="influencer-avatar" src="https://kitt.lewagon.com/placeholder/users/krokrob" />
-    <p class="bio-card">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-  </div>
+  <%@influencers_growth_strategy.each do |influencer| %>
+    <div class="card-influencer">
+      <div class="card-header">
+        <img class="influencer-avatar" alt="influencer-avatar" src="https://kitt.lewagon.com/placeholder/users/krokrob"/>
+        <h2 class="onboarding-header dark"><%= influencer.name %></h2>
+      </div>
+      <p class="bio-card"><%= influencer.bio %></p>
+    </div>
+  <% end %>
 
 </div>
 
-<div>
-  <h2 id="page_three_progress_button">NEXT</h2>
+<div class="footer">
+  <h2 class="onboarding-header previous_button" id="previous_button_page_three">PREV</h2>
+  <h2 class="onboarding-header progress_button" id="progress_button_page_three">NEXT</h2>
 </div>
 

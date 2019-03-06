@@ -60,26 +60,44 @@ input[type=text] {
   font-family: $headers-font;
 }
 
-.footer {
-  margin-top: 8vh;
-  flex-direction: row;
-}
-
 #page_two_progress_button {
-  font-family: $headers-font;
-  color: $warm-mid;
-  // border-bottom: 3px solid #FFFFFF;
-  background-color: white;
-  padding: 5px;
-  border-radius: 2px;
+  font-family: $body-font;
+  margin-top: 8vh;
 }
 
-#page_two_previous_button {
+.footer {
+  width: 20%;
+  display: flex;
+  margin-top: 10vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.progress_button {
   font-family: $headers-font;
   color: $text-white;
   border-bottom: 3px solid #FFFFFF;
+  &:hover {
+    color: $warm-mid;
+    border-bottom: 3px solid $warm-mid;
+    cursor: pointer;
+  }
 }
 
-// #recommended {
-//   font-size: 10px;
-// }
+.previous_button {
+  font-family: $headers-font;
+
+  color: $text-white;
+  border-bottom: 3px solid #FFFFFF;
+  &:hover {
+    color: $warm-mid;
+    border-bottom: 3px solid $warm-mid;
+    cursor: pointer;
+  }
+}
+
+#recommended p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}

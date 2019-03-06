@@ -29,7 +29,7 @@ closeButton.forEach( button => {
 
   button.addEventListener("click", (e) => {
 
-    const close = e.currentTarget.parentNode.parentNode
+    const close = e.currentTarget.parentNode.parentNode.parentNode
     close.classList.toggle("hidden-page");
 
   })
