@@ -7,14 +7,13 @@ const bubbles = document.querySelectorAll(".bubble-wrapper")
 bubbles.forEach( bubble => {
 
   bubble.addEventListener("click", (e) => {
-
+    console.log("test")
     const bubblesWindow = document.querySelectorAll(".bubble-right")
     bubblesWindow.forEach( bbl => {
       if ( bbl.classList.contains("hidden-page") ){
         bbl.classList.toggle("hidden-page");
       }
     });
-
 
     const hh = e.currentTarget.attributes["data-target-id"].value ;
     document.getElementById(hh).classList.toggle("hidden-page");

@@ -1,0 +1,41 @@
+
+<% @my_states.each do |state| %>
+  <div class="bubble-right scroll" id="medium<%= state.medium.id %>">
+    <div class="fixed-top top-bar-nav bottom-border">
+
+      <!-- top menu -->
+      <div class="menu-window">
+
+        <!-- FULLSCREEN / Redirect to medium show page -->
+        <%=link_to medium_path(state.medium.id) do %>
+          <p class="click-aspect menu-item-window">
+          <i class="fas fa-external-link-alt gray"></i>&nbsp&nbsp
+          </p>
+        <% end %>
+
+         <!-- READ / Update read state -->
+        <%=link_to state_path(state.id),method: :patch, remote: true do %>
+          <p id="<%= state.id %>readstate" class="click-aspect menu-item-window gray">
+            <i class="fas fa-check"></i>&nbsp&nbsp
+          </p>
+        <% end %>
+
+        <!-- <p class="menu-item-window">|</p> -->
+
+        <!-- CLOSE -->
+        <p class="close-button click-aspect menu-item-window">
+          <i class="fas fa-times gray"></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="content article-text-style">
+      <h3 class="title_styling"><%= state.medium.title %></h3>
+      <br>
+      <h3 class="influencer_name_styling">By <%= state.medium.influencer.name %></h3>
+      <em><%= link_to "Original Source", state.medium.url, :class => "blue-small", target: "_blank" %></em>
+      <br><br>
+      <p class="body_styling"><%= simple_format(state.medium.content) %></p>
+    </div>
+  </div>
+<% end %>
