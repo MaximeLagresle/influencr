@@ -70,8 +70,13 @@ p{
 
 a{
   color: $text-white;
+  text-decoration: none;
   &.dark {
   color: $text-dark;
+  }
+  &.blue-small {
+  color: $temp-low;
+  font-size: 1.5rem;
   }
   &.gray {
   color: $text-gray;
@@ -86,16 +91,24 @@ a:hover{
   text-decoration: none;
 }
 
-p.body_styling {
-  font-size: 21px;
-  line-height: 33.18px;
-  text-align: start;
+a:visited{
+  text-decoration: none;
 }
 
+
 h3.title_styling {
-  font-size: 46px;
+  font-size: 3.5rem;
 }
 
 h3.influencer_name_styling {
-  font-size: 23px;
+  font-size: 2.25rem;
 }
+
+p.body_styling {
+  font-size: 1.75rem;
+  line-height: 33.18px;
+  text-align: justify;
+  color: $text-dark;
+}
+
+

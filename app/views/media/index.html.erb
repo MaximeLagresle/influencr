@@ -1,6 +1,9 @@
 <!-- for testing -->
 <%#= render 'test/dashboard' %>
 
+<%# render "page_four" if current_user.first_onboarding %>
+
+
 <!-- Dsplay the page in a grid 2 columns desktop / 1 column mobile-->
 <div id="display-grid">
 
@@ -10,10 +13,10 @@
     <!-- DESKTOP MENU -->
     <div class="menu-desktop hidden-sm">
       <!-- Righ Navigation for desktop -->
-      <div class="menu hidden">
+      <div class="menu">
         <!-- Link list -->
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item" %>
         <%= link_to "My Influencers", "#", { "data-target" => ".bd-example-modal-lg", "data-toggle" => "modal", class: "menu-item" } %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item" %>
       </div>
       <!-- Logo - Clickable far right -->
       <div id="menu-logo-container-desktop">
@@ -30,8 +33,8 @@
 
       <div class="menu">
         <!-- Link list -->
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item dark" %>
         <%= link_to "My Influencers", ".bd-example-modal-lg", "data-toggle" => "modal", class: "menu-item dark" %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item dark" %>
       </div>
 
     <!-- Logo - Clickable far right -->
@@ -44,9 +47,84 @@
   </div>
 
 <!-- INDEX DISPLAY -->
+
   <!-- Container Left Side -->
   <div  id="bubble_update" class="bubble-container overflow-sm">
     <%= render "shared/index-bubble" %>
+
+<!-- TO INSERT IN PARTIAL -->
+    
+ <!-- Container Left Side -->
+  <div class="bubble-container overflow-sm">
+    <% @state_array.each do |state| %>
+
+      <!-- Going through all Medium from State to diplay in a wrapper -->
+      <div class="bubble-wrapper" data-target-id="medium<%= state.medium.id %>">
+
+        <!-- Storing the format in a CSS class style -->
+        <div class='bubble <%=state.medium.format.type_of%>'>
+
+          <!-- Displaying Influencer Name for all media format in a CSS Title class -->
+          <!-- Inner-round Div = Curve inner corner top right of bubbles -->
+          <div class="title-top-bar"> <div id="inner-round"></div> <h2 class="bubble-influencer"> <%= state.medium.influencer.name %> </h2> </div>
+
+          <!-- Display different content for Format type -->
+
+          <!-- ARTICLE-->
+          <% if state.medium.format.type_of == "article" %>
+            <div class="icon-container"><i class="far fa-file-alt"></i></div>
+
+            <div class="bubble-title">
+              <h4> <%= state.medium.title %> </h4>
+            </div>
+
+            <div class="content">
+              <p> <%= simple_format(state.medium.content.first(100)) if state.medium.content %> </p>
+            </div>
+
+          <!-- TWEET-->
+          <% elsif state.medium.format.type_of == "tweet" %>
+            <div class="icon-container"><i class="fab fa-twitter"></i></div>
+            <div class="bubble-title">
+              <h4> 1 new tweet </h4>
+            </div>
+            <div class="content">
+              <h2>Tweet</h2>
+              <p> <%= state.medium.content if state.medium.content %> </p>
+            </div>
+
+          <!-- PODCAST-->
+          <% elsif state.medium.format.type_of == "podcast" %>
+            <div class="icon-container"><i class="fas fa-headphones"></i></div>
+            <div class="bubble-title">
+              <h4><%= state.medium.title %></h4>
+            </div>
+            <div class="content">
+
+            <!-- replace with erb-embedcode for each media -->
+
+              <iframe width="100%" height="80px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319411042&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+             </div>
+
+          <!-- VIDEO-->
+          <% elsif state.medium.format.type_of == "video" %>
+            <div class="icon-container"><i class="fas fa-tv"></i></div>
+            <div class="bubble-title">
+              <h4><%= state.medium.title %></h4>
+            </div>
+            <div class="content">
+
+            <!-- replace with erb-embedcode for each media -->
+
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/m8DQpqJwo3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
   </div>
 
   <!-- INFLUENCER'S MODAL -->
@@ -66,34 +144,44 @@
   <!-- RIGHT SIDE DISPLAY -->
 
   <div class="window-container hidden-sm">
+
     <% @my_states.each do |state| %>
-      <div class="bubble-right" id="medium<%= state.medium.id %>">
-        <div class="title-top-bar top-bar-nav bottom-border">
+      <div class="bubble-right scroll" id="medium<%= state.medium.id %>">
+        <div class="fixed-top top-bar-nav bottom-border">
 
           <!-- top menu -->
           <div class="menu-window">
-            <!-- READ / Update read state -->
-            <%=link_to state_path(state.id),method: :patch, remote: true do %>
-              <p id="<%= state.id %>readstate" class="click-aspect menu-item-window">read</p>
-            <% end %>
 
             <!-- FULLSCREEN / Redirect to medium show page -->
             <%=link_to medium_path(state.medium.id) do %>
-              <p class="click-aspect menu-item-window">fullscreen</p>
+              <p class="click-aspect menu-item-window">
+              <i class="fas fa-external-link-alt gray"></i>&nbsp&nbsp
+              </p>
+            <% end %>
+
+             <!-- READ / Update read state -->
+            <%=link_to state_path(state.id),method: :patch, remote: true do %>
+              <p id="<%= state.id %>readstate" class="click-aspect menu-item-window gray">
+                <i class="fas fa-check"></i>&nbsp&nbsp
+              </p>
             <% end %>
 
             <!-- <p class="menu-item-window">|</p> -->
 
             <!-- CLOSE -->
-            <p class="close-button click-aspect menu-item-window">close</p>
+            <p class="close-button click-aspect menu-item-window">
+              <i class="fas fa-times gray"></i>
+            </p>
           </div>
         </div>
 
         <div class="content article-text-style">
           <h3 class="title_styling"><%= state.medium.title %></h3>
-          <h3 class="influencer_name_styling"><%= state.medium.influencer.name %></h3>
           <br>
-          <p class="body_styling"><%= state.medium.content %></p>
+          <h3 class="influencer_name_styling">By <%= state.medium.influencer.name %></h3>
+          <em><%= link_to "Original Source", state.medium.url, :class => "blue-small", target: "_blank" %></em>
+          <br><br>
+          <p class="body_styling"><%= simple_format(state.medium.content) %></p>
         </div>
       </div>
     <% end %>

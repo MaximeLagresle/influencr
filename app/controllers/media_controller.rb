@@ -1,5 +1,12 @@
 class MediaController < ApplicationController
   def index
+    if current_user.first_onboarding == true
+      current_user.first_onboarding = false
+      current_user.save
+      redirect_to tutorial_path
+    else
+      @media = Medium.all
+      @influencers = Influencer.all
 
     # Initialize instance variables
     @all_media = Medium.all
@@ -68,8 +75,10 @@ class MediaController < ApplicationController
     form = Format.find_by(type_of: "article")
     @media = @influencer.media.where(format: form)
 
-    #Active Record alternative for faster processing.
-    # @influencer.media.joins(:format).where(formats: { type_of: "article" } ).count
+
+      #Active Record alternative for faster processing.
+      # @influencer.media.joins(:format).where(formats: { type_of: "article" } ).count
+    end
   end
 
   def show

@@ -5,6 +5,7 @@
   justify-content: center;
   align-content:center;
   flex-direction: column;
+  // position: relative;
 }
 
 .title {
@@ -30,5 +31,19 @@
     color: $warm-mid;
     border-bottom: 3px solid $warm-mid;
     cursor: pointer;
+  }
+}
+
+.sign-in {
+ position:absolute;
+ top:15px;
+ right:15px;
+}
+
+.button-click {
+  opacity: 0.8;
+  &:hover {
+  color: white;
+  opacity: 1;
   }
 }

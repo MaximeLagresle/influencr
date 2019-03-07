@@ -1,0 +1,5 @@
+class AddOnboardingToUsers < ActiveRecord::Migration[5.2]
+  def change
+    add_column :users, :first_onboarding, :boolean, default: true
+  end
+end

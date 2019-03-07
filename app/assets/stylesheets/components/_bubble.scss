@@ -4,10 +4,18 @@
   padding: 8px;
 }
 
+.bubble-title{
+  position: absolute;
+  left: 40px;
+  top: 42px;
+  padding-bottom: 12px;
+}
+
 .content{
   position: absolute;
   left: 40px;
   top: 90px;
+  padding-right: 40px;
   transition: all 0.5s ease-in-out;
   opacity:0;
 }
@@ -54,17 +62,43 @@
         color: $text-dark;
       }
     }
+    .bubble-title{
+      h4{
+        color: $text-dark;
+      }
+    }
+    .icon-container{
+      color: $text-dark;
+    }
   }
+}
+
+.bubble-right{
+  position: sticky;
+  top: 108px;
+  opacity:1;
+  background: $bubble-white;
+  border: 1px solid $bubble-white;
+  backdrop-filter: blur(4px);/* Note: backdrop-filter has minimal browser support */
+  border-radius: 0px 40px 40px 40px;
+  transition: all 0.5s ease-in-out;
+  height: calc(100vh - 150px);
+  width:100%;
+  display: none;
+  min-width: 350px;
+  overflow: scroll;
+  .content{
+      opacity: 1;
+    }
+    .title-top-bar{
+      h2{
+        color: $text-dark;
+      }
+    }
 }
 
 .dark {
   border-color: $text-dark;
-}
-
-.bubble-title{
-  position: absolute;
-  left: 40px;
-  top: 42px;
 }
 
 #inner-round {
@@ -87,7 +121,14 @@
     transform: rotate(180deg);
 }
 
+.scroll {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
 
+.scroll::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+}
 
 .tweet{
  // position: relative;
@@ -103,4 +144,7 @@
 
 .video{
  // position: relative;
+ &:hover{
+  height: 275px;
+  }
 }

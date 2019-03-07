@@ -10,4 +10,10 @@ class PagesController < ApplicationController
     @influencers_growth_strategy << influencer_two
     @influencers_growth_strategy << influencer_three
   end
+
+  def tutorial
+  end
+
+  def change_onboarding_status
+  end
 end
