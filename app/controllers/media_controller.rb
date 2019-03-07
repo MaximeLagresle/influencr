@@ -1,5 +1,7 @@
 class MediaController < ApplicationController
   def index
+      p "LOADING MEDIA INDEX"
+      p current_user
     if current_user.first_onboarding
       p "-------------------- DEBUG TRACE 001"
       current_user.first_onboarding = false
