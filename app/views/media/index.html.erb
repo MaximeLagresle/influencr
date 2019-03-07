@@ -1,5 +1,5 @@
 <!-- for testing -->
-<%= render 'test/dashboard' %>
+<%#= render 'test/dashboard' %>
 
 <!-- Dsplay the page in a grid 2 columns desktop / 1 column mobile-->
 <div id="display-grid">
@@ -44,56 +44,9 @@
   </div>
 
 <!-- INDEX DISPLAY -->
-
- <!-- Container Left Side -->
-  <div class="bubble-container overflow-sm">
-    <% @my_states.each do |state| %>
-
-      <!-- Going through all Medium from State to diplay in a wrapper -->
-      <div class="bubble-wrapper" data-target-id="medium<%= state.medium.id %>">
-
-        <!-- Storing the format in a CSS class style -->
-        <div class='bubble <%=state.medium.format.type_of%>'>
-
-          <!-- Displaying Influencer Name for all media format in a CSS Title class -->
-          <!-- Inner-round Div = Curve inner corner top right of bubbles -->
-          <div class="title-top-bar"> <div id="inner-round"></div> <h2 class="bubble-influencer"> <%= state.medium.influencer.name %> </h2> </div>
-
-          <!-- Display different content for Format type -->
-
-          <!-- ARTICLE-->
-          <% if state.medium.format.type_of == "article" %>
-            <div class="icon-container"><i class="far fa-file-alt"></i></div>
-            <h4 class="bubble-title"> <%= state.medium.title %> </h4>
-            <div class="content">
-              <p> Dispaly Count: <%= state.display_count %> </p>
-              <p> <%= state.medium.content.first(100) if state.medium.content %> </p>
-            </div>
-
-          <!-- TWEET-->
-          <% elsif state.medium.format.type_of == "tweet" %>
-            <div class="icon-container"><i class="fab fa-twitter"></i></div>
-            <h4 class="bubble-title"> 1 new tweet </h4>
-            <div class="content">
-              <h2>Tweet</h2>
-              <p> <%= state.medium.content if state.medium.content %> </p>
-            </div>
-
-          <!-- PODCAST-->
-          <% elsif state.medium.format.type_of == "podcast" %>
-            <div class="icon-container"><i class="fas fa-headphones"></i></div>
-            <h4 class="bubble-title"><%= state.medium.title %></h4>
-            <div class="content"> <h3>Podcast</h3> </div>
-
-          <!-- VIDEO-->
-          <% elsif state.medium.format.type_of == "video" %>
-            <div class="icon-container"><i class="fas fa-tv"></i></div>
-            <h4 class="bubble-title"><%= state.medium.title %></h4>
-            <div class="content"> <h3>Video</h3> </div>
-          <% end %>
-        </div>
-      </div>
-    <% end %>
+  <!-- Container Left Side -->
+  <div  id="bubble_update" class="bubble-container overflow-sm">
+    <%= render "shared/index-bubble" %>
   </div>
 
   <!-- INFLUENCER'S MODAL -->

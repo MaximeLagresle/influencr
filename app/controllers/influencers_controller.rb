@@ -11,11 +11,9 @@ class InfluencersController < ApplicationController
     @my_influencers = @my_preference.map { |p| p.influencer }
     @not_my_influencers = @all_influencers.reject { |i| @my_influencers.include?(i) }
 
-
-
-
-
-
+    # Initialize user States
+    @all_my_states = State.where(user: current_user)
+    @my_states = @all_my_states.select { |s| @my_influencers.include?(s.medium.influencer) }
 
     @preference = Preference.find_by(user: current_user, influencer: @influencer)
 
