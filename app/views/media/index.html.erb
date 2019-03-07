@@ -1,4 +1,8 @@
+<!-- for testing -->
+<%#= render 'test/dashboard' %>
+
 <%# render "page_four" if current_user.first_onboarding %>
+
 
 <!-- Dsplay the page in a grid 2 columns desktop / 1 column mobile-->
 <div id="display-grid">
@@ -44,6 +48,12 @@
 
 <!-- INDEX DISPLAY -->
 
+  <!-- Container Left Side -->
+  <div  id="bubble_update" class="bubble-container overflow-sm">
+    <%= render "shared/index-bubble" %>
+
+<!-- TO INSERT IN PARTIAL -->
+    
  <!-- Container Left Side -->
   <div class="bubble-container overflow-sm">
     <% @state_array.each do |state| %>
@@ -114,6 +124,7 @@
         </div>
       </div>
     <% end %>
+
   </div>
 
   <!-- INFLUENCER'S MODAL -->
@@ -133,7 +144,8 @@
   <!-- RIGHT SIDE DISPLAY -->
 
   <div class="window-container hidden-sm">
-    <% @state_array.each do |state| %>
+
+    <% @my_states.each do |state| %>
       <div class="bubble-right scroll" id="medium<%= state.medium.id %>">
         <div class="fixed-top top-bar-nav bottom-border">
 

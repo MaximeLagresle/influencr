@@ -1,0 +1,14 @@
+<h2> user : <%= current_user.email %> </h2>
+<h2> My Influencer </h2>
+<% @my_influencers.each do |i| %>
+  <p> <%= i.name %> </p>
+<% end %>
+<h2> Not My Influencer </h2>
+<% @not_my_influencers.each do |i| %>
+  <p> <%= i.name %> </p>
+<% end %>
+<h2> My states </h2>
+<% @my_states.each do |s| %>
+  <p> <%= s.medium.influencer.name %> </p>
+<% end %>
+
