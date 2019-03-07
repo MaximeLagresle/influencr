@@ -3,4 +3,11 @@ function refreshInfluencer(innerHTML) {
   influencerContainer.innerHTML = innerHTML;
 }
 
+function refreshBubble(innerHTML) {
+  const bubbleContainer = document.getElementById('bubble_update');
+  bubbleContainer.innerHTML = innerHTML;
+}
+
 refreshInfluencer('<%= j render "influencer_modal", influencer: @influencer %>');
+
+refreshBubble('<%= j render "shared/index-bubble" %>')
