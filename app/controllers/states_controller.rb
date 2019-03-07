@@ -3,10 +3,10 @@ class StatesController < ApplicationController
 def update
   @state = State.find(params[:id])
   if @state.read == true
-    @inner_html = "read"
+    @new_class = "gray"
     @state.read = false
   else
-    @inner_html = "unread"
+    @new_class = "blue"
     @state.read = true
   end
 

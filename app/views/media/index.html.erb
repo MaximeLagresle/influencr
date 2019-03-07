@@ -8,10 +8,10 @@
     <!-- DESKTOP MENU -->
     <div class="menu-desktop hidden-sm">
       <!-- Righ Navigation for desktop -->
-      <div class="menu hidden">
+      <div class="menu">
         <!-- Link list -->
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item" %>
         <%= link_to "My Influencers", "#", { "data-target" => ".bd-example-modal-lg", "data-toggle" => "modal", class: "menu-item" } %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item" %>
       </div>
       <!-- Logo - Clickable far right -->
       <div id="menu-logo-container-desktop">
@@ -62,16 +62,21 @@
           <!-- ARTICLE-->
           <% if state.medium.format.type_of == "article" %>
             <div class="icon-container"><i class="far fa-file-alt"></i></div>
-            <h4 class="bubble-title"> <%= state.medium.title %> </h4>
+
+            <div class="bubble-title">
+              <h4> <%= state.medium.title %> </h4>
+            </div>
+
             <div class="content">
-              <p> Dispaly Count: <%= state.display_count %> </p>
               <p> <%= state.medium.content.first(100) if state.medium.content %> </p>
             </div>
 
           <!-- TWEET-->
           <% elsif state.medium.format.type_of == "tweet" %>
             <div class="icon-container"><i class="fab fa-twitter"></i></div>
-            <h4 class="bubble-title"> 1 new tweet </h4>
+            <div class="bubble-title">
+              <h4> 1 new tweet </h4>
+            </div>
             <div class="content">
               <h2>Tweet</h2>
               <p> <%= state.medium.content if state.medium.content %> </p>
@@ -80,13 +85,17 @@
           <!-- PODCAST-->
           <% elsif state.medium.format.type_of == "podcast" %>
             <div class="icon-container"><i class="fas fa-headphones"></i></div>
-            <h4 class="bubble-title"><%= state.medium.title %></h4>
+            <div class="bubble-title">
+              <h4><%= state.medium.title %></h4>
+            </div>
             <div class="content"> <h3>Podcast</h3> </div>
 
           <!-- VIDEO-->
           <% elsif state.medium.format.type_of == "video" %>
             <div class="icon-container"><i class="fas fa-tv"></i></div>
-            <h4 class="bubble-title"><%= state.medium.title %></h4>
+            <div class="bubble-title">
+              <h4><%= state.medium.title %></h4>
+            </div>
             <div class="content"> <h3>Video</h3> </div>
           <% end %>
         </div>
@@ -117,20 +126,27 @@
 
           <!-- top menu -->
           <div class="menu-window">
-            <!-- READ / Update read state -->
-            <%=link_to state_path(state.id),method: :patch, remote: true do %>
-              <p id="<%= state.id %>readstate" class="click-aspect menu-item-window">read</p>
-            <% end %>
 
             <!-- FULLSCREEN / Redirect to medium show page -->
             <%=link_to medium_path(state.medium.id) do %>
-              <p class="click-aspect menu-item-window">fullscreen</p>
+              <p class="click-aspect menu-item-window">
+              <i class="fas fa-external-link-alt gray"></i>&nbsp&nbsp
+              </p>
+            <% end %>
+
+             <!-- READ / Update read state -->
+            <%=link_to state_path(state.id),method: :patch, remote: true do %>
+              <p id="<%= state.id %>readstate" class="click-aspect menu-item-window gray">
+                <i class="fas fa-check"></i>&nbsp&nbsp
+              </p>
             <% end %>
 
             <!-- <p class="menu-item-window">|</p> -->
 
             <!-- CLOSE -->
-            <p class="close-button click-aspect menu-item-window">close</p>
+            <p class="close-button click-aspect menu-item-window">
+              <i class="fas fa-times gray"></i>
+            </p>
           </div>
         </div>
 
