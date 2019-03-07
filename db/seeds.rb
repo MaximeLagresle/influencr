@@ -32,7 +32,7 @@ full_list = [
 
   {
     name: 'Paul Graham',
-    bio: "Programmer, writer, and investor. In 1995, he and Robert Morris started Viaweb, the first software as a service company. Viaweb was acquired by Yahoo in 1998, where it became Yahoo Store. In 2001 he started publishing essays on paulgraham.com, which in 2015 got 34 million page views. In 2005 he and Jessica Livingston, Robert Morris, and Trevor Blackwell started Y Combinator, the first of a new type of startup incubator. Since 2005 Y Combinator has funded over 1000 startups, including Dropbox, Airbnb, Stripe, and Reddit.",
+    bio: "Programmer, writer, and investor. In 1995, he and Robert Morris started Viaweb, the first software as a service company. Viaweb was acquired by Yahoo in 1998, where it became Yahoo Store. In 2001 he started publishing essays on paulgraham.com, which in 2015 got 34 million page views.",
     accounts: [
       {
         username: "paulg",
@@ -208,9 +208,9 @@ Thanks to Sam Altman, Paul Buchheit, Patrick Collison, Kevin Hale, Steven Levy, 
 
 And that's kind of exciting, when you think about it, because all three are doable. Hard, but doable. And since a startup that succeeds ordinarily makes its founders rich, that implies getting rich is doable too. Hard, but doable.
 
-If there is one message I'd like to get across about startups, that's it. There is no magically difficult step that requires brilliance to solve.
+If there is one message I'd like to get across about startups, that's it. There is no magically difficult step that requires brilliance to solve.\n
 
-The Idea
+The Idea \n
 
 In particular, you don't need a brilliant idea to start a startup around. The way a startup makes money is to offer people better technology than they have now. But what people have now is often so bad that it doesn't take brilliance to do better.
 
@@ -495,7 +495,35 @@ Thanks to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and Robert Morris 
             format: article
           }
         ]
-      }
+      },
+      {
+        username: nil,
+        url:"https://youtube.com/",
+        platform: youtube,
+        media: [
+          {
+            url: "https://www.youtube.com/watch?v=4WO5kJChg3w&t=5s",
+            content: nil,
+            title: "A Conversation with Paul Graham - Moderated by Geoff Ralston",
+            header: "YC Partner Geoff Ralston talks with Paul Graham, one of the founders of YC, and tries to draw out as much startup wisdom as possible in an hour of conversation.",
+            format: video
+          }
+        ]
+      },
+      {
+        username: nil,
+        url:"https://podcast.app/paul-graham-before-the-startup-e32007888/",
+        platform: external_blog,
+        media: [
+          {
+            url: "http://media.awesound.com/t/tnen38obk.mp3?auid=aCAGmNdgRJ",
+            content: nil,
+            title: "Paul Graham - Before the Startup",
+            header: "Counterintuitive Parts of Startups, and How to Have Ideas Paul Graham delivers an informative (and highly amusing) talk, addressing counterintuitive parts of startups.",
+            format: podcast
+          }
+        ]
+      },
     ]
   },
 
@@ -689,23 +717,280 @@ Thanks to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and Robert Morris 
         media: [
           {
             url: "https://a16z.com/2018/12/07/when-advertising-isnt-enough-multimodal-business-models-product-strategy/",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            content: "Stop and think for a moment about how many ads you saw in the last 24 hours, on Instagram or Facebook or anywhere else. How many did you scroll through and glaze over? What if the number was capped at 2 or 3 a day? How would that change how you felt about the platform? Similarly, think about how many subscriptions you’ve signed up for—or forgot to cancel. What if, at the point of purchase, you had the option to only buy what you wanted, for the time frame you specified? This type of consumer power is the reality for netizens in China today—because Chinese internet companies have adopted business models that are drastically different than what we see here in the States, especially on mobile.
+
+Product success is not just about having a good product, but also having the right business model(s). Expanding sources of revenue pushes us to think beyond what we know, and creates the infrastructure that opens up new opportunities. In this post, I will use consumer entertainment apps (books, podcasts, videos, and music) as a lens into the different business models and product strategies of Chinese companies. Thinking about content consumption in a mobile-first way in China has enabled these new business models, which not only provide diversified revenue streams for businesses, but also allow users to make better, more flexible purchasing decisions. \n
+State of Affairs in the US
+In the last decade, large consumer Internet companies from Google and Pinterest to Lyft and Spotify have become household names with market caps in the hundreds of billions of dollars. And yet, in terms of how these hugely successful companies monetize, these companies’ revenue streams are interestingly not very diverse. In fact, they generally fall into one of two buckets: advertising-driven, or transaction/subscription-driven. Revenue is heavily concentrated in one of these two business models, which in turn drives how the companies think about creating product. For example, advertising-driven companies focus on increasing engagement and time in app; transaction-driven services optimize for the lowest friction before checkout. \n
+Put simply, apps in the United States are part of either the eyeball economy or part of the wallet economy.
+
+
+
+It’s great for a company to focus, but is such a singular focus on one model for a revenue stream the best long term strategy for growth? And perhaps more importantly, does this lead to the best product for customers?
+
+There are extremely compelling reasons to consider diversified revenue streams. Expanding revenue beyond ads allows for the simple fact that people’s preferences change. Digital marketing experts estimate that Americans are exposed to around 4,000 to 10,000 ads daily. There is a point where you can no longer stuff more ads down a consumer’s throat; ads become less effective and more annoying. Over time consumers may also not feel comfortable always being forced to pay for a ‘buffet’ with subscriptions, when in fact they only want one item on the menu.
+
+There are also very strong reasons for combining the advertising centric world and the transaction world. Imagine if, as an advertising company, all of your ads could become one-click transactions: a win-win for advertisers, users, and the platform. If you are a transaction or subscription company, adding content and finding ways for users to increase time on your site leads to more mindshare and lower customer acquisition costs when expanding business lines.
+
+What do these new business models look like?
+Largely because many people could not afford a computer, China skipped the PC and the credit card; smartphones were the way many people were exposed to the Internet for the first time. So today, products aren’t just mobile first, many are mobile only. Mobile payments have penetrated the country and China has become a seamless digital society.
+
+In part because a mobile ad is much more annoying on a small screen, the emphasis on advertising vs. other revenue streams is very different in China today than it is in the US. Due to the heightened competitive environment in China, platforms can not afford to not simultaneously seek alternative revenue streams and find ways to monetize without harming the user experience. Take Tencent, for example — a consumer internet company with skyrocketing revenue and a very diversified revenue stream — cloud/payments revenue is up 105% YOY; value added services for social networks are growing by 47%; and less than 20% of their revenue is from advertising. “We should not be overloading our users with ads,” said Tencent President Martin Lau in the Q1 earning call last year. As a result, ads in WeChat Moments (the equivalent to the FB newsfeed) are limited to just two per day. Tencent is able to hold that line on user experience because it has other ways of monetization. It’s hard to argue that the end result is not a better user experience.
+
+As the products have got more sophisticated on mobile, business models with diversified revenue streams for content consumption — that rely neither solely on advertising nor transactions — evolved as well. This post will address four different content categories, with different consumer app sectors as case studies that illustrate not only how different the business models are, but also how the business models result in unique and ultimately better consumer experiences.
+
+  Books
+  In the United States, we typically buy digital books on Amazon’s website as one of several purchase options, in the same checkout flow as ordinary purchases.
+
+
+
+  In China, books are consumed very differently. In addition to their paid subscription service (similar to Kindle Unlimited), there are three main business models for book-selling in QQ Reading:
+
+  Paid books allow readers access of up to ⅔ of the book for free. Readers have time to get hooked before they need to pay to unlock the ending. Think about how many more books you’d start if this were the case in the States!
+  Books are also sold as bite-sized snacks. Readers pay per 1,000 words, for often-serialized works. Below is a screenshot of one of the most popular books from 2014, 一世倾城. It has over 10,000 chapters and is still being updated — now more than 46 times the length of the entire Harry Potter series. Because authors can publish chapters piecemeal, they are also able to incorporate reader feedback to quickly change plots or even kill off characters.
+
+
+  Some authors offer free books and illustrations, gain a loyal user base, and then collect money through tips. At the end of each chapter, an overlay button for tipping authors allows readers to tip from $0.15 and up.
+
+
+  Social elements and gamification also are combined to create a more enticing user experience. In WeRead, another one of China Literature’s reading apps, users compete against their WeChat friends on a weekly leaderboard showing who has read for the most time. It’s not just for bragging rights; users earn credits for every 30 minutes they read to spend on more books.
+
+  Search is also a much more complex and refined function in China, going far beyond best-sellers or sort-by-categories with granular, multivariable, smarter search options. Search is about discovery, after all — and the Chinese book platforms find ways to convey more information to customers, so they can find precisely what they want to read however they want to pay for it. For example, users can filter according to male or female readership, physical publications, or audiobooks. Then users can view custom curated lists including top trending, top new, top annual, most searches, free books with the most tips, and even according to times read cover-to-cover. These lists can be sorted weekly, monthly, or overall.
+
+  Importantly, in China, these book platforms also combine books from big publishers with books from up and coming self-published authors. So the way books are sold in China compared to the US is a major rethink of the publishing industry as well as a rethink of ebook platforms. In China, purchasing books is not about a one-time transaction for the platforms. There are elements of social media, gamification, and enhanced discovery — ultimately creating an experience that drives more sales. It all seems to be working. In China the ebook industry grew over 35% from 2016 to 2017; the same industry in the same time in the US trended the opposite direction.
+
+
+
+  Podcasts
+  The podcast Serial was downloaded 40 million times during its first three-month season in October 2014. This wildly successful spin-off of This is American Life likely perhaps earned up to one million dollars in ad revenue, according to the industry standard of $25 per 1,000 downloads. Revenue might even have been lower, as rates were negotiated well before anyone knew how successful the podcast would become.
+
+  Despite being deemed ‘podcasting’s first breakout hit’, revenue couldn’t cover the cost of producing a second season. The host/executive producer Sarah Koenig started asking listeners for donations during episode nine. In less than a week, enough donations poured in to guarantee a sequel, but the fact remains that advertising alone couldn’t support the big budget podcasts’ continued production even for the most successful podcast the US had ever seen.
+
+  The entire podcast market in the US in 2017 was $314 million, all from ads. Estimates for paid podcast in China, on the other hand, are $3-5 billion, and many individual podcasters are multimillionaires. It’s not a difference of talent; it’s a difference in business models.
+
+
+
+
+  In China, many podcasts charge the end customer instead of relying solely on advertising. Some podcasts are part of the platform’s paid subscription service, but users always have the option to pay for podcasts individually. The following screenshot from the popular podcasting app Ximalaya is all about improving the sound of users’ voices. The podcast course is made of over 30 episodes, and costs around $17. The course has over fifteen million listens and has generated over $1 million in revenue.
+
+
+
+  Just like digital books, free podcasts are monetized in several ways. Some podcasts rely on sponsorships and ads the way we do in the US, but podcast hosts can also receive tips that are split between podcaster and platform. In the following example, tip options vary from $.30 to $21. This new model means everyone can make money and content creators have more funds to invest in better production and better content; everyone wins.
+
+
+
+  The audio platform Dedao (“iGetGet”) essentially takes the MOOC format and applies it to podcasts. Below are two economics professors from Peking University. Xue Zhaofeng, the professor on the left, actually resigned after making $8 million in one year with his economics podcast series. The professor on the right has grossed nearly $5M in sales for her podcasts on financial literacy and wealth management techniques.
+
+
+  Beyond the scale and business models, what else makes these Chinese podcast platforms different from their Western counterparts? Similar to book platforms, these apps hook users through social elements and gamification. Ximalaya has a leveling concept, where you ‘level up’ by listening or spending money in the app to earn coupons and even limited-time membership to use their paid subscription service. Dedao hosts a social network based around studying, where users can create a public profile and share or compare course notes. Users can also leave public questions or comments at the end of each podcast transcript.
+
+
+
+  Studying podcast platforms such as Dedao or Ximalaya give us insight to how the podcast market here in the States can evolve beyond ads, and ultimately put more money in the pockets of our podcast creators. There is an expansive expert network that is untapped and not fully monetized in the States, not due to a lack of talent, but because of overly simplistic business models.
+
+  Video
+  In the U.S., this is what users typically see on YouTube when they first click on a video. Monetization is accomplished through pre-roll ads, display ads, and interstitial ads. Ads typically have nothing to do with the content of the video.
+
+
+
+  In China, Baidu spinoff iQiyi, one of the bigger video players, uses AI and machine learning to figure out what’s happening in the content, and play relevant advertising. In the following scene of a young professional putting on lipstick, for example, iQiyi serves an ad promoting a makeup brand. This makes product placement ads that much more valuable, and ads in general slightly more acceptable (screenshot from Ad+ Home).
+
+
+
+  iQiyi’s business model also goes beyond advertising with many other revenue initiatives. (Sneak peak: advertising is less than 50% of the company’s revenue). iQiyi has over 80 million VIP members, but membership is not an absolute paywall. Instead, members get perks such as discount coupons, no advertisements, and the ability to watch new releases up to 12 episodes faster. Some of the movies on iQiyi are member-exclusives; non-members can watch the first 6 minutes of the film before deciding whether or not to “unlock” the rest of it with a membership or pay à la carte for the movie. VIP membership rewards active users with perks that keep them engaged with the platform and inevitably spend more money.
+
+  VIP memberships also include exclusive access to app skins based on celebrities or popular shows. In the below skin from iQiyi-produced ‘Sing! China’, all of the navigation buttons are replaced with faces of the mentors/judges.
+
+
+
+  On iQiyi, users can clip digital coupons, such as the following BOGO coupons for Dairy Queen and Burger King. Imagine watching a movie on YouTube and getting a craving for pizza and hot wings, now you can immediately act on that craving.
+
+
+
+  This is what the watch screen on iQiyi looks like. There’s live comments, sharing for prizes, GIF creation, and even the ability to top up your mobile data plan. Users are even upsold their VIP membership in order to access the higher quality audio and video. You could say this is too crowded of a page; you could also argue that this is a more advanced experience, where you can even create content to share on social media. If it’s too busy for you, all you have to do is tap to hide the settings overlay.
+
+
+
+  For many shows or movies, users can shop related items as they continue to watch; there is no need to stop the video. Rap of China viewers can buy Beats headsets as they watch, while users watching ‘The Great Wall’ movie can purchase custom movie merchandise while they’re engrossed in the film.
+
+  There’s even a social network component that lives entirely inside iQiyi. Users can join their favorite celebrities fan circles to chat about the latest celebrity news and gossip. The platform is a rich aggregate of content and can be used as a portal to watch shows, movies, social media, view upcoming meet and greet events, and even read news.
+
+
+
+  This social network that lives inside iQiyi is not just for celebrity news; there are more than one hundred fan circles based on iQiyi’s most popular content and all topics related to entertainment. In turn, the information from the social network gives iQiyi data on how to cast characters, evaluate scripts, and even predict show success. The social network increases app opens by 160%, and average daily watch time by 24%.
+
+  iQiyi’s business model has also extended to the real world with its recent launch of ‘on-demand movie theatres.’ These miniature theatres range from two to ten seats, and are rentable by the hour to watch any content from iQiyi’s library. It’s bringing the traditional movie theatre experience up to date in the era of streaming.
+
+  The result of iQiyi’s expansive business model is a diverse product strategy and diverse revenue streams.The below graph depicts the 1H18 revenue distribution, with membership and advertising in a dead heat.
+
+
+
+  However, this race did not stay even for long. In 3Q18, membership stayed steady at 41.2% of revenue, while advertising dropped to 34.6%.  iQiyi has over 80 million paying members out of over 500 million total users, and is able to successfully monetize all users because of its expansive business model and emphasis on diversified revenue.
+
+  Music
+  In the US, we’re used to a monthly subscription fee on Spotify or free online radio where we listen to ads every so often. What happens when you take a music streaming platform and turn it into a social, lifestyle app?
+
+  Tencent Music illustrates very well the extent to which Chinese music industry has rethought the entire business model. For starters, popular artists often have a limited-time streaming block on new releases. During this time period, users buy or gift virtual albums that provide exclusive access. Two years ago, pop singer Jay Chou sold limited time access to his album Bedtime Stories for less than $3. To promote competition among fans, Tencent Music created a leaderboard showing how many times fans purchased the album; the top user purchased the album over 400 times!
+
+
+
+  But you don’t have to top the leaderboards to get the benefits here. Say you bought that Jay Chou album 3 times; you might be ranked #3913 on the leaderboard, but worry not, you’ve also won 3 raffle tickets to win signed posters, VIP memberships, or even Jay Chou sleeping masks. This kind of gamification and reward system turns average fans into superfans, and gives superfans a deeper connection to the artists they adore.
+
+
+
+  The Tencent Music platform has multiple such methods of increasing fan loyalty and improving artist marketing for artists big and small. Similar to iQiyi, users can skin the app for a small fee. You can imagine how many Deadheads, Beliebers or Swifties here in the States might also be willing to pay a small fee to skin their media apps.
+
+  There is also a social network where small or medium artists can post articles, and fans can access news, music videos, and behind the scenes content. Artists are able to share more of their story and fans develop deeper loyalty. Artists simply don’t get this kind of fan support from Western music platforms.
+
+  If your interest is in live music, Tencent Music apps also have a feature for that. The app strives to be a hub for concerts and events so you can buy concert tickets directly within the app. If you can’t attend concerts in person, you can also watch live streams. In the screenshot below, the live stream concert by TFBOYS was watched over 36 million times.
+
+
+
+  In Tencent Music, there are leaderboards for gamification, social radio and singing, live concerts, and even a TMZ-type portal for discovery. In short, there are many ways for listeners to engage with music and the artists. But perhaps the biggest difference of all is that the company’s focus is not just listening and consuming music, but also creating content and allowing users to earn money. Anyone can create an online radio station within the music app and curate their own playlist. Hosts tell stories between songs, or give commentary on the lyrics. Good hosts earn tips in the form of digital gifts from listeners and get to keep 30% of the revenue.
+
+
+  In Tencent Music’s other flagship app, WeSing, users can livestream their own karaoke room or open up the floor to anyone who wants to sing karaoke. Singers keep 30% of the tip revenue. It’s fun, social, and makes a lot of money for both platform and customer.
+
+
+
+  Lastly, Tencent Music is also taking its business offline. The company is not only selling microphones and headphones, but also opening up hundreds of mini karaoke booths in malls. They come complete with chairs, curtains, headsets, even air conditioning. Users have a blast in the booth, and then get a recording of the singing sent to their phone. (Image below of competitor Minik’s karaoke booth from journalist Zhang Cenyu).
+
+
+
+  The result of such a nuanced business model is a whopping 70% of revenue comes from those live streaming services – tips for radio and karaoke. It’s a complete contrast from Spotify’s business model, of which 90% of revenue comes from subscriptions. All in all, Tencent Music’s business model transforms music from a solo consumption product to a lifestyle, sharable experience.
+
+
+
+  Where is the US headed?
+  Finding new ways to diversify revenue streams in China has led to very interesting product innovation for these companies. We are just beginning to see the same kind of thinking in the US. Amazon is one of my favorite examples. As Amazon dives more into content and advertisements, its ability to sell ads against viewer’s past purchases make their ads tremendously valuable. For instance, imagine Coca-Cola now being able to serve ads only to people who purchased Pepsi.
+
+
+
+
+  CEO/Founder of Buzzfeed Jonah Peretti (an a16z portfolio company) understands this shift. “We’ve outgrown the ability to build our business on essentially a single, very distinct revenue stream,” Peretti recently said. Buzzfeed — historically a media business that delivers news and makes money from ads —  announced their push to diversify in late 2017. They’ve partnered with Walmart and Jet to sell branded kitchenware in a seamless purchase experience.
+
+  Their new business model is a 3×3 grid (below) in which Buzzfeed and related brands profit from three core revenue streams: advertising, commerce, and video entertainment. Jonah predicted that by 2019, half of the company’s revenue will come from outside of ads.
+
+
+
+  Going beyond “only”
+  In the past, revenue was often thought of as a result of product brilliance. Studying China illustrates how expanding sources of revenue, not just growing existing revenue lines, is a lens to drive product thinking. This idea of going beyond ads-only and transactions-only to diversify revenue streams can be applied to all kinds of sectors. Just think about some of the following ways in which we can adapt or integrate business models for the future: ads to subsidize ride sharing; live streaming, influencer reviews, and limited-time promos to drive e-commerce; gamification to promote healthier lifestyles. How much more fun could products and services be if they branched away from a singular business model?
+
+  History has taught us that not all established companies can make business model transitions. Will the current set of Internet companies make this leap to more personalized user experiences that are less ad- or transaction-centric? Perhaps, given all of this, FAANG could be more vulnerable than many think.
+
+  Expanding sources of revenue not only pushes us to think beyond what we know, but forces us to create the infrastructure to go after new opportunities. After all, revenue is simply a proxy for how you are serving your customers. As you diversify and experiment in generating revenue in new ways, you are effectively honing in on your ability to give customers what they want, how they want it.
+
+
+
+  Business models as a product strategy. It’s exciting to imagine what’s possible when advertising and transactions collide.
+
+  Thanks to Avery Segal for his research help.",
+
             title: "Outgrowing Advertising: Multimodal Business Models as a Product Strategy",
-            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",
+            header: "Stop and think for a moment about how many ads you saw in the last 24 hours, on Instagram or Facebook or anywhere else. How many did you scroll through and glaze over? What if the number was capped at 2 or 3 a day? How would that change how you felt about the platform?",
+            format: article
+          },
+          {
+            url: "https://a16z.com/2018/12/07/when-advertising-isnt-enough-multimodal-business-models-product-strategy/",
+            content: "There’s a new era of AI consumer-based apps spreading around the world, though starting from China.
+
+TikTok, a short-form mobile video app, was downloaded on Apple’s App store more than 104 million times during the first half of 2018 — making it the world’s most downloaded app in that period. In fact, installs in the United States in the month of October [or more specifically, between 09/29/18-10/30/18] were higher than Facebook, Instagram, Snapchat, and YouTube, reaching a whopping 42.4% of downloads among those already popular apps. Yet much of the coverage on TikTok either compares it to Facebook’s direct competitor (Lasso), or incorrectly labels it as a lip sync app for teenagers. It’s more.
+
+Not only is TikTok a China-based company whose product is winning hearts in the U.S. and around the world, it is, more importantly the first mainstream consumer app where artificial intelligence IS the product (I argue why below). It’s representative of a broader shift, where AI is transitioning from the discovery phase to the implementation phase.
+
+So what happens when AI research comes to life in a mass-market consumer app? In this post, we’ll examine three examples of consumer apps, originally from China (though TikTok is already used beyond China) that are really drawing on AI to reshape product, provide trust in anonymity (yes!), and unlock massive cost savings and accessibility. AI is not a feature, but the product… and this phenomenon will spread around the world.
+
+AI consumer app example #1: TikTok, and why it matters
+Often misclassified as a lip sync platform based off its predecessor Musical.ly, TikTok is a mobile app that displays full screen short videos — a max of 60 seconds — and uses AI to personalize the user’s video feed. Clips play continuously, and users can swipe up if they want to skip ahead; there’s also commenting, liking, and the early seeds of a stranger-to-stranger social network. Recently, TikTok partnered with the NBA to show behind-the-scenes footage and highlights, as well as showcase celebrities (including Jimmy Fallon and Cardi B) to create fun “challenges” for community engagement.
+
+It’s like TV, but without a remote control — thanks to AI
+TikTok is fully reliant on AI, and that makes all the difference. Rather than asking users to tap into a video thumbnail or click into a channel, the app’s AI algorithms decide which videos to show users. The full-screen design of TikTok allows every video to unveil both positive and negative signals from users (positive = a like, follow, or watching until the end; negative = swipe away, press down). Even the speed at which users swipe a video away is a relevant signal.
+
+Instagram, on the other hand, uses AI as a tool instead of the actual product. Although AI helps determine the recommended videos shown in one’s Instagram’s explore feed, the thumbnail presentation gives the platform less clear signaling of likes and dislikes. If someone didn’t click into a thumbnail, is it really because they wouldn’t like that video?
+
+How is this different than platforms and products like Facebook news feed, Netflix, Spotify, and YouTube, which all also famously use recommendation algorithms to users on what to pay attention to (whether news, shows, music, or videos)? I’d argue that the approach that the apps mentioned in this post take a more AI-centric approach, each in different ways. TikTok, for example, never presents a list of recommendations to the user (like Netflix and YouTube do), and never asks the user to explicitly express intent — the platform infers and decides entirely what the user should watch.
+
+This may be a matter of degree not just kind, but I’d also argue that even seemingly small differences shouldn’t be underestimated: Who thought disappearing stories would change so much of social networking as we know it? By taking such a fully AI-reliant approach, TikTok users are more likely to see short videos of topics they would never explicitly search or express interest in on YouTube (e.g., of manufacturing lines), opening up new routes to serendipitous discovery.
+
+A broad talent and content pool
+The diversity of content in TikTok is as wide as YouTube, with TikTok users competing to push the boundaries of what’s possible with short clips. Music and lip syncing is a portion of the content, but so is artwork, cookie-decorating, hair tutorials, DIY science experiments, jokes, and video memes that allow users to add their own twist to preexisting songs and videos. This format lowers the barrier to entry for content creation, facilitates a sense of shared community among users, and does not require a large song selection. Some musicians have also enjoyed broader promotion and distribution from TikTok memes: In the case of Deep Chills, the creator of the music clip behind #shoechange, his song has been used to create over 5.5 million videos.
+
+15 seconds of fame
+Since most TikTok videos are 15 seconds today, creators don’t need to speak, and some don’t even show their face. This allows a whole new crop of creators that would not succeed on YouTube and Instagram to find their internet followings, expressing themselves in new ways. Additionally, the lack of “voice” means a fair amount of platform content has global appeal without requiring translation. The short length also requires videos to be entertaining at the get-go, providing instant gratification and habit-forming predictability for users, as well as the incentive to keep trying new genres of content.
+
+The Happy Place
+Because TikTok completely controls what users see, and uses AI to do so, it can optimize the video feed for user happiness. The platform can decide to show videos that are upbeat, funny, and/or wholesome — in fact, the entire vibe of the platform is largely under TikTok’s control because they, not users, decide which videos to display. Even if a user subscribes to a creator, there is no guarantee that he/she will see all of the creator’s videos. This product design ups the ante for the platform’s algorithms because a series of misses will cause users to close the app. Unlike other social networks where communication is part of the core value proposition, if a user stops using the U.S. version of TikTok, it is harder for TikTok to win him/her back.
+
+A Trojan horse to social networking?
+Just as the U.S. version of WeChat only showcases a subset of the app’s functionality, TikTok only has a subset of the features of its sister app in China, 抖音 (“Douyin”), which is more social. Instead of a dedicated notifications tab, Douyin has a news tab which is primarily a messaging inbox. Since videos in Douyin can be sorted by city, the introduction of messaging allows the platform to facilitate friendships in real life. Furthermore, a larger focus on livestreaming and ecommerce give creators financial incentives to broadcast and create great content through these mechanisms. So, it will be interesting to see how TikTok evolves on the social front.
+
+TikTok is the first mainstream consumer app where artificial intelligence IS the product. It’s representative of a broader shift.
+
+…It all comes down to AI
+Because TikTok’s success hinges on the strength of its algorithms — it is not easy to otherwise curate hundreds of unique videos everyday for each user — the format of short UGC video, viewed on mobile, paired with AI personalized recommendations has created a sticky platform with global appeal. In China, daily use time is 31 minutes (over 120 videos); in the U.S., monthly usage in October 2018 was 6.8 hours.
+
+More broadly, I believe TikTok’s rise signals a new era of AI consumer apps. Not only can the learnings from TikTok be applied to a vast range of consumer behavior — reading news, listening to music, making purchases — but also Chinese entrepreneurs are already applying learnings to new categories such as dating, learning, and recruiting. In the same way WeChat ushered in the era of “super apps“, TikTok’s parent company Bytedance is ushering in the era of AI consumer apps. But there’s more, beyond TikTok…
+
+AI consumer app example #2: Soul, bringing back anonymity
+In an ideal world, building relationships would be based on complementary personalities, interests, and values — and Soul, a more recently popular app in China, uses AI and anonymity as the cornerstones for facilitating such relationships. Popular use cases range from wanting to just talk or vent anonymously, to finding new friends and soulmates. As of May 2018, Soul had over 3.5 million MAUs.
+
+When users join Soul, they answer a six-question quiz (with 50 optional further questions if so desired) with binary answers that serve as the baseline for the app’s AI matching algorithms:
+
+Would you prefer to be seen as firm or tenderhearted?
+Are you better at helping close friends understand emotions or making logical decisions?
+What is more important in conversations: maintaining interpersonal connections or reaching agreements?
+In your work, which do you display more: enthusiasm or perfectionism?
+Do you often forget trivial chores?
+Which better describes your life goal: seizing life’s opportunities to capture its brilliance or searching for the meaning and essence of life?
+Once the quiz is completed, users are eligible to be matched and can choose to have a conversation with strangers via text or audio. Most importantly: no real names, photos, or even quiz answers are revealed — users actually have the option of changing their voice, and there’s even a paper bag that conceals the avatar heads! AI drives the matching algorithm based on at least an 85% compatibility score.
+
+
+
+Chats begin immediately when two strangers are paired, and users are given suggestions on what to talk about. Either user can end the chat at any time, and after three minutes, both parties must decide whether or not to reveal their usernames to continue the conversation. The platform has full visibility into when and why the conversation fell apart.
+
+It’s as if a dating service got to listen in on your first date and use that information to find your next match.
+
+By using AI to generate matches, Soul also gives users more confidence that their matches are not random and have a decent chance of success. In other words, AI helps restore trust in anonymous chats. Soul’s approach has other benefits as well; for instance, by stripping the experience of video and relying only on voice and messaging, interactions are not based on physical attraction, so rejection is taken less personally. (After all, maybe the platform just made a bad match!)
+
+The app draws parallels to Chatroulette, of which one in eight matches has questionable content. But on a platform molded with AI, “questionable” users are either weeded out or only matched with other users that they’re likely to still have a shot with. Soul’s popularity demonstrates how an AI approach can give new life to an old consumer app idea. How many other failed business models could be revisited with an AI strategy today?
+
+AI consumer app example #3: LingoChamp, providing affordable education
+Imagine an English tutor that can give you feedback on pronunciation, grammar, vocabulary and overall fluency — that kind of 1:1 tutor could easily cost upwards of $40/hour in first-tier Chinese cities. But LingoChamp is an AI English tutoring app that charges users $14/month for unlimited access to tests, courses, and personalized curriculum. In Q3 2018, the app had 97 million total users with over 870,000 paying customers (158% growth YOY) — the equivalent of $26.3 million in net revenue and 73.4% gross margins.
+
+Users start by selecting level of schooling; purpose for using the app (international business, travel, karaoke, watching movies, IELTS exam, study abroad, etc.); and then they complete an assessment exam. Once the users’ level is determined, they can take bite-sized courses on how to say hi to foreigners or how to ask for employee benefits, or simply reading a children’s storybook. The platform gives users audio playback of any mistakes as well as smart analysis and suggestions for improvement.
+
+LingoChamp therefore has the world’s largest dedicated database (as of Q2 2018) of English spoken by Chinese at various proficiency levels — it has trained its AI model with over 1.3 billion minutes of conversation and 17.5 billion sentences. Lingochamp then uses this data to predict user success and tailor questions to be challenging, but not discouraging. Finally, LingoChamp’s parent company LAIX also offers a free International English Language Testing System (IELTS) exam app that uses their AI engine to give advanced feedback for practice exams.
+
+All this data, combined with AI, provides the company’s moat against competitors. According to iResearch, China’s AI-powered online education market reached approximately $568 million in 2017 and is expected to surpass $26 billion in 2022 overall. But the bigger picture here is about AI enabling scale and access: In a country where there’s a huge deficit of English teachers (70% of primary and secondary schools in Yunnan province alone lack English teachers), the app is not just making English learning orders of magnitude cheaper, but truly more accessible to all. As founder Yi Wang observes, “The variable cost is so low that it’s negligible. This is a whole new model of really pushing the boundary of human learning forward.”
+
+Imagine how such AI knowledge sharing could be extended beyond English tutoring. As such, AI is a cost-effective solution to scaling education to make it both accessible and inclusive.
+
+How many other failed business models could be revisited with an AI strategy today?
+
+*   *   *
+
+These are just three examples — for short video, anonymous chat, and English learning — of AI consumer apps. Other examples include Boss Zhipin and VIP Peilian: the former uses AI to match job applicants and employers, optimizing its recommendations to increase the chances of an applicant landing a job; and the latter uses AI for music education, evaluating how each song is played based on pitch and rhythm. Because both apps use an AI-driven approach, the app (in the case of Boss Zhipin) can recommend a long tail of potential employers, and the app can also (in the case of VIP Peilian) be much cheaper — a fraction of the cost of an in-person instructor.
+
+What all these apps show is the earliest innings of a new wave of consumer startups where AI is the product. Everyone talks about TikTok — and Toutiao, China’s leading news app that uses AI to deliver a personalized feed to each of its users (both created by the same company) — but the question we should ask ourselves is not whether these apps stay at the top, but what other problems for consumer behavior can AI solve?
+
+In his recent book AI Superpowers, former NLP researcher/ technologist Kai-Fu Lee argues that “Much of the difficult but abstract work of AI research has been done, and it’s now time for entrepreneurs to roll up their sleeves and get down to the dirty work of turning algorithms into sustainable businesses.” But as I’ve outlined in this post, the implementation phase has already begun. So what’s coming next in this new era of Consumer AI apps?",
+
+            title: "When AI is the Product: The Rise of AI-Based Consumer Apps",
+            header: "There’s a new era of AI consumer-based apps spreading around the world, though starting from China.",
             format: article
           }
         ]
       },
       {
         username: nil,
-        url:"http://www.conniechan.com/#posts-and-podcasts",
-        platform: blog,
+        url:"https://a16z.com/2017/04/24/to-f8-and-beyond/",
+        platform: external_blog,
         media: [
           {
-            url: "https://soundcloud.com/a16z/mobile-design-culture-product",
+            url: "https://soundcloud.com/a16z/to-f8-and-beyond",
             content: nil,
-            title: "Culture and/of Design",
-            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",
+            title: "Connie Chan and Andrew Chen: QR. AR. VR. ",
+            header: "As online platforms built on “real” identity and brands bring more of the real world into the digital realm, will we experience filter fatigue… or will the mundane become more profound?",
             format: podcast
           }
         ]
@@ -718,7 +1003,7 @@ Thanks to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and Robert Morris 
   {
     name: 'Marc Andreessen',
     bio: "Marc Andreessen is a cofounder and general partner of the venture capital firm Andreessen Horowitz. He is an innovator and creator, one of the few to pioneer a software category used by more than a billion people and one of the few to establish multiple billion-dollar companies. \n
-    Marc co-created the highly influential Mosaic Internet browser and co-founded Netscape, which later sold to AOL for $4.2 billion. He also co-founded Loudcloud, which as Opsware, sold to Hewlett-Packard for $1.6 billion. He later served on the board of Hewlett-Packard from 2008 to 2018.",
+    Marc co-created the highly influential Mosaic Internet browser and co-founded Netscape, which later sold to AOL for $4.2 billion.",
     accounts: [
       {
         username: nil,
@@ -807,6 +1092,65 @@ That’s the big opportunity. I know where I’m putting my money.",
            title: "Why Software Is Eating the World",
            header: "This article was originally published in The Wall Street Journal on August 20, 2011.",
            format: article
+          },
+          {
+           url: "http://blog.pmarca.com/2010/08/02/growing-pains/",
+           content: "These days, entrepreneurs spend a lot of time thinking about scaling their products. No one wants to build the next Facebook only to watch their technical infrastructure crumble when user growth takes off.
+
+Entrepreneurs rarely think as much or as deeply or as rigorously about how to scale their companies. Best practices for scaling human organizations are harder to find, and the whole endeavor feels much more like an art than a science.
+
+Ben leaps into this information void with his latest blog post titled Taking the Mystery out of Scaling a Company. This post will be the first of a series Ben will write on this topic because each skill CEOs must learn to scale their companies—such as designing and rolling out re-organizations, hiring functional executives for functions they’ve never done personally, optimizing incentive systems, and so on—need a post (or three) of their own.",
+           title: "Growing Pains",
+           header: "These days, entrepreneurs spend a lot of time thinking about scaling their products. No one wants to build the next Facebook only to watch their technical infrastructure crumble when user growth takes off.",
+           format: article
+          },
+          {
+           url: "https://a16z.com/2014/06/20/what-it-will-take-to-create-the-next-great-silicon-valleys-plural/",
+           content: "The popular recipe for creating the “next” Silicon Valley goes something like this: \n
+
+          *Build a big, beautiful, fully equipped technology park;
+          *Mix in R&D labs and university centers;
+          *Provide incentives to attract scientists, firms, and users;
+          *Interconnect the industry through consortia and specialized suppliers;
+          *Protect intellectual property and tech transfer; and
+          *Establish a favorable business environment and regulations.
+
+          Except … this approach to innovation clusters hasn’t really worked. Some have even dismissed these government-driven efforts as “modern-day snake oil.” Yet policymakers are always searching for the next Silicon Valley because of the critical link between tech innovation, economic growth, and social opportunity.
+
+          Previous efforts at such clusters failed for a variety of reasons, but one big reason is that government efforts alone simply don’t draw people. That’s why a recent crop of experiments has focused more on building entrepreneurial communities, urban hubs and districts, and hackerspaces. Still, we’re “splitting the logic” on how to create an innovation ecosystem, according to MIT expert Fiona Murray in Technology Review: We’re either going top-down by focusing primarily on infrastructure — plunking down an office park next to a university — or bottom-up by focusing on just the networks. None of these efforts successfully pursue both paths at once, with government, academia and entrepreneurial communities proceeding together in lockstep … as was the case in the development of Silicon Valley.
+
+            But policymakers shouldn’t be trying to copy Silicon Valley. Instead, they should be figuring out what domain is (or could be) specific to their region — and then removing the regulatory hurdles for that particular domain. Because we don’t want 50 Silicon Valleys; we want 50 different variations of Silicon Valley, all unique from each other and all focusing on different domains.
+
+            Imagine a Bitcoin Valley, for instance, where some country fully legalizes cryptocurrencies for all financial functions. Or a Drone Valley, where a particular region removes all legal barriers to flying unmanned aerial vehicles locally. A Driverless Car Valley in a city that allows experimentation with different autonomous car designs, redesigned roadways and safety laws. A Stem Cell Valley. And so on.
+
+            There’s a key difference from the if-you-build-it-they-will-come argument of yore. Here, the focus is more on driving regulatory competition between city, state, and national governments. There are many new categories of innovation out there and entrepreneurs eager to go after opportunities within each of them. Rethinking the regulatory barriers in specific industries would better draw the startups, researchers and divisions of big companies that want to innovate in the vanguard of a particular domain — while also exploring and addressing many of the difficult regulatory issues along the way.
+
+            Why this approach? Compared with previous innovation-cluster efforts where governments contrived to do something unnatural, this proposal flows from what governments naturally do best: create, or rather, relax laws.
+
+            Another advantage of this approach is that it’s a way for clusters to differentiate from each other and successfully compete for resources. Think of it as a sort of “global arbitrage” around permissionless innovation — the freedom to create new technologies without having to ask the powers that be for their blessing. Entrepreneurs can take advantage of the difference between opportunities in different regions, where innovation in a particular domain of interest may be restricted in one region, allowed and encouraged in another, or completely legal in still another.For example, the laws and guidelines for using drones or taxing bitcoin already vary widely across the globe, just as they do for ride-sharing services across different cities in the U.S.
+
+            But the biggest advantage of the 50-different-Silicon Valleys approach isn’t just in what it affords isolated regions or entrepreneurs — it’s in accelerating innovation everywhere. Removing regulations across different regions allows multiple innovation categories to advance together at once, in parallel, without being bottlenecked by time or place.
+
+            So what are the risks? Well, there’s a real possibility that advanced regions will essentially outsource or “regulate away” their own risk at the expense of less advanced ones. To get ahead, poorer countries may become more tempted to take on the very things wealthier countries are fencing out of their borders. But as long as the innovations aren’t life-threatening — and many of the restricted domains aren’t (the restrictions are often protecting incumbent interests) — a model like this one provides a much faster and more feasible way for developing regions to catch up. Especially when you consider the advantage that previous innovation clusters didn’t have: mobile.
+
+            With 5.9 billion smartphone users coming online in five years — largely due to the developing world — mobile acts not just as a leveler, but as a multiplier. As Tim Worstall argues:
+
+            One way of thinking about economic growth…is that it’s all about the adoption of new technologies of production. We could say that the introduction of electricity was itself economic growth, or that the adoption of smartphones will be. However, they’re both multiplying technologies: electricity allows more work to be done by replacing muscle power and, through light, enables work or study to be done for more hours of the day. The smartphone opens up the books of human knowledge to those who have never had access to it before. And that is seriously going to accelerate economic growth in just about every other field as well. That peasant farmer trying to manage his acre of maize using nothing but a hoe and a machete: sure, he’s not going to be the world’s greatest user of Facebook…but he will benefit massively from information about weather, market prices, and better farming practices.
+
+            Because of mobile, removing regulatory hurdles goes from being a potentially vicious cycle to a more virtuous one that can help millions of people climb out of poverty. And the next big companies wouldn’t be built in the U.S., but elsewhere in the world instead. For example, as mobile payment systems like M-Pesa create opportunities in banking, risk-sharing, and more, they’ve expanded to areas outside of Africa as well — including Europe.
+
+            Meanwhile, allowing more experimentation in financial services could help those in countries that don’t have stable currencies (let alone banks) to more easily save and move their money across borders; some of these places would leapfrog, innovation-wise, through something like bitcoin. As for other domains, if we think of airspace as the next Internet-like platform, lifting restrictions on drones is one way to give other regions a chance to become the next significant locus of innovation.
+
+            In fact, this kind of competition is probably the only way to create successful innovation clusters that can compete with the huge advantage Silicon Valley already has. In the United States, the “death of distance” due to improvements in communications technologies has historically benefited only ideas-producing places like New York, but not goods-producing ones like Detroit. That’s why turning Detroit into a commercial Drone Valley could draw the innovative people who in turn want to be near other innovative people around that domain.
+
+            It’s already happening in places like Brazil, which are becoming known for being commercial drone-regulation friendly. It’s also happening in other domains, as genetic reporting companies like 23andme are forced to explore opportunities abroad, athletes go to places like Germany for biologic medicine, and even Japan considers slashing regulatory red tape to attract more drug R&D. But these examples are more reactive than proactive; I’m arguing for cities, states and countries to more systematically consider and create their regulatory competitive advantage. (If you don’t know what that advantage is, the best place to start is with local universities. Have a special competency in materials science? Then begin there.)
+
+            This kind of regulatory arbitrage is already happening in the United States, too, through innovations like Google Fiber. Instead of the traditional model where telecoms competed to be in a particular city neighborhood, cities are the ones competing to get Google Fiber. And the ones most willing to relax their oft-arbitrary regulations and fees are the ones getting it.
+
+            That’s another advantage of the regulatory arbitrage approach: It helps shake up regulatory capture altogether. The best defense of regulation is its use in protecting consumer interests, but the reality is that agencies and incumbents tend to watch out for their own entrenched interests and extract rents instead.",
+           title: "What It Will Take to Create the Next Great Silicon Valleys, Plural",
+           header: nil,
+           format: article
           }
         ]
       },
@@ -819,7 +1163,7 @@ That’s the big opportunity. I know where I’m putting my money.",
             url: "https://soundcloud.com/a16z/talent-tech-trends-culture-ben-marc-tyler-cowen-summit-2018",
             content: nil,
             title: "Talent, Tech Trends, and Culture",
-            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",
+            header: "This discussion covers Ben and Marc’s marriage, er, partnership; the evolution of VC and “talent as a network”; and where are we right now on industries being affected by tech (such as retail) and tech trends (such as VR/AR and wearables) — and where are we going next? Finally, is software eating culture… or is it the other way around?",
             format: podcast
           }
         ]
