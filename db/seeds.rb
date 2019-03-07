@@ -33,6 +33,7 @@ full_list = [
   {
     name: 'Paul Graham',
     bio: "Programmer, writer, and investor. In 1995, he and Robert Morris started Viaweb, the first software as a service company. Viaweb was acquired by Yahoo in 1998, where it became Yahoo Store. In 2001 he started publishing essays on paulgraham.com, which in 2015 got 34 million page views.",
+    photo: "influencers/paul_graham.jpeg",
     accounts: [
       {
         username: "paulg",
@@ -860,6 +861,7 @@ Melendez and Gregory Price for inviting me to speak.",
   {
     name: 'James Currier',
     bio: "James is one of Silicon Valley’s foremost experts in growth and network effects. He's a four-time serial entrepreneur. He is also a pioneer of user-generated models, viral marketing, a/b testing, crowdsourcing, and myriad other growth techniques now followed by nearly all technology companies.",
+    photo: "influencers/james_currier.jpg",
     accounts: [
       {
         username: "jamescurrier",
@@ -917,6 +919,7 @@ Melendez and Gregory Price for inviting me to speak.",
   {
     name: 'Brian Balfour',
     bio: "Founder/CEO of Reforge, previously VP Growth @ HubSpot. Brian Balfour has started multiple VC backed companies, and grown user bases to millions of daily active users. He writes detailed essays on growth and user acquisition that have been featured in Forbes, Hacker Monthly, and OnStartups to help build a growth machine.",
+    photo: "influencers/brian_balfour.jpeg",
     accounts: [
       {
         username: "bbalfour",
@@ -1074,6 +1077,7 @@ Melendez and Gregory Price for inviting me to speak.",
   {
     name: 'Andrew Chen',
     bio: "Investor at Andreessen Horowitz, where he focuses on consumer products, marketplaces, and bottoms up SaaS. Previously, he led growth teams at Uber.",
+    photo: "influencers/andrew_chen.jpeg",
     accounts: [
       {
         username: "andrewchen",
@@ -1247,6 +1251,7 @@ Of course, we also chat about some of their favorite products, including an app 
   {
     name: 'Connie Chan',
     bio: "Connie Chan is a general partner at Andreessen Horowitz where she focuses on consumer tech investments. Since joining the firm in 2011, Connie has worked on the investment team sourcing consumer tech deals including Pinterest and Lime and worked closely with startups across the portfolio.",
+    photo: "influencers/connie_chan.jpg",
     accounts: [
       {
         username: "conniechan",
@@ -1547,6 +1552,7 @@ In his recent book AI Superpowers, former NLP researcher/ technologist Kai-Fu Le
   {
     name: 'Marc Andreessen',
     bio: "Marc Andreessen is a cofounder and general partner of the venture capital firm Andreessen Horowitz. Marc co-created the highly influential Mosaic Internet browser and co-founded Netscape, which later sold to AOL for $4.2 billion.",
+    photo: "influencers/marc_andreessen.jpeg",
     accounts: [
       {
         username: nil,
@@ -1733,6 +1739,7 @@ Ben leaps into this information void with his latest blog post titled Taking the
   {
     name: 'Sam Altman',
     bio: "Sam Altman is an American entrepreneur, investor, programmer, and blogger. He is the president of Y Combinator and co-chairman of OpenAI.",
+    photo: "influencers/sam_altman.jpg",
     accounts: [
       {
         username: "sama",
@@ -2464,6 +2471,7 @@ HOFFMAN: I’m Reid Hoffman. Thank you for listening.",
   {
     name: 'Benedict Evans',
     bio: "I work at Andreessen Horowitz ('a16z'), a venture capital firm in Silicon Valley that invests in technology companies. I try to work out what's going on and what will happen next.",
+    photo: "influencers/benedict_evans.jpg",
     accounts: [
       {
         username: "benedictevans",
@@ -2521,6 +2529,7 @@ HOFFMAN: I’m Reid Hoffman. Thank you for listening.",
   {
     name: 'Reid Hoffman',
     bio: "Reid Garrett Hoffman is an American internet entrepreneur, venture capitalist and author. Hoffman was the co-founder and executive chairman of LinkedIn. He is currently a partner at the venture capital firm Greylock Partners.",
+    photo: "influencers/reid_hoffman.jpg",
     accounts: [
       {
         username: "reidhoffman",
@@ -2578,6 +2587,7 @@ HOFFMAN: I’m Reid Hoffman. Thank you for listening.",
   {
     name: "Tim O'Reilly",
     bio: "Tim has a history of convening conversations that reshape the computer industry. In 1998, he organized the meeting where the term “open source software” was agreed on, and helped the business world understand its importance. In 2004, with the Web 2.0 Summit, he defined how “Web 2.0” represented not only the resurgence of the web after the dot com bust, but a new model for the computer industry, based on big data, collective intelligence, and the internet as a platform.",
+    photo: "influencers/tim_oreilly.jpg",
     accounts: [
       {
         username: "timoreilly",
@@ -2636,7 +2646,7 @@ full_list.each do |influencer|
   # influencer[:name]
   # influencer[:bio]
 
-  this_influencer = Influencer.create! name: influencer[:name], bio: influencer[:bio]
+  this_influencer = Influencer.create! name: influencer[:name], bio: influencer[:bio], photo: influencer[:photo]
 
   accounts = influencer[:accounts]
 

@@ -4,6 +4,13 @@
   padding: 8px;
 }
 
+.bubble-title{
+  position: absolute;
+  left: 40px;
+  top: 42px;
+  padding-bottom: 12px;
+}
+
 .content{
   position: absolute;
   left: 40px;
@@ -55,6 +62,14 @@
         color: $text-dark;
       }
     }
+    .bubble-title{
+      h4{
+        color: $text-dark;
+      }
+    }
+    .icon-container{
+      color: $text-dark;
+    }
   }
 }
 
@@ -84,12 +99,6 @@
 
 .dark {
   border-color: $text-dark;
-}
-
-.bubble-title{
-  position: absolute;
-  left: 40px;
-  top: 42px;
 }
 
 #inner-round {

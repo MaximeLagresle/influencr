@@ -1,7 +1,7 @@
-function refreshReadState(innerHTML) {
-  console.log("updated")
+function refreshReadState(new_class) {
+
   const influencerContainer = document.getElementById("<%= @state.id %>readstate");
-  influencerContainer.innerHTML = innerHTML;
+  influencerContainer.classList.toggle(new_class);
 }
 
-refreshReadState( "<%= @inner_html %>");
+refreshReadState( "<%= @new_class %>");
