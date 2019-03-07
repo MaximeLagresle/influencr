@@ -1,10 +1,15 @@
 class MediaController < ApplicationController
   def index
-    if current_user.first_onboarding == true
+    if current_user.first_onboarding
+      p "-------------------- DEBUG TRACE 001"
       current_user.first_onboarding = false
-      current_user.save
-      redirect_to tutorial_path
+      if current_user.save!
+        redirect_to tutorial_path
+      else
+        raise "failed to update user"
+      end
     else
+      p "-------------------- DEBUG TRACE 002"
       @media = Medium.all
       @influencers = Influencer.all
 
