@@ -59,7 +59,10 @@
 </div>
 
 <div class="avatar-container">
-  <%= image_tag(image_path(@influencer.photo), :alt => @influencer.name, :class => "influencer-avatar") %>
+  <% p "--------------------" %>
+  <% p image_path(@influencer.photo) %>
+  <img src="<%= image_path(@influencer.photo) %>" class="influencer-avatar">
+  <%#= image_tag(image_path(@influencer.photo), :alt => @influencer.name, :class => "influencer-avatar") %>
 </div>
 
 <!-- Influencer biography displayed here -->
