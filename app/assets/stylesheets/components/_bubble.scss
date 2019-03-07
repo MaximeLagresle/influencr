@@ -6,9 +6,9 @@
 
 .content{
   position: absolute;
-  left: 50px;
+  left: 40px;
   top: 90px;
-  padding-right: 50px;
+  padding-right: 40px;
   transition: all 0.5s ease-in-out;
   opacity:0;
 }
@@ -120,7 +120,6 @@
 .scroll::-webkit-scrollbar {
     display: none; // Safari and Chrome
 }
-
 
 .tweet{
  // position: relative;
