@@ -105,7 +105,7 @@
 
   <div class="accounts-container">
     <% @influencer.accounts.each do |account| %>
-      <h4><%=link_to account.platform.name, account.url, :class => "blue" %></h4>
+      <h4><%=link_to account.platform.name, account.url, :class => "blue", target: "_blank" %></h4>
     <% end %>
   </div>
 
