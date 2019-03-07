@@ -140,7 +140,7 @@
           <h3 class="influencer_name_styling">By <%= state.medium.influencer.name %></h3>
           <em><%= link_to "Original Source", state.medium.url, :class => "blue-small", target: "_blank" %></em>
           <br><br>
-          <p class="body_styling"><%= state.medium.content %></p>
+          <p class="body_styling"><%= simple_format(state.medium.content) %></p>
         </div>
       </div>
     <% end %>
