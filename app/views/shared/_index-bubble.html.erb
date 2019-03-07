@@ -1,5 +1,4 @@
-
-
+<!-- Container Left Side -->
 <% @my_states.each do |state| %>
 
   <!-- Going through all Medium from State to diplay in a wrapper -->
@@ -17,16 +16,21 @@
       <!-- ARTICLE-->
       <% if state.medium.format.type_of == "article" %>
         <div class="icon-container"><i class="far fa-file-alt"></i></div>
-        <h4 class="bubble-title"> <%= state.medium.title %> </h4>
+
+        <div class="bubble-title">
+          <h4> <%= state.medium.title %> </h4>
+        </div>
+
         <div class="content">
-          <p> Dispaly Count: <%= state.display_count %> </p>
-          <p> <%= state.medium.content.first(100) if state.medium.content %> </p>
+          <p> <%= simple_format(state.medium.content.first(100)) if state.medium.content %> </p>
         </div>
 
       <!-- TWEET-->
       <% elsif state.medium.format.type_of == "tweet" %>
         <div class="icon-container"><i class="fab fa-twitter"></i></div>
-        <h4 class="bubble-title"> 1 new tweet </h4>
+        <div class="bubble-title">
+          <h4> 1 new tweet </h4>
+        </div>
         <div class="content">
           <h2>Tweet</h2>
           <p> <%= state.medium.content if state.medium.content %> </p>
@@ -35,16 +39,31 @@
       <!-- PODCAST-->
       <% elsif state.medium.format.type_of == "podcast" %>
         <div class="icon-container"><i class="fas fa-headphones"></i></div>
-        <h4 class="bubble-title"><%= state.medium.title %></h4>
-        <div class="content"> <h3>Podcast</h3> </div>
+        <div class="bubble-title">
+          <h4><%= state.medium.title %></h4>
+        </div>
+        <div class="content">
+
+        <!-- replace with erb-embedcode for each media -->
+
+          <iframe width="100%" height="80px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319411042&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+         </div>
 
       <!-- VIDEO-->
       <% elsif state.medium.format.type_of == "video" %>
         <div class="icon-container"><i class="fas fa-tv"></i></div>
-        <h4 class="bubble-title"><%= state.medium.title %></h4>
-        <div class="content"> <h3>Video</h3> </div>
+        <div class="bubble-title">
+          <h4><%= state.medium.title %></h4>
+        </div>
+        <div class="content">
+
+        <!-- replace with erb-embedcode for each media -->
+
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/m8DQpqJwo3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
       <% end %>
     </div>
   </div>
 <% end %>
-
