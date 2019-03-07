@@ -5,13 +5,22 @@
   justify-content: center;
   align-content:center;
   flex-direction: column;
+  position:relative;
 }
 
 .arrow img {
   height: 32vh;
 }
 
-.onboarding-header {
-  padding: 14px;
+#first_onboarding {
+  height: 100vh;
 }
+// .onboarding-header {
+//   padding: 14px;
+// }
 
+#starting-button {
+  position:absolute;
+  bottom:50px;
+  right:15px;
+}

@@ -48,7 +48,7 @@ $("#previous_button_page_two").click((e) => {
 //jquery logic for page three
 $("#progress_button_page_three").click((e) => {
  $("#page_three").fadeOut(300, () => {
-  $("#page_four").fadeIn(300, () => {
+  $("#page_five").fadeIn(300, () => {
     // console.log("page four loaded")
   })
  })
@@ -60,4 +60,20 @@ $("#previous_button_page_three").click((e) => {
   })
  })
 })
+
+//jquery logic for page five
+// $("#sign_up_button_page_five").click((e) => {
+//  $("#page_five").fadeOut(300, () => {
+//   $("#page_four").fadeIn(300, () => {
+//     // console.log("page four loaded")
+//   })
+//  })
+// })
+// $("#previous_button_page_five").click((e) => {
+//  $("#page_five").fadeOut(300, () => {
+//   $("#page_three").fadeIn(300, () => {
+//     // console.log("page two loaded")
+//   })
+//  })
+// })
 

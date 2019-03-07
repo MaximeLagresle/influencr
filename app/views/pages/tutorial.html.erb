@@ -1,0 +1,14 @@
+<div class="container" id="first_onboarding">
+  <h2 class="onboarding-header">HOT</h2>
+  <div class="arrow">
+    <%= image_tag("arrow-up.svg") %>
+  </div>
+  <h2 class="onboarding-header">The more recent the activity from your influencers is, the hotter your background will be.</h2>
+  <div class="arrow">
+    <%= image_tag("arrow-down.svg") %>
+  </div>
+  <h2 class="onboarding-header">COLD</h2>
+
+  <%= link_to "Let's start", {controller: "media", action: "index"}, class: "onboarding-header progress_button", id: "starting-button" %>
+
+</div>

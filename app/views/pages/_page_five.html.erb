@@ -17,7 +17,7 @@
                       input_html: { autocomplete: "new-password", class: "user_name_input input-style" },
                       wrapper_html: { class: "wrapper-style"},
                       label_html: { class: "label-style" }%>
-          <%= f.input :password_confirmation,
+          <%# f.input :password_confirmation,
                       required: true,
                       input_html: { autocomplete: "new-password", class: "user_name_input input-style" },
                       wrapper_html: { class: "wrapper-style"},
@@ -29,6 +29,7 @@
       <div class="form-actions">
         <%= f.button :submit, "SIGN UP", class: "form-action-button" %>
       </div>
+
     <% end %>
   </div>
 </div>
