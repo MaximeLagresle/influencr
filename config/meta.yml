@@ -1,0 +1,5 @@
+meta_product_name: "influencr.io"
+meta_title: "influencr.io - Your best friend in the growth and tech industry."
+meta_description: "An influencer-centric curation tool for growth and tech strategy content."
+meta_image: "teacup.png" # should exist in `app/assets/images/`
+twitter_account: "@LagresleMaxime"   # required for Twitter Cards
