@@ -112,8 +112,8 @@
 
   <div class="window-container hidden-sm">
     <% @state_array.each do |state| %>
-      <div class="bubble-right" id="medium<%= state.medium.id %>">
-        <div class="title-top-bar top-bar-nav bottom-border">
+      <div class="bubble-right scroll" id="medium<%= state.medium.id %>">
+        <div class="fixed-top top-bar-nav bottom-border">
 
           <!-- top menu -->
           <div class="menu-window">
@@ -136,8 +136,10 @@
 
         <div class="content article-text-style">
           <h3 class="title_styling"><%= state.medium.title %></h3>
-          <h3 class="influencer_name_styling"><%= state.medium.influencer.name %></h3>
           <br>
+          <h3 class="influencer_name_styling">By <%= state.medium.influencer.name %></h3>
+          <em><%= link_to "Original Source", state.medium.url, :class => "blue-small", target: "_blank" %></em>
+          <br><br>
           <p class="body_styling"><%= simple_format(state.medium.content) %></p>
         </div>
       </div>
