@@ -28,8 +28,8 @@
 
       <div class="menu">
         <!-- Link list -->
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item dark" %>
         <%= link_to "My Influencers", ".bd-example-modal-lg", "data-toggle" => "modal", class: "menu-item dark" %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "menu-item dark" %>
       </div>
 
     <!-- Logo - Clickable far right -->
@@ -68,7 +68,7 @@
             </div>
 
             <div class="content">
-              <p> <%= state.medium.content.first(100) if state.medium.content %> </p>
+              <p> <%= simple_format(state.medium.content.first(100)) if state.medium.content %> </p>
             </div>
 
           <!-- TWEET-->
@@ -88,7 +88,13 @@
             <div class="bubble-title">
               <h4><%= state.medium.title %></h4>
             </div>
-            <div class="content"> <h3>Podcast</h3> </div>
+            <div class="content">
+
+            <!-- replace with erb-embedcode for each media -->
+
+              <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319411042&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+             </div>
 
           <!-- VIDEO-->
           <% elsif state.medium.format.type_of == "video" %>
@@ -96,7 +102,13 @@
             <div class="bubble-title">
               <h4><%= state.medium.title %></h4>
             </div>
-            <div class="content"> <h3>Video</h3> </div>
+            <div class="content">
+
+            <!-- replace with erb-embedcode for each media -->
+
+              <iframe width="100%" height="80" src="https://www.youtube.com/embed/m8DQpqJwo3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
           <% end %>
         </div>
       </div>
