@@ -1,10 +1,21 @@
 class InfluencersController < ApplicationController
 
   def show
-    @influencer = Influencer.find(params[:id])
 
-    @influencers = Influencer.all
-    @preferences = Preference.where(user: current_user)
+    # Initialize instance variables
+    @influencer = Influencer.find(params[:id])
+    @all_influencers = Influencer.all
+
+    # Initialize Influencer list for user
+    @my_preference = Preference.where(user: current_user)
+    @my_influencers = @my_preference.map { |p| p.influencer }
+    @not_my_influencers = @all_influencers.reject { |i| @my_influencers.include?(i) }
+
+
+
+
+
+
 
     @preference = Preference.find_by(user: current_user, influencer: @influencer)
 

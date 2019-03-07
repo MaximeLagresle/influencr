@@ -12,34 +12,30 @@
 
   <!-- Lists the influencer's included in the user's preferences -->
 
-  <% @preferences.each do | preference| %>
-    <h3><%=link_to preference.influencer.name, influencer_path(preference.influencer), :class => "blue", remote: true %></h3>
+  <% @my_influencers.each do | influencer | %>
+    <h3><%=link_to influencer.name, influencer_path(influencer), :class => "blue", remote: true %></h3>
   <% end %>
 
   <br><br>
 
   <!-- Lists all the influencer's available -->
-
   <h2 class="dark">Top Influencers</h2><br>
 
   <!-- map preferences to obtain influencer ids -->
-
-  <% pref_filter = @preferences.map do | pref | %>
-    <% pref.influencer.id %>
-  <% end %>
+  <%# pref_filter = @my_preference.map do | pref | %>
+    <%# pref.influencer.id %>
+  <%# end %>
 
   <!-- display only influencers NOT in the user's list -->
+  <% @not_my_influencers.sort.each do | influencer | %>
 
-  <% @influencers.sort.each do | influencer| %>
-
-    <% unless pref_filter.include?(influencer.id) %>
+    <%# unless pref_filter.include?(influencer.id) %>
       <h3><%=link_to influencer.name, influencer_path(influencer), :class => "gray", remote: true %></h3>
-      <% end %>
+      <%# end %>
   <% end %>
 </div>
 
 <!-- Displays the influencer avatar and name -->
-
 <div class="name-bar">
     <h1 class="dark"><%= @influencer.name %></h1>
 
