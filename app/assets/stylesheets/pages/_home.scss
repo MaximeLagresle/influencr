@@ -34,7 +34,7 @@ body{
 }
 
 // Small device
-@media (max-width: 1400px) {
+@media (max-width: 850px) {
   .navbar-influencr {
     position: relative;
   }
@@ -57,7 +57,7 @@ body{
 }
 
 // Large device
-@media (min-width: 1400px) {
+@media (min-width: 850px) {
   #display-grid {
     grid-template-rows: 100px 1fr ;
     grid-template-columns: 60px 2fr 5fr 60px;

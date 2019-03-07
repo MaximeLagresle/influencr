@@ -1551,8 +1551,7 @@ In his recent book AI Superpowers, former NLP researcher/ technologist Kai-Fu Le
 
   {
     name: 'Marc Andreessen',
-    bio: "Marc Andreessen is a cofounder and general partner of the venture capital firm Andreessen Horowitz. He is an innovator and creator, one of the few to pioneer a software category used by more than a billion people and one of the few to establish multiple billion-dollar companies. \n
-    Marc co-created the highly influential Mosaic Internet browser and co-founded Netscape, which later sold to AOL for $4.2 billion.",
+    bio: "Marc Andreessen is a cofounder and general partner of the venture capital firm Andreessen Horowitz. Marc co-created the highly influential Mosaic Internet browser and co-founded Netscape, which later sold to AOL for $4.2 billion.",
     photo: "influencers/marc_andreessen.jpeg",
     accounts: [
       {
