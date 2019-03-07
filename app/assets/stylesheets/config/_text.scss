@@ -70,6 +70,7 @@ p{
 
 a{
   color: $text-white;
+  text-decoration: none;
   &.dark {
   color: $text-dark;
   }
@@ -87,6 +88,10 @@ a{
 
 a:hover{
   color: $text-dark;
+  text-decoration: none;
+}
+
+a:visited{
   text-decoration: none;
 }
 
