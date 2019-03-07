@@ -33,7 +33,7 @@ full_list = [
   {
     name: 'Paul Graham',
     bio: "Programmer, writer, and investor. In 1995, he and Robert Morris started Viaweb, the first software as a service company. Viaweb was acquired by Yahoo in 1998, where it became Yahoo Store. In 2001 he started publishing essays on paulgraham.com, which in 2015 got 34 million page views.",
-    photo: "influencers/paul_graham.jpeg",
+    photo: "influencers/paul_graham.jpg",
     accounts: [
       {
         username: "paulg",
@@ -919,7 +919,7 @@ Melendez and Gregory Price for inviting me to speak.",
   {
     name: 'Brian Balfour',
     bio: "Founder/CEO of Reforge, previously VP Growth @ HubSpot. Brian Balfour has started multiple VC backed companies, and grown user bases to millions of daily active users. He writes detailed essays on growth and user acquisition that have been featured in Forbes, Hacker Monthly, and OnStartups to help build a growth machine.",
-    photo: "influencers/brian_balfour.jpeg",
+    photo: "influencers/brian_balfour.jpg",
     accounts: [
       {
         username: "bbalfour",
@@ -1077,7 +1077,7 @@ Melendez and Gregory Price for inviting me to speak.",
   {
     name: 'Andrew Chen',
     bio: "Investor at Andreessen Horowitz, where he focuses on consumer products, marketplaces, and bottoms up SaaS. Previously, he led growth teams at Uber.",
-    photo: "influencers/andrew_chen.jpeg",
+    photo: "influencers/andrew_chen.jpg",
     accounts: [
       {
         username: "andrewchen",
@@ -1552,7 +1552,7 @@ In his recent book AI Superpowers, former NLP researcher/ technologist Kai-Fu Le
   {
     name: 'Marc Andreessen',
     bio: "Marc Andreessen is a cofounder and general partner of the venture capital firm Andreessen Horowitz. Marc co-created the highly influential Mosaic Internet browser and co-founded Netscape, which later sold to AOL for $4.2 billion.",
-    photo: "influencers/marc_andreessen.jpeg",
+    photo: "influencers/marc_andreessen.jpg",
     accounts: [
       {
         username: nil,
