@@ -68,4 +68,9 @@
   margin-top: 8vh;
   color: $text-white;
   border-bottom: 3px solid #FFFFFF;
+  &:hover {
+    color: $warm-mid;
+    border-bottom: 3px solid $warm-mid;
+    cursor: pointer;
+  }
 }
