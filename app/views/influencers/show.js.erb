@@ -8,6 +8,40 @@ function refreshBubble(innerHTML) {
   bubbleContainer.innerHTML = innerHTML;
 }
 
+function refreshWindow(innerHTML) {
+  const windowContainer = document.getElementById('window_update');
+  windowContainer.innerHTML = innerHTML;
+}
+
 refreshInfluencer('<%= j render "influencer_modal", influencer: @influencer %>');
 
-refreshBubble('<%= j render "shared/index-bubble" %>')
+refreshBubble('<%= j render "shared/index-bubble" %>');
+refreshWindow('<%= j render "shared/index-bubble-window" %>');
+
+document.querySelectorAll(".bubble-wrapper").forEach( bubble => {
+
+  bubble.addEventListener("click", (e) => {
+    console.log("test")
+    const bubblesWindow = document.querySelectorAll(".bubble-right")
+    bubblesWindow.forEach( bbl => {
+      if ( bbl.classList.contains("hidden-page") ){
+        bbl.classList.toggle("hidden-page");
+      }
+    });
+
+    const hh = e.currentTarget.attributes["data-target-id"].value ;
+    document.getElementById(hh).classList.toggle("hidden-page");
+  })
+});
+
+// Event listener to toggle the article hide on CLOSE button.
+
+document.querySelectorAll(".close-button").forEach( button => {
+
+  button.addEventListener("click", (e) => {
+
+    const close = e.currentTarget.parentNode.parentNode.parentNode
+    close.classList.toggle("hidden-page");
+
+  })
+});
