@@ -138,7 +138,7 @@
           <h3 class="title_styling"><%= state.medium.title %></h3>
           <h3 class="influencer_name_styling"><%= state.medium.influencer.name %></h3>
           <br>
-          <p class="body_styling"><%= state.medium.content %></p>
+          <p class="body_styling"><%= simple_format(state.medium.content) %></p>
         </div>
       </div>
     <% end %>

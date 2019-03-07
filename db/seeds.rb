@@ -659,10 +659,114 @@ Thanks to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and Robert Morris 
         platform: blog,
         media: [
           {
-            url: "https://andrewchen.co/2018-essay-collection/",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            title: "2018 essay collection on growth metrics, marketplaces, viral growth in the enterprise, and more",
-            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",
+            url: "https://andrewchen.co/the-law-of-shitty-clickthroughs/",
+            content: "The first banner ad ever, on HotWired in 1994, debuted with a clickthrough rate of 78% (thanks @ottotimmons) \r
+
+First it works, and then it doesn’t
+After months of iterating on different marketing strategies, you finally find something that works. However, the moment you start to scale it, the effectiveness of your marketing grinds to a halt. Sound familiar?
+
+Welcome to the Law of Shitty Clickthroughs:
+
+Over time, all marketing strategies result in shitty clickthrough rates.
+
+Here’s a real example – let’s compare the average clickthrough rates of banner ads when debuted on HotWired in 1994 versus Facebook in 2011:
+
+HotWired CTR, 1994: 78%
+Facebook CTR, 2011: 0.05%
+That’s a 1500X difference. While there are many factors that influence this difference, the basic premise is sound – the clickthrough rates of banner ads, email invites, and many other marketing channels on the web have decayed every year since they were invented.
+
+Here’s another channel, which is email open rates over time, according to eMarketer:
+
+
+
+While this graph shows a decline, the other graph (which I don’t have handy) is that the number of emails sent out has increased up to 30+ billion per day.
+
+All these channels are decaying over time, and what’s saving us is the new marketing channels are constantly getting unveiled, too. These new channels offer high performance, because of a lack of competition, big opportunities for novel marketing techniques, and these days, the cutting edge is about optimizing your mobile notifications, not your banner placements.
+
+There are a few drivers for the Law of Shitty Clickthroughs, and here’s a summary of the top ones:
+
+Customers respond to novelty, which inevitably fades
+First-to-market never lasts
+More scale means less qualified customers
+Let’s examine each in more detail, and then discuss the options for combatting this force of gravity in marketing.
+Novelty
+Without a doubt, one of the key drivers of engagement for marketing is that customers respond to novelty. When HotWired showed banner ads for the first time in history, people clicked just to check out the experience. Same for being the first web product to email people invites to a website – it works for a while, until your customers get used to the effect, and start ignoring it.
+
+One of the most important tools you have at your disposal is the creative and calls to action that you use in your marketing – this might be like “X has invited you to Y” or it might be the headline you use in your banner ads. Recently, Retargeter posted an interesting analysis on the Importance of Rotating Creatives, which showed how keeping the same ad creative led to declining CTRs over time:
+
+
+
+Publishers often have a similar problem in consumers ignoring the advertising on their site, which drives down clickthrough rates for both of them (bad for CPMs). This problem is often described as banner blindness, and you can see it clearly here in an eye-tracking study by Jakob Nielsen:
+
+
+
+You can see here how users, almost comically, avoid looking at any banners.
+
+The point is, humans seek novelty yet are pattern-recognition machines. Your initial marketing strategy will work quite well as your users try it for the first time, but afterwards, they learn to filter your marketing efforts out unless they are genuinely useful (more on that later).
+
+First-to-market never lasts
+It’s bad enough that your own marketing efforts drive down channel performance, but usually once your marketing efforts are working, your competitors quickly follow. There’s a whole cottage industry of companies that provide competitive research in the area of how their competitors are advertising and give you the information needed to fast-follow their marketing efforts.
+
+For example, with a quick query, I know how much Airbnb is spending on search marketing (turns out, millions per year) what keywords they are buying ads on, and who their competitors are. And this is just a free service! There are much more sophisticated products for every established marketing channel:
+
+Airbnb Search Engine Marketing
+
+Daily ad budget: $10,638
+Keywords: 62,729
+Example ad: Find Affordable Rooms Starting From $20/Day. Browse & Book Online Now!
+Main competitors: Expedia.com, booking.com, hotels.com, Marriott.com
+Any clone of their business can quickly fast-follow their marketing efforts and use the same ads in the same marketing channels. This quickly degrades the performance of the marketing channel as the novelty wears off and clickthroughs plummet.
+
+Any product that is first to market has a limited window where they will enjoy unnaturally high marketing performance, until the competition enters, in which case everyone’s marketing efforts will degrade.
+
+More scale means less qualified customers
+Another important way to think about the available market for your product is in terms of the popular Technology Adoption Lifecycle, in which early adopters actively seek out your product, while the rest of the mainstream market needs a lot of convincing. The quant marketing way to look at this is that early adopters respond better to marketing efforts across any given metric (signup %, CTR, CPA) than the later customer segments. In the TAL framework, the early market seeks out novelty, whereas the mainstream market just cares if you solve a problem for them.
+
+As a result, a marketing strategy focused on early adopters is bound to look better than what you get later. You can get some limited traffic from PR and targeted advertising from niche communities and media properties. However once you get past this group, the CTRs can drop substantially.
+
+If you’re a SaaS or ecommerce company that’s road-tested your marketing strategy by acquiring limited batches of customers, the problem is that whatever assumptions and projections you make off of this base end up fundamentally skewed positive. If your model indicates that you can acquire customers at $10 and break even within 6 months, it’s not hard for a 30% increase in CAC and 30% decrease in LTV to double the time it takes to get to profitability. This could be the difference between life and death for a company.
+
+Lesson to investors is: Beware marketing metrics done at a small scale, and beware marketing tech companies that facilitate momentary marketing opportunities without a bigger vision. These are arbitrage opportunities that will disappear over time.
+
+How to fight the Law of Shitty Clickthroughs
+I call it a Law, of course, because I really believe it’s a strong gravitational pull on all marketing on the web. You can’t avoid it, and in many ways, it’s counter productive to try.
+
+You can always get incrementally better performance out of your marketing by taking a nomad strategy – always keep developing new creative, testing new publishers, and so on. That’s all easy, but is mostly about maintaining some base level of performance. This can push the Law of Shitty Clickthroughs to act over years rather than degrading your marketing efforts over months.
+
+Similarly, this law provides a litmus test as to the difference between advertising and information. When you are marketing with useful information, then CTRs stay high. Advertising that’s just novelty and noise wrapped in a new marketing channel has a limited shelf life.
+
+The real solution: Discover the next untapped marketing channel
+The 10X solution to solving the Law of Shitty Clickthroughs, even momentarily, is to discover the next untapped marketing channel. In addition to doubling down on traditional forms of online advertising like banners, search, and email, it’s important to work hard to get to the next marketing channel while it’s uncontested.
+
+Sometimes I get asked “have you ever seen someone do XYZ to acquire customers?” Turns out, the highest vote of confidence I can give is, “No I haven’t, and that’s good – that means there’s a higher chance of it working. You should try it.”
+
+Today, these (relatively) uncontested marketing channels are Open Graph, mobile notifications, etc. If you can make these channels work with a strong product behind it, then great. Chances are, you’ll enjoy a few months if not a few years of strong marketing performance before they too, slowly succumb.",
+            title: "The Law of Shitty Clickthroughs",
+            header: "Welcome to the Law of Shitty Clickthroughs: Over time, all marketing strategies result in shitty clickthrough rates.",
+            format: article
+          },
+          {
+            url: "https://andrewchen.co/power-user-curve/",
+            content: "<p><em>[Today we have an essay on one of the common frameworks we use to analyze investments at Andreessen Horowitz: The Power User Curve. I worked closely with Li Jin, a partner on the investing team, to collect our ideas into this essay which she wrote. <a href='https://twitter.com/ljin18'>You can follow @ljin18 on Twitter for more thoughts</a>. -Andrew]</em></p>
+<p><img class='alignnone size-full wp-image-4258' src='http://1g1uem2nc4jy1gzhn943ro0gz50-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/The-Power-User-Curve-1.png' alt='' width='600' height='200' srcset='https://1g1uem2nc4jy1gzhn943ro0gz50-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/The-Power-User-Curve-1.png 600w, https://1g1uem2nc4jy1gzhn943ro0gz50-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/The-Power-User-Curve-1-300x100.png 300w' sizes='(max-width: 600px) 100vw, 600px' /></p>
+<p><strong>The importance of power users</strong><br />
+Power users drive some of the most successful companies &#8212; people who love their product, are highly engaged, and contribute a ton of value to the network. In ecommerce marketplaces it’s power sellers, in ridesharing platforms it’s power riders, and in social networks it’s influencers.</p>
+<p><span style='font-weight: 400;'>All companies want more power users, but you need to measure them before you can find (and retain) them. While DAU/MAU &#8212; dividing daily active users (DAUs) by monthly active users (MAUs or monthly actives) &#8212; is a common metric for measuring engagement,</span> <a href='https://andrewchen.co/dau-mau-is-an-important-metric-but-heres-where-it-fails/'>it has its shortcomings</a>.</p>
+<p>Since companies need a richer and more nuanced way to understand user engagement, we’re going to introduce what we&#8217;ll call the “Power User Curve” &#8212; also commonly called the activity histogram or the &#8220;L30&#8221; (coined by the Facebook growth team). It’s a histogram of users’ engagement by the total number of days they were active in a month, from 1 day out of the month to all 30 (or 28, or 31) days. While typically reflecting top-level activity like app opens or logins, it can be customized for whatever action you decide is important to measure for your product.</p>
+<p>The Power User Curve has a number of advantages over DAU/MAU:</p>
+<ul>
+<li>It shows if you have a hardcore, engaged segment that’s coming back every day.</li>
+<li>It shows the variability among your users: some are slightly engaged, whereas others are power users. Contrast this with DAU/MAU: it’s a single number and so blurs this variance.</li>
+<li>When mapped to cohorts, Power User Curves let you see if your engagement is getting better over time &#8212; which in turn helps assess product launches and performance of other feature changes.</li>
+<li>Power User Curves can be shown for different user actions, not just app opens. This matters if the core activity that matters for your product is deeper in the funnel.</li>
+</ul>
+<p>In other words, while the DAU/MAU gives you a single number, the Power User Curve gives entrepreneurs several avenues of analysis to assess their product&#8217;s engagement to the most addicted users &#8212; in a single snapshot, over time, and also in relation to monetization. This is useful. So how does it work?</p>
+<p><strong>The Power User Curve will &#8220;smile&#8221; when things are good<br />
+</strong>The shape of the Power User Curve can be left-leaning or smile-like, all of which means different things. Here&#8217;s a smile:</p>
+<p><img class='alignnone wp-image-4259' src='http://1g1uem2nc4jy1gzhn943ro0gz50-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Screenshot-2018-07-29-at-6.58.48-PM.png' alt=' width='600' height='379' srcset='https://1g1uem2nc4jy1gzhn943ro0gz50-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Screenshot-2018-07-29-at-6.58.48-PM.png 797w, https://1g1uem2nc4jy1gzhn943ro0gz50-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Screenshot-2018-07-29-at-6.58.48-PM-300x189.png 300w, https://1g1uem2nc4jy1gzhn943ro0gz50-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Screenshot-2018-07-29-at-6.58.48-PM-768x485.png 768w' sizes='(max-width: 600px) 100vw, 600px' /></p>
+<p>The Power User Curve above is for a social product, and shows the characteristic smile shape that indicates there’s a group of highly engaged users using the app daily or nearly daily. Social products with frequent user engagement like this lend themselves well to monetization via ads—there&#8217;s enough users returning frequently that the impressions can support an ad business. Remember that Facebook would have a very right-leaning smile, with 60%+ of its MAUs coming back daily.</p>",
+            title: "The Power User Curve: The best way to understand your most engaged users",
+            header: "Power users drive some of the most successful companies — people who love their product, are highly engaged, and contribute a ton of value to the network.",
             format: article
           }
         ]
@@ -674,9 +778,21 @@ Thanks to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and Robert Morris 
         media: [
           {
             url: "https://soundcloud.com/a16z/growth-user-acquisition",
-            content: "<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/483117867&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'><\/iframe>",
+            content: "Growth is one of the most top of mind questions for entrepreneurs building startups of all kinds (and especially consumer ones) — but how does one go beyond a mindset of “growth hacking” to thinking about growth more systemically and holistically? What are the key metrics to know; why; and how?",
             title: "The Basics of Growth 1 -- User Acquisition",
-            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",
+            header: "This episode of the a16z Podcast — one of two in a series — focuses on the user acquisition aspect of growth, followed by engagement and retention in the next episode.",
+            format: podcast
+          },
+          {
+            url: "https://embed.simplecast.com/81994ef7?noborder&color=3d3d3d",
+            content: "In this episode we talk about:
+
+The uniqueness of the Silicon Valley tech ecosystem, how network effects conspire to create a “rich get richer” situation for cities, and why new communication tools enabling distributed teams to work together across continents could mean that there will be no “next Silicon Valley.”
+Ada shares her insights on the contrasting skill sets needed when working at a big company versus a small startup, after having herself gone from a small startup to a huge organization like LinkedIn back to a two-person startup with her husband.
+How to port the concept of OKRs — objectives and key results, a personnel management framework originated by legendary Intel CEO Andy Grove — to your personal life from your business (and why you would want to). We talk about you can use them to help manage your exercise, social life and relationship with your SO.
+Of course, we also chat about some of their favorite products, including an app that lets you pop in to a luxury hotel for a few hours to shower or have a nap, a super cool way to greet visitors to your office, and a new app for emailing yourself.",
+            title: "Mullet startups and how Silicon Valley has changed",
+            header: "Today on Product Hunt Radio, I make the trek from San Francisco down to Sandhill Road to talk to Andrew Chen and Ada Chen at Andreessen Horowitz.",
             format: podcast
           }
         ]
@@ -690,7 +806,7 @@ Thanks to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and Robert Morris 
             url: "https://www.youtube.com/watch?v=m8DQpqJwo3Q",
             content: nil,
             title: "Chat with Andrew Chen, Supply Growth at Uber",
-            header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.",
+            header: "Andrew Chen is one of Silicon Valley's thought leaders on growth, mobile, and startups in general.",
             format: video
           }
         ]
@@ -1108,12 +1224,12 @@ Ben leaps into this information void with his latest blog post titled Taking the
            url: "https://a16z.com/2014/06/20/what-it-will-take-to-create-the-next-great-silicon-valleys-plural/",
            content: "The popular recipe for creating the “next” Silicon Valley goes something like this: \n
 
-          *Build a big, beautiful, fully equipped technology park;
-          *Mix in R&D labs and university centers;
-          *Provide incentives to attract scientists, firms, and users;
-          *Interconnect the industry through consortia and specialized suppliers;
-          *Protect intellectual property and tech transfer; and
-          *Establish a favorable business environment and regulations.
+          *Build a big, beautiful, fully equipped technology park;\n
+          *Mix in R&D labs and university centers;\\n
+          *Provide incentives to attract scientists, firms, and users;\n
+          *Interconnect the industry through consortia and specialized suppliers;\n
+          *Protect intellectual property and tech transfer; and\n
+          *Establish a favorable business environment and regulations.\n
 
           Except … this approach to innovation clusters hasn’t really worked. Some have even dismissed these government-driven efforts as “modern-day snake oil.” Yet policymakers are always searching for the next Silicon Valley because of the critical link between tech innovation, economic growth, and social opportunity.
 
