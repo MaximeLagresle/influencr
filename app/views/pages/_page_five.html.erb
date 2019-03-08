@@ -1,7 +1,10 @@
-<div class="form-container">
-  <div class="form-wrapper">
-    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-      <%= f.error_notification %>
+<!-- <div class="form-container"> -->
+  <!-- <div class="form-wrapper"> -->
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="onboarding-container">
+    <div class="center-content-onboarding">
 
       <div class="form-inputs">
         <%= f.input :email,
@@ -10,6 +13,7 @@
                     input_html: { autocomplete: "email", class: "user_name_input input-style" },
                     wrapper_html: { class: "wrapper-style"},
                     label_html: { class: "label-style text-style" }%>
+
         <div class="password-container">
           <%= f.input :password,
                       required: true,
@@ -26,10 +30,14 @@
         </div>
       </div>
 
-      <div class="form-actions">
-        <%= f.button :submit, "SIGN UP", class: "form-action-button" %>
-      </div>
-
-    <% end %>
+    </div>
   </div>
-</div>
+
+  <div class="onboarding-menu-container">
+    <div class="get-started onboarding-upper-rightside">
+      <%= f.button :submit, "SIGN UP", class: "form-action-button" %>
+    </div>
+  </div>
+
+<% end %>
+

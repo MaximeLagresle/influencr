@@ -1,13 +1,17 @@
-.form-container {
-  display: flex;
-  height:100vh;
-  align-items: center;
-  justify-content:center;
-}
+// .form-container {
+//   display: flex;
+//   height:100vh;
+//   align-items: center;
+//   justify-content:center;
+// }
 
-.form-wrapper {
-  width: 100%;
-  max-width: 400px;
+// .form-wrapper {
+//   width: 100%;
+//   max-width: 400px;
+// }
+
+.simple_form {
+  width: -webkit-fill-available;
 }
 
 .input-style{
@@ -65,7 +69,6 @@
   background: none;
   padding: 0px;
   font-family: $body-font;
-  margin-top: 8vh;
   color: $text-white;
   border-bottom: 3px solid #FFFFFF;
   &:hover {

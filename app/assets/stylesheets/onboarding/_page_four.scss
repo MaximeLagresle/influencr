@@ -1,0 +1,38 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content:center;
+  flex-direction: column;
+  position:relative;
+}
+
+.arrow img {
+  height: 32vh;
+}
+
+#first_onboarding {
+  height: 100vh;
+}
+// .onboarding-header {
+//   padding: 14px;
+// }
+
+#starting-button {
+  position:absolute;
+  bottom:50px;
+  right:15px;
+}
+
+#begin-button {
+  color: $text-white;
+  // border-bottom: 3px solid rgba(255,255,255,0.8);
+  border-bottom: 3px solid;
+  // opacity: 0.8;
+  &:hover {
+    color: $warm-mid;
+    border-bottom: 3px solid $warm-mid;
+    cursor: pointer;
+  }
+}
