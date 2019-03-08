@@ -12,8 +12,8 @@ class State < ApplicationRecord
 
     # Evaluate the importance
     if self.display_count < display_cap
-      time_value = Time.now - self.medium.created_at
-      algie_value = 1.0 #test
+      # time_value = Time.now - self.medium.created_at
+      algie_value = display_count
     else
       algie_value = 11.0 #test
     end

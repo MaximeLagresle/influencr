@@ -39,7 +39,9 @@ class MediaController < ApplicationController
     # @media.take_while { |medium| medium.platform.name != "Twitter" }
 
     # sorts the state with the "SUPER" algorithm  ---> in the State model
-    # sort_by_algo(@my_states)
+
+    @my_states.map! { |state| increment_state!(state.medium) }
+    sort_by_algo(@my_states)
 
 
 
@@ -70,10 +72,9 @@ class MediaController < ApplicationController
     #   insert_array << t
     # end
 
-    # @state_array = insert_array.map { |state| increment_state!(state.medium) }
 
     # defaults to the first influencer's media for filter window
-    @influencer = Influencer.first if @influencer.nil?
+    @influencer = @my_influencers.first if @influencer.nil?
 
     # define first preference to show add or delete option
     @preference = Preference.find_by(user: current_user, influencer: @influencer)

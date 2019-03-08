@@ -1,0 +1,52 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content:center;
+  flex-direction: column;
+  position:relative;
+}
+
+.arrow img {
+  height: 32vh;
+}
+
+
+#tutorial_page_one {
+  height: 100vh;
+}
+
+#tutorial_page_two {
+  height: 100vh;
+}
+
+.onboarding-header {
+  padding: 14px;
+}
+
+#starting-button {
+  position:absolute;
+  bottom:50px;
+  right:15px;
+}
+
+.white-background {
+  background: rgba(255,255,255,.3);
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+.text-grey {
+  color: $text-grey;
+}
+
+.text-margin {
+  // text-align: justify;
+  min-height: 30px;
+  height: 30px !important;
+  overflow: hidden;
+
+  padding: 40px;
+}
+

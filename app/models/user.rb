@@ -16,8 +16,12 @@ class User < ApplicationRecord
   end
 
   def initialize_preferences
-    Influencer.first(3).each do |influencer|
-      Preference.create!(user: self, influencer: influencer)
-    end
+    influencer_one = Influencer.find_by(name: "Marc Andreessen")
+    influencer_two = Influencer.find_by(name: "Paul Graham")
+    influencer_three = Influencer.find_by(name: "Connie Chan")
+
+    Preference.create!(user: self, influencer: influencer_one)
+    Preference.create!(user: self, influencer: influencer_two)
+    Preference.create!(user: self, influencer: influencer_three)
   end
 end
