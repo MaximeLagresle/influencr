@@ -15,6 +15,8 @@ bubbles.forEach( bubble => {
       }
     });
 
+    // const bg = document.querySelector("#background-bubble")
+
     const hh = e.currentTarget.attributes["data-target-id"].value ;
     document.getElementById(hh).classList.toggle("hidden-page");
   })
@@ -32,6 +34,7 @@ closeButton.forEach( button => {
     close.classList.toggle("hidden-page");
 
   })
+  const bg = document.querySelector("#background-bubble").classList.toggle("hidden-page");
 });
 
 // Mobile animation for navabr.
