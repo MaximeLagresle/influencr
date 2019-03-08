@@ -72,27 +72,33 @@
   <h3>Filter By</h3>
   <br>
     <h4>
-    <%=link_to "Articles",
-      influencer_type_path(influencer_id: @influencer.id,
-      formata: "article"), :class => "blue", remote: true %>
+    <%=link_to influencer_type_path(influencer_id: @influencer.id,
+      formata: "article"), :class => "blue", remote: true do %>
+      <i class="far fa-file-alt"></i> Articles
+      <% end %>
   </h4>
 
   <h4>
-    <%=link_to "Podcasts",
-      influencer_type_path(influencer_id: @influencer.id,
-      formata: "podcast"), :class => "blue", remote: true %>
+
+    <%=link_to influencer_type_path(influencer_id: @influencer.id,
+      formata: "podcast"), :class => "blue", remote: true do %>
+      <i class="fas fa-headphones"></i> Podcasts
+      <% end %>
   </h4>
 
   <h4>
-    <%=link_to "Videos",
-      influencer_type_path(influencer_id: @influencer.id,
-      formata: "video"), :class => "blue", remote: true %>
+    <%=link_to influencer_type_path(influencer_id: @influencer.id,
+      formata: "video"), :class => "blue", remote: true do %>
+      <i class="fas fa-tv"></i> Videos
+    <% end %>
   </h4>
 
   <h4>
-    <%=link_to "Tweets",
-      influencer_type_path(influencer_id: @influencer.id,
-      formata: "tweet"), :class => "blue", remote: true %>
+
+    <%=link_to influencer_type_path(influencer_id: @influencer.id,
+      formata: "tweet"), :class => "blue", remote: true do %>
+        <i class="fab fa-twitter"></i> Tweets
+      <% end %>
   </h4>
 
   <br>
