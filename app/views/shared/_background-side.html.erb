@@ -1,0 +1,44 @@
+<script>
+  document.querySelectorAll(".close-button").forEach((closeButton) => {
+    closeButton.addEventListener("click", () => {
+      document.querySelector("#background-bubble").classList.toggle("hidden-page");
+    });
+  });
+</script>
+
+<div class="bubble-right scroll hidden-page" id="background-bubble" style="
+  background: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+">
+  <div class="fixed-top top-bar-nav bottom-border" style="
+    display: none;
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.6);*/
+  ">
+    <div class="menu-window">
+    </div>
+  </div>
+
+  <div class="content article-text-style" style="
+    position: initial;
+    padding-right: initial;
+  ">
+    <div style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: calc(100vh - 235px);
+    ">
+      <h1 style="
+      font-size: 5vw;
+      font-family: poynter-oldstyle-display, serif;
+      font-weight: 400;
+      font-style: normal;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.2);
+        text-align: center;
+
+      ">influencr.io</h1>
+    </div>
+  </div>
+</div>
