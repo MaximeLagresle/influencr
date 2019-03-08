@@ -9,16 +9,14 @@
 }
 
 .title {
-  font-family: $headers-font;
+  font-size: 78px;
+  font-family: poynter-oldstyle-display, serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .tagline {
   margin-top: 2vh;
-  font-family: $headers-font;
-}
-
-.get-started {
-  margin-top: 15vh;
   font-family: $headers-font;
 }
 
@@ -46,4 +44,9 @@
   color: white;
   opacity: 1;
   }
+}
+
+.first-page-logo {
+  height: 100px;
+  width: 100px;
 }

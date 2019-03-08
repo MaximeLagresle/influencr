@@ -1,21 +1,30 @@
-<h2 class="onboarding-header tagline">Let’s start by introducing you with the 3 must-known Growth Strategists Influencers</h2>
+<div class="onboarding-container">
+  <div class="center-content-onboarding">
+    <h2 class="onboarding-header tagline">Let’s start by introducing you with the 3 must-known Growth Strategists Influencers</h2>
 
-<div class="cards">
+    <div class="cards">
 
-  <%@influencers_growth_strategy.each do |influencer| %>
-    <div class="card-influencer">
-      <div class="card-header">
-        <img class="influencer-avatar" alt="influencer-avatar" src="<%= image_path(influencer.photo) %>"/>
-        <h2 class="onboarding-header dark"><%= influencer.name %></h2>
-      </div>
-      <p class="bio-card"><%= influencer.bio %></p>
+      <%@influencers_growth_strategy.each do |influencer| %>
+        <div class="card-influencer">
+          <div class="card-header">
+            <img class="influencer-avatar" alt="influencer-avatar" src="<%= image_path(influencer.photo) %>"/>
+            <h2 class="onboarding-header dark"><%= influencer.name %></h2>
+          </div>
+          <p class="bio-card no-show-mobile"><%= influencer.bio %></p>
+        </div>
+      <% end %>
+
     </div>
-  <% end %>
-
+  </div>
 </div>
 
-<div class="footer">
-  <h2 class="onboarding-header previous_button" id="previous_button_page_three">PREV</h2>
-  <h2 class="onboarding-header progress_button" id="progress_button_page_three">NEXT</h2>
+<div class="onboarding-menu-container">
+  <div class="get-started onboarding-upper-leftside">
+    <h2 class="onboarding-header previous_button" id="previous_button_page_three">PREV</h2>
+  </div>
+
+  <div class="get-started onboarding-upper-rightside">
+    <h2 class="onboarding-header progress_button" id="progress_button_page_three">NEXT</h2>
+  </div>
 </div>
 

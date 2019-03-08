@@ -1,10 +1,20 @@
-<div class="sign-in">
-<%= link_to "Sign In", user_session_path, class: "button-click" %>
+<div class="onboarding-container">
+  <div class="center-content-onboarding">
+    <div class="sign-in">
+    <%= link_to "Sign In", user_session_path, class: "button-click" %>
+    </div>
+
+    <!-- SVG LOGO -->
+    <div class="first-page-logo">
+      <%= render partial:'shared/logo', locals: { myclass: 'logo-white' } %>
+    </div>
+    <h1 class="title">influencr.io</h1>
+    <h2 class="onboarding-header tagline">Get the right content from the right influencers</h2>
+  </div>
 </div>
 
-<h1 class="title">INFLUENCR.IO</h1>
-<h2 class="onboarding-header tagline">Get the right content from the right influencers</h2>
-
-<div class="get-started">
-  <h2 class=onboarding-header id="get-started-button">GET STARTED</h2>
+<div class="onboarding-menu-container">
+  <div class="get-started onboarding-upper-rightside">
+    <h2 class=onboarding-header id="get-started-button">GET STARTED</h2>
+  </div>
 </div>
