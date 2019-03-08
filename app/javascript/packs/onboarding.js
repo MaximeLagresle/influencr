@@ -4,7 +4,7 @@ import Typed from 'typed.js';
 let pageTwoRenderCount = 0;
 // jquery
 $("#page_one").fadeIn(300, () => {
-  console.log("page one loaded")
+  // console.log("page one loaded")
 })
 
 //jquery logic for page one
@@ -17,14 +17,14 @@ $("#get-started-button").click((e) => {
     $("#input_field").focus();
 
     // Typed.js animation (refer to _page_two.html.erb for more details)
-    if (pageTwoRenderCount === 0) {
-      var typed = new Typed('#input_field', {
-        stringsElement: '#typed-strings',
-        attr: "placeholder",
-        typeSpeed: 30
-      });
-      pageTwoRenderCount += 1;
-    }
+    // if (pageTwoRenderCount === 0) {
+    //   var typed = new Typed('#input_field', {
+    //     stringsElement: '#typed-strings',
+    //     attr: "placeholder",
+    //     typeSpeed: 30
+    //   });
+    //   pageTwoRenderCount += 1;
+    // }
   })
  })
 })
