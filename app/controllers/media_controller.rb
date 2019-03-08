@@ -41,7 +41,7 @@ class MediaController < ApplicationController
     # sorts the state with the "SUPER" algorithm  ---> in the State model
 
     @my_states.map! { |state| increment_state!(state.medium) }
-    sort_by_algo(@my_states)
+    # sort_by_algo(@my_states)
 
 
 

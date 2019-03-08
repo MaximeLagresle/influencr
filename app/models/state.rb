@@ -4,23 +4,23 @@ class State < ApplicationRecord
 
   def algie_check
 
-    # Initialize constance and modifier
-    algie_value = 0.0
-    display_cap = 10.0
-    display_modifier = 1.0
-    time_modifier = 1.0
+    # # Initialize constance and modifier
+    # algie_value = 0.0
+    # display_cap = 10.0
+    # display_modifier = 1.0
+    # time_modifier = 1.0
 
-    # Evaluate the importance
-    if self.display_count < display_cap
-      # time_value = Time.now - self.medium.created_at
-      algie_value = display_count
-    elsif self.influencer.name == "Paul Graham"
-      algie_value = 1
-    else
-      algie_value = 11.0 #test
-    end
+    # # Evaluate the importance
+    # if self.display_count < display_cap
+    #   # time_value = Time.now - self.medium.created_at
+    #   algie_value = display_count
+    # elsif self.influencer.name == "Paul Graham"
+    #   algie_value = 1
+    # else
+    #   algie_value = 11.0 #test
+    # end
 
-    return algie_value
+    # return algie_value
 
   end
 
