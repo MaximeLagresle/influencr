@@ -1,5 +1,5 @@
 meta_product_name: "influencr.io"
 meta_title: "influencr.io - A moment of calm in the noisy world of growth and tech"
 meta_description: "Daily curation of high-quality content that will keep you on the cutting edge of growth"
-meta_image: "influencr_og.png" # should exist in `app/assets/images/`
+meta_image: "influencr_og_resized.png" # should exist in `app/assets/images/`
 twitter_account: "@LagresleMaxime"   # required for Twitter Cards
