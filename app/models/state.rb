@@ -14,6 +14,8 @@ class State < ApplicationRecord
     if self.display_count < display_cap
       # time_value = Time.now - self.medium.created_at
       algie_value = display_count
+    elsif self.influencer.name == "Paul Graham"
+      algie_value = 1
     else
       algie_value = 11.0 #test
     end
